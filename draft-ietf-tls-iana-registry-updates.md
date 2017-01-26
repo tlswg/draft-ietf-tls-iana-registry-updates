@@ -63,11 +63,11 @@ This document requests that IANA make changes to a number of DTLS- and TLS-relat
 
 In this document, we use the term "(D)TLS" to refer to registries that apply to both TLS and DTLS.
 
-- Add "TLS" to registries' names for consistency with other TLS-related registries.
+- Add "TLS" to registries' names for consistency amongst TLS-related registries.
 
 - Change the IANA registry policy {{RFC5226}} for the TLS ExtensionType Values, TLS Cipher Suite, and TLS ClientCertificateType Identifiers registries.  These changes register a small part of these code spaces for experimentation and private use.
 
-- Add the designated expert intructions as a note to the TLS ExtensionType Values, TLS Cipher Suite, and TLS ClientCertificateType Identifiers registries to inform users of the registry.
+- Add designated expert intructions as notes in the TLS ExtensionType Values, TLS Cipher Suite, TLS ClientCertificateType Identifiers, and TLS Exporter Label registries to inform users about what to expect from the designated expert.
 
 - Add notes to indicate whether an extension, certain values of an extension, or an entire registry is only applicable pre-(D)TLS 1.3.
 
@@ -76,6 +76,8 @@ In this document, we use the term "(D)TLS" to refer to registries that apply to 
 - Rename the SessionTicket TLS to session_ticket to match the nomenclature for the other extensions' names.
 
 - Add missing entry to the TLS Alert Registry for the no_application_protocol alert defined in {{RFC7301}}
+
+- Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intened to alter the incorrect perception that getting a code point somehow legitimizes the extesion, cipher suite/algorithm, or exporter. 
 
 This document proposes no changes to the registration policies for TLS Alert {{I-D.ietf-tls-tls13}}, TLS ContentType {{I-D.ietf-tls-tls13}}, TLS HandshakeType, {{I-D.ietf-tls-tls13}} and TLS Certificate Status Types {{RFC6961}}; the existing policies (Standards Action for the first three; IETF Review for the last), are appropriate for these one-byte code points because of their scarcity.
 
