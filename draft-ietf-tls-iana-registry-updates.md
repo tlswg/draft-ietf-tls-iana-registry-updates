@@ -73,7 +73,7 @@ In this document, we use the term "(D)TLS" to refer to registries that apply to 
 
 - Rename the NewSessionTicket TLS HandshakeType message registry entry {{RFC5077}} to new_session_ticket to match the naming nomenclature for the other Handshake type names and to match with existing implementations.
 
-- Rename the SessionTicket TLS to session_ticket to match the nomenclature for the other extensions' names.
+- Rename the SessionTicket TLS extension to session_ticket to match the nomenclature for the other extensions' names.
 
 - Add missing entry to the TLS Alert Registry for the no_application_protocol alert defined in {{RFC7301}}.
 
@@ -211,7 +211,7 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 
     WARNING: Cryptographic algorithms will be broken or weakened over time.  Blindly implementing cipher suites listed here is not advised.  Implementers and users need to check that the cryptographic algorithms listed continue to provide the expected level of security.
 
-    Note(1): Although TLS 1.3 uses the same cipher suite space as previous versions of TLS, TLS 1.3 cipher suites are defined differently, only specifying the symmetric ciphers, and cannot it be used for TLS 1.2. Similarly, TLS 1.2 and lower cipher suites cannot be used with TLS 1.3.
+    Note(1): Although TLS 1.3 uses the same cipher suite space as previous versions of TLS, TLS 1.3 cipher suites are defined differently, only specifying the symmetric ciphers, and cannot be used for TLS 1.2. Similarly, TLS 1.2 and lower cipher suites cannot be used with TLS 1.3.
 
     Note(2): Cipher suites marked as "Yes" are those allocated via Standards Track RFCs.  Cipher suites marked as "No" are not; cipher suites marked "No" range from "good" to "bad" from a cryptographic standpoint.
 
@@ -224,7 +224,7 @@ IANA is to update the TLS ClientCertificateType Identifiers registry as follows:
 
 - Change the registry policy to:
 
-    Values in the range 0-223 are assigned via Specification Required {{RFC5226}}.  Values 224-255 are are reserved for Private Use.
+    Values in the range 0-223 are assigned via Specification Required {{RFC5226}}.  Values 224-255 are reserved for Private Use.
 
 - Add the following:
 
