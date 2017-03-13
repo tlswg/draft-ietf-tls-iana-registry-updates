@@ -400,13 +400,14 @@ address {
 <p/>
 
 <ul>
-  <li>Add &#8220;TLS&#8221; to registries&#8217; names for consistency with other TLS-related registries.</li>
+  <li>Add &#8220;TLS&#8221; to registries&#8217; names for consistency amongst TLS-related registries.</li>
   <li>Change the IANA registry policy <a href="#RFC5226">[RFC5226]</a> for the TLS ExtensionType Values, TLS Cipher Suite, and TLS ClientCertificateType Identifiers registries.  These changes register a small part of these code spaces for experimentation and private use.</li>
-  <li>Add the designated expert intructions as a note to the TLS ExtensionType Values, TLS Cipher Suite, and TLS ClientCertificateType Identifiers registries to inform users of the registry.</li>
+  <li>Add designated expert instructions as notes in the TLS ExtensionType Values, TLS Cipher Suite, TLS ClientCertificateType Identifiers, and TLS Exporter Label registries to inform users about what to expect from the designated expert.</li>
   <li>Add notes to indicate whether an extension, certain values of an extension, or an entire registry is only applicable pre-(D)TLS 1.3.</li>
   <li>Rename the NewSessionTicket TLS HandshakeType message registry entry <a href="#RFC5077">[RFC5077]</a> to new_session_ticket to match the naming nomenclature for the other Handshake type names and to match with existing implementations.</li>
-  <li>Rename the SessionTicket TLS to session_ticket to match the nomenclature for the other extensions&#8217; names.</li>
-  <li>Add missing entry to the TLS Alert Registry for the no_application_protocol alert defined in <a href="#RFC7301">[RFC7301]</a></li>
+  <li>Rename the SessionTicket TLS extension to session_ticket to match the nomenclature for the other extensions&#8217; names.</li>
+  <li>Add missing entry to the TLS Alert Registry for the no_application_protocol alert defined in <a href="#RFC7301">[RFC7301]</a>.</li>
+  <li>Added &#8220;Recommended&#8221; column to TLS ExtensionType Values, TLS Cipher Suite, and TLS Exporters Label registries.  Initial values marked &#8220;Yes&#8221; are specified in IETF Standards Track documents; all others are marked &#8220;No&#8221;.  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.</li>
 </ul>
 <p id="rfc.section.2.p.4">This document proposes no changes to the registration policies for TLS Alert <a href="#I-D.ietf-tls-tls13">[I-D.ietf-tls-tls13]</a>, TLS ContentType <a href="#I-D.ietf-tls-tls13">[I-D.ietf-tls-tls13]</a>, TLS HandshakeType, <a href="#I-D.ietf-tls-tls13">[I-D.ietf-tls-tls13]</a> and TLS Certificate Status Types <a href="#RFC6961">[RFC6961]</a>; the existing policies (Standards Action for the first three; IETF Review for the last), are appropriate for these one-byte code points because of their scarcity.</p>
 <p id="rfc.section.2.p.5">This document proposes no changes to the EC Curve Type, EC Point Format, and Supported Groups Registries (see <a href="#I-D.ietf-tls-rfc4492bis">[I-D.ietf-tls-rfc4492bis]</a>).</p>
@@ -602,15 +603,15 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 <p/>
 
 <ul>
-  <li>Add the following:  <br/><br/> WARNING: Cryptographic algorithms will be broken or weakened over time.  Blindly implementing cipher suites listed here is not advised.  Implementers and users need to check that the cryptographic algorithms listed continue to provide the expected level of security.  <br/><br/> Note(1): Although TLS 1.3 uses the same cipher suite space as previous versions of TLS, TLS 1.3 cipher suites are defined differently, only specifying the symmetric ciphers, and cannot it be used for TLS 1.2. Similarly, TLS 1.2 and lower cipher suites cannot be used with TLS 1.3.  <br/><br/> Note(2): Cipher suites marked as &#8220;Yes&#8221; are those allocated via Standards Track RFCs.  Cipher suites marked as &#8220;No&#8221; are not; cipher suites marked &#8220;No&#8221; range from &#8220;good&#8221; to &#8220;bad&#8221; from a cryptographic standpoint.  <br/><br/> Note(3): The designated expert <a href="#RFC5226">[RFC5226]</a> only ensures that the specification is publically available.</li>
+  <li>Add the following:  <br/><br/> WARNING: Cryptographic algorithms will be broken or weakened over time.  Blindly implementing cipher suites listed here is not advised.  Implementers and users need to check that the cryptographic algorithms listed continue to provide the expected level of security.  <br/><br/> Note(1): Although TLS 1.3 uses the same cipher suite space as previous versions of TLS, TLS 1.3 cipher suites are defined differently, only specifying the symmetric ciphers, and cannot be used for TLS 1.2. Similarly, TLS 1.2 and lower cipher suites cannot be used with TLS 1.3.  <br/><br/> Note(2): Cipher suites marked as &#8220;Yes&#8221; are those allocated via Standards Track RFCs.  Cipher suites marked as &#8220;No&#8221; are not; cipher suites marked &#8220;No&#8221; range from &#8220;good&#8221; to &#8220;bad&#8221; from a cryptographic standpoint.  <br/><br/> Note(3): The designated expert <a href="#RFC5226">[RFC5226]</a> only ensures that the specification is publicly available.</li>
 </ul>
 <h1 id="rfc.section.7"><a href="#rfc.section.7">7.</a> <a href="#tls-clientcertificatetype-identifiers" id="tls-clientcertificatetype-identifiers">TLS ClientCertificateType Identifiers</a></h1>
 <p id="rfc.section.7.p.1">IANA is to update the TLS ClientCertificateType Identifiers registry as follows:</p>
 <p/>
 
 <ul>
-  <li>Change the registry policy to:  <br/><br/> Values in the range 0-223 are assigned via Specification Required <a href="#RFC5226">[RFC5226]</a>.  Values 224-255 are are reserved for Private Use.</li>
-  <li>Add the following:  <br/><br/> Note: The designated expert <a href="#RFC5226">[RFC5226]</a> only ensures that the specification is publically available.</li>
+  <li>Change the registry policy to:  <br/><br/> Values in the range 0-223 are assigned via Specification Required <a href="#RFC5226">[RFC5226]</a>.  Values 224-255 are reserved for Private Use.</li>
+  <li>Add the following:  <br/><br/> Note: The designated expert <a href="#RFC5226">[RFC5226]</a> only ensures that the specification is publicly available.</li>
 </ul>
 <h1 id="rfc.section.8"><a href="#rfc.section.8">8.</a> <a href="#new-session-ticket-tls-handshake-message-type" id="new-session-ticket-tls-handshake-message-type">New Session Ticket TLS Handshake Message Type</a></h1>
 <p id="rfc.section.8.p.1">To align with TLS implementations and to align the naming nomenclature for other Handshake message types, IANA is to rename entry 4 in the TLS HandshakeType registry to &#8220;new_session_ticket (renamed from NewSessionTicket)&#8221;. IANA is to also add a reference to this document in the Reference column for entry 4 in the TLS HandshakeType registry.</p>
@@ -620,6 +621,25 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 <p id="rfc.section.10.p.1">IANA is to add the following note to the TLS Exporter Label Registry:</p>
 <pre>
 Note: {{RFC5705}} defines keying material exporters for TLS in terms of the TLS PRF. {{I-D.ietf-tls-tls13}} replaced the PRF with HKDF, thus requiring a new construction. The exporter interface remains the same, however the value is computed different.
+</pre>
+<p id="rfc.section.10.p.2">IANA is to also to add a &#8220;Recommended&#8221; column to the TLS Exporter Label registry.  The table that follows has been generated by marking Standards Track RFCs as &#8220;Yes&#8221; and all others as &#8220;No&#8221;.  Future exporters MUST define the value of this column.  A Standards Track document <a href="#RFC5226">[RFC5226]</a> is required to register an extension with the value &#8220;Yes&#8221;.</p>
+<p id="rfc.section.10.p.3">IANA is also to add the following note:</p>
+<pre>
+Note: The designated expert {{RFC5226}} ensures that the specification is publicly available.  The expert also verifies that the label is a string consisting of printable ASCII characters beginning with "EXPORTER". IANA MUST also verify that one label is not a prefix of any other label.  For example, labels "key" or "master secretary" are forbidden.
+</pre>
+<pre>
+Exporter Value
+-------------------------------
+client finished
+server finished
+master secret
+key expansion
+client EAP encryption
+ttls keying material
+ttls challenge
+EXTRACTOR-dtls_srtp
+EXPORTER_DTLS_OVER_SCTP
+EXPORTER: teap session key seed
 </pre>
 <h1 id="rfc.section.11"><a href="#rfc.section.11">11.</a> <a href="#add-missing-item-to-tls-alert-registry" id="add-missing-item-to-tls-alert-registry">Add Missing Item to TLS Alert Registry</a></h1>
 <p id="rfc.section.11.p.1">IANA is to add the following entry to the TLS Alert Registry (the entry was omitted from the IANA instructions in <a href="#RFC7301">[RFC7301]</a>):</p>
@@ -652,7 +672,7 @@ Note: The following extensions are only applicable to (D)TLS protocol vesions pr
       <td class="reference">
         <b id="I-D.ietf-tls-tls13">[I-D.ietf-tls-tls13]</b>
       </td>
-      <td class="top"><a>Rescorla, E.</a>, "<a href="http://tools.ietf.org/html/draft-ietf-tls-tls13-18">The Transport Layer Security (TLS) Protocol Version 1.3</a>", Internet-Draft draft-ietf-tls-tls13-18, October 2016.</td>
+      <td class="top"><a>Rescorla, E.</a>, "<a href="http://tools.ietf.org/html/draft-ietf-tls-tls13-19">The Transport Layer Security (TLS) Protocol Version 1.3</a>", Internet-Draft draft-ietf-tls-tls13-19, March 2017.</td>
     </tr>
     <tr>
       <td class="reference">
@@ -723,7 +743,7 @@ Note: The following extensions are only applicable to (D)TLS protocol vesions pr
       <td class="reference">
         <b id="I-D.ietf-tls-rfc4492bis">[I-D.ietf-tls-rfc4492bis]</b>
       </td>
-      <td class="top"><a>Nir, Y.</a>, <a>Josefsson, S.</a> and <a>M. Pegourie-Gonnard</a>, "<a href="http://tools.ietf.org/html/draft-ietf-tls-rfc4492bis-09">Elliptic Curve Cryptography (ECC) Cipher Suites for Transport Layer Security (TLS) Versions 1.2 and Earlier</a>", Internet-Draft draft-ietf-tls-rfc4492bis-09, October 2016.</td>
+      <td class="top"><a>Nir, Y.</a>, <a>Josefsson, S.</a> and <a>M. Pegourie-Gonnard</a>, "<a href="http://tools.ietf.org/html/draft-ietf-tls-rfc4492bis-14">Elliptic Curve Cryptography (ECC) Cipher Suites for Transport Layer Security (TLS) Versions 1.2 and Earlier</a>", Internet-Draft draft-ietf-tls-rfc4492bis-14, March 2017.</td>
     </tr>
     <tr>
       <td class="reference">
