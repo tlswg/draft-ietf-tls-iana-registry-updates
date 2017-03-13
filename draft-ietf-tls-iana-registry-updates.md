@@ -300,6 +300,21 @@ To make it clear that (D)TLS 1.3 has orphaned certain registries (i.e., they are
 
 - Update the "References" in the TLS Compression Method Identifiers, TLS Hash Algorithm {{RFC5246}} and TLS SignatureAlgorithm registries to also refer to this document.
 
+Designated Expert Pool
+======================
+
+Specification Required [RFC5226] registry requests are registered after a three-week review period on the (tbd but maybe tls-reg-review@ietf.org) mailing list, on the advice of one or more Designated Experts.  However, to allow for the allocation of values prior to publication, the Designated Experts may approve registration once they are satisfied that such a specification will be published.
+
+Registration requests sent to the mailing list for review should use an appropriate subject (e.g., "Request to register value in TLS bar registry").
+
+Within the review period, the Designated Experts will either approve or deny the registration request, communicating this decision to the review list and IANA.  Denials should include an explanation and, if applicable, suggestions as to how to make the request successful.  Registration requests that are undetermined for a period longer than 21 days can be brought to the IESG's attention (using the iesg@ietf.org mailing list) for resolution.
+
+Criteria that should be applied by the Designated Experts includes determining whether the proposed registration duplicates existing functionality, whether it is likely to be of general applicability or useful only for a single application, and whether the registration description is clear.
+
+IANA must only accept registry updates from the Designated Experts and should direct all requests for registration to the review mailing list.
+
+It is suggested that multiple Designated Experts be appointed who are able to represent the perspectives of different applications using this specification, in order to enable broadly informed review of registration decisions.  In cases where a registration decision could be perceived as creating a conflict of interest for a particular Expert, that Expert should defer to the judgment of the other Experts.
+
 Security Considerations
 =======================
 
