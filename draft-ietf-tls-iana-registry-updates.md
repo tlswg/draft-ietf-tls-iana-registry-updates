@@ -169,6 +169,8 @@ IANA is to update the TLS Cipher Suite registry as follows:
 
 The cipher suites that follow are standards track server-authenticated (and optionally client-authenticated) cipher suites which are currently available in TLS 1.2. The notable exception are the ECDHE AES GCM cipher suites which are not yet standards track prior to the publication of this specification, but this document promotes those 4 cipher suites to standards track (see TO-DO insert reference).
 
+RFC EDITOR: Please delete the sentence beginning with "The notable exception ..." after RFC 5289 has been promoted to Proposed Standard.
+
 ~~~
 Cipher Suite Name                             | Value
 ----------------------------------------------+------------
