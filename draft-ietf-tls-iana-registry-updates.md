@@ -167,6 +167,8 @@ IANA is to update the TLS Cipher Suite registry as follows:
 
 - Add a "Recommended" column to the cipher suite registry.  The cipher suites that follow in the two tables are marked as "Yes". All other cipher suites are marked as "No".  Future cipher suites MUST define the value of the Recommended column.  A Standards Track document [RFC5226] is required to register a cipher suite with the value “Yes”.
 
+- Update the reference for this registry to also point to this document.
+
 The cipher suites that follow are standards track server-authenticated (and optionally client-authenticated) cipher suites which are currently available in TLS 1.2. The notable exception are the ECDHE AES GCM cipher suites which are not yet standards track prior to the publication of this specification, but this document promotes those 4 cipher suites to standards track (see TO-DO insert reference).
 
 RFC EDITOR: Please delete the sentence beginning with "The notable exception ..." after RFC 5289 has been promoted to Proposed Standard.
