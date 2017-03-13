@@ -304,7 +304,7 @@ To make it clear that (D)TLS 1.3 has orphaned certain registries (i.e., they are
 
 Designated Expert Pool
 ======================
-0123456789012345678901234567890123456789012345678901234567890123456789
+
 Specification Required [RFC5226] registry requests are registered after
 a three-week review period on the (tbd but maybe
 tls-reg-review@ietf.org) mailing list, on the advice of one or more
