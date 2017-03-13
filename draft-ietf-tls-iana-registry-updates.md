@@ -79,6 +79,8 @@ In this document, we use the term "(D)TLS" to refer to registries that apply to 
 
 - Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
 
+- Establish Designated Expert pool rules for Specification Required registries.
+
 This document proposes no changes to the registration policies for TLS Alert {{I-D.ietf-tls-tls13}}, TLS ContentType {{I-D.ietf-tls-tls13}}, TLS HandshakeType, {{I-D.ietf-tls-tls13}} and TLS Certificate Status Types {{RFC6961}}; the existing policies (Standards Action for the first three; IETF Review for the last), are appropriate for these one-byte code points because of their scarcity.
 
 This document proposes no changes to the EC Curve Type, EC Point Format, and Supported Groups Registries (see {{I-D.ietf-tls-rfc4492bis}}).
