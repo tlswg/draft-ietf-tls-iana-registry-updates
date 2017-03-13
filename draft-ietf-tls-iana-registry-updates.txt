@@ -6,8 +6,8 @@ TLS WG                                                        J. Salowey
 Internet-Draft                                          Tableau Software
 Updates: 3749, 5077, 4680, 5246, 5878,                         S. Turner
          6520, 7301 (if approved)                                  sn3rd
-Intended status: Standards Track                        January 02, 2017
-Expires: July 6, 2017
+Intended status: Standards Track                          March 13, 2017
+Expires: September 14, 2017
 
 
                       D/TLS IANA Registry Updates
@@ -35,7 +35,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on July 6, 2017.
+   This Internet-Draft will expire on September 14, 2017.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Salowey & Turner          Expires July 6, 2017                  [Page 1]
+Salowey & Turner       Expires September 14, 2017               [Page 1]
 
-Internet-Draft         D/TLS IANA Registry Updates          January 2017
+Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 
    the Trust Legal Provisions and are provided without warranty as
@@ -69,7 +69,7 @@ Table of Contents
    4.  Aligning with RFC 5226  . . . . . . . . . . . . . . . . . . .   4
    5.  TLS ExtensionType Values  . . . . . . . . . . . . . . . . . .   4
    6.  TLS Cipher Suite Registry . . . . . . . . . . . . . . . . . .   6
-   7.  TLS ClientCertificateType Identifiers . . . . . . . . . . . .   7
+   7.  TLS ClientCertificateType Identifiers . . . . . . . . . . . .   8
    8.  New Session Ticket TLS Handshake Message Type . . . . . . . .   8
    9.  Session Ticket TLS Extension  . . . . . . . . . . . . . . . .   8
    10. TLS Exporter Label Registry . . . . . . . . . . . . . . . . .   8
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Salowey & Turner          Expires July 6, 2017                  [Page 2]
+Salowey & Turner       Expires September 14, 2017               [Page 2]
 
-Internet-Draft         D/TLS IANA Registry Updates          January 2017
+Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 
    o  Add designated expert instructions as notes in the TLS
@@ -165,9 +165,9 @@ Internet-Draft         D/TLS IANA Registry Updates          January 2017
 
 
 
-Salowey & Turner          Expires July 6, 2017                  [Page 3]
+Salowey & Turner       Expires September 14, 2017               [Page 3]
 
-Internet-Draft         D/TLS IANA Registry Updates          January 2017
+Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 
    o  Heartbeat Modes, and
@@ -221,9 +221,9 @@ Internet-Draft         D/TLS IANA Registry Updates          January 2017
 
 
 
-Salowey & Turner          Expires July 6, 2017                  [Page 4]
+Salowey & Turner       Expires September 14, 2017               [Page 4]
 
-Internet-Draft         D/TLS IANA Registry Updates          January 2017
+Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 
          +----------------------------------------+-------------+
@@ -277,9 +277,9 @@ Internet-Draft         D/TLS IANA Registry Updates          January 2017
 
 
 
-Salowey & Turner          Expires July 6, 2017                  [Page 5]
+Salowey & Turner       Expires September 14, 2017               [Page 5]
 
-Internet-Draft         D/TLS IANA Registry Updates          January 2017
+Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 
          |                                        |             |
@@ -312,6 +312,9 @@ Internet-Draft         D/TLS IANA Registry Updates          January 2017
    promotes those 4 cipher suites to standards track (see TO-DO insert
    reference).
 
+   RFC EDITOR: Please delete the sentence beginning with "The notable
+   exception ..." after RFC 5289 has been promoted to Proposed Standard.
+
    Cipher Suite Name                             | Value
    ----------------------------------------------+------------
    TLS_DHE_RSA_WITH_AES_128_GCM_SHA256           | {0x00,0x9E}
@@ -328,16 +331,15 @@ Internet-Draft         D/TLS IANA Registry Updates          January 2017
    TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 | {0xCC,0xA9}
    TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAA}
 
+
+
+Salowey & Turner       Expires September 14, 2017               [Page 6]
+
+Internet-Draft         D/TLS IANA Registry Updates            March 2017
+
+
    The cipher suites that follow are standards track ephemeral pre-
    shared key cipher suites which are available in TLS 1.2.  [RFC6655]
-
-
-
-Salowey & Turner          Expires July 6, 2017                  [Page 6]
-
-Internet-Draft         D/TLS IANA Registry Updates          January 2017
-
-
    is inconsistent with respect to the ordering of components within PSK
    AES CCM cipher suite names; those names are used here without
    modification.
@@ -380,19 +382,24 @@ Internet-Draft         D/TLS IANA Registry Updates          January 2017
       Note(3): The designated expert [RFC5226] only ensures that the
       specification is publicly available.
 
+
+
+
+
+
+
+
+Salowey & Turner       Expires September 14, 2017               [Page 7]
+
+Internet-Draft         D/TLS IANA Registry Updates            March 2017
+
+
 7.  TLS ClientCertificateType Identifiers
 
    IANA is to update the TLS ClientCertificateType Identifiers registry
    as follows:
 
    o  Change the registry policy to:
-
-
-
-Salowey & Turner          Expires July 6, 2017                  [Page 7]
-
-Internet-Draft         D/TLS IANA Registry Updates          January 2017
-
 
       Values in the range 0-223 are assigned via Specification Required
       [RFC5226].  Values 224-255 are reserved for Private Use.
@@ -438,16 +445,9 @@ Note: The designated expert {{RFC5226}} ensures that the specification is public
 
 
 
-
-
-
-
-
-
-
-Salowey & Turner          Expires July 6, 2017                  [Page 8]
+Salowey & Turner       Expires September 14, 2017               [Page 8]
 
-Internet-Draft         D/TLS IANA Registry Updates          January 2017
+Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 
    Exporter Value
@@ -501,9 +501,9 @@ Note: The following extensions are only applicable to (D)TLS protocol vesions pr
 
 
 
-Salowey & Turner          Expires July 6, 2017                  [Page 9]
+Salowey & Turner       Expires September 14, 2017               [Page 9]
 
-Internet-Draft         D/TLS IANA Registry Updates          January 2017
+Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 
    o  Update the "References" in the TLS Compression Method Identifiers,
@@ -557,9 +557,9 @@ Internet-Draft         D/TLS IANA Registry Updates          January 2017
 
 
 
-Salowey & Turner          Expires July 6, 2017                 [Page 10]
+Salowey & Turner       Expires September 14, 2017              [Page 10]
 
-Internet-Draft         D/TLS IANA Registry Updates          January 2017
+Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 
    [RFC5705]  Rescorla, E., "Keying Material Exporters for Transport
@@ -613,9 +613,9 @@ Authors' Addresses
 
 
 
-Salowey & Turner          Expires July 6, 2017                 [Page 11]
+Salowey & Turner       Expires September 14, 2017              [Page 11]
 
-Internet-Draft         D/TLS IANA Registry Updates          January 2017
+Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 
    Sean Turner
@@ -669,4 +669,4 @@ Internet-Draft         D/TLS IANA Registry Updates          January 2017
 
 
 
-Salowey & Turner          Expires July 6, 2017                 [Page 12]
+Salowey & Turner       Expires September 14, 2017              [Page 12]

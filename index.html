@@ -303,7 +303,7 @@ address {
 
   <meta name="dct.creator" content="Salowey, J. and S. Turner" />
   <meta name="dct.identifier" content="urn:ietf:id:draft-ietf-tls-iana-registry-updates-latest" />
-  <meta name="dct.issued" scheme="ISO8601" content="2017-1-02" />
+  <meta name="dct.issued" scheme="ISO8601" content="2017-3-13" />
   <meta name="dct.abstract" content="This document changes the IANA registry policy for a number of registries related to DTLS and TLS, renames some of the registries for consistency, and adds notes to many of the registries.  As a result, this document updates many RFCs (see updates header)." />
   <meta name="description" content="This document changes the IANA registry policy for a number of registries related to DTLS and TLS, renames some of the registries for consistency, and adds notes to many of the registries.  As a result, this document updates many RFCs (see updates header)." />
 
@@ -332,10 +332,10 @@ address {
 </tr>
 <tr>
   <td class="left">Intended status: Standards Track</td>
-  <td class="right">January 02, 2017</td>
+  <td class="right">March 13, 2017</td>
 </tr>
 <tr>
-  <td class="left">Expires: July 6, 2017</td>
+  <td class="left">Expires: September 14, 2017</td>
   <td class="right"></td>
 </tr>
 
@@ -356,7 +356,7 @@ address {
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at http://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on July 6, 2017.</p>
+<p>This Internet-Draft will expire on September 14, 2017.</p>
 <h1 id="rfc.copyrightnotice">
   <a href="#rfc.copyrightnotice">Copyright Notice</a>
 </h1>
@@ -565,6 +565,7 @@ address {
   <li>Add a &#8220;Recommended&#8221; column to the cipher suite registry.  The cipher suites that follow in the two tables are marked as &#8220;Yes&#8221;. All other cipher suites are marked as &#8220;No&#8221;.</li>
 </ul>
 <p id="rfc.section.6.p.3">The cipher suites that follow are standards track server-authenticated (and optionally client-authenticated) cipher suites which are currently available in TLS 1.2. The notable exception are the ECDHE AES GCM cipher suites which are not yet standards track prior to the publication of this specification, but this document promotes those 4 cipher suites to standards track (see TO-DO insert reference).</p>
+<p id="rfc.section.6.p.4">RFC EDITOR: Please delete the sentence beginning with &#8220;The notable exception &#8230;&#8221; after RFC 5289 has been promoted to Proposed Standard.</p>
 <pre>
 Cipher Suite Name                             | Value
 ----------------------------------------------+------------
@@ -582,7 +583,7 @@ TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256   | {0xCC,0xA8}
 TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 | {0xCC,0xA9}
 TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAA}
 </pre>
-<p id="rfc.section.6.p.4">The cipher suites that follow are standards track ephemeral pre-shared key cipher suites which are available in TLS 1.2.  <a href="#RFC6655">[RFC6655]</a> is inconsistent with respect to the ordering of components within PSK AES CCM cipher suite names; those names are used here without modification.</p>
+<p id="rfc.section.6.p.5">The cipher suites that follow are standards track ephemeral pre-shared key cipher suites which are available in TLS 1.2.  <a href="#RFC6655">[RFC6655]</a> is inconsistent with respect to the ordering of components within PSK AES CCM cipher suite names; those names are used here without modification.</p>
 <pre>
 Cipher Suite Name                             | Value
 ----------------------------------------------+------------
