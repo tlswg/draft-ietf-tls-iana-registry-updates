@@ -79,6 +79,8 @@ In this document, we use the term "(D)TLS" to refer to registries that apply to 
 
 - Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
 
+- Establish Designated Expert pool rules for Specification Required registries.
+
 This document proposes no changes to the registration policies for TLS Alert {{I-D.ietf-tls-tls13}}, TLS ContentType {{I-D.ietf-tls-tls13}}, TLS HandshakeType, {{I-D.ietf-tls-tls13}} and TLS Certificate Status Types {{RFC6961}}; the existing policies (Standards Action for the first three; IETF Review for the last), are appropriate for these one-byte code points because of their scarcity.
 
 This document proposes no changes to the EC Curve Type, EC Point Format, and Supported Groups Registries (see {{I-D.ietf-tls-rfc4492bis}}).
@@ -301,6 +303,44 @@ To make it clear that (D)TLS 1.3 has orphaned certain registries (i.e., they are
     Note: The values in this registry are only applicable to (D)TLS protocol versions prior to 1.3.
 
 - Update the "References" in the TLS Compression Method Identifiers, TLS Hash Algorithm {{RFC5246}} and TLS SignatureAlgorithm registries to also refer to this document.
+
+Designated Expert Pool
+======================
+
+Specification Required [RFC5226] registry requests are registered after
+a three-week review period on the (tbd but maybe
+tls-reg-review@ietf.org) mailing list, on the advice of one or more
+Designated Experts.  However, to allow for the allocation of values
+prior to publication, the Designated Experts may approve registration
+once they are satisfied that such a specification will be published.
+
+Registration requests sent to the mailing list for review SHOULD use an
+appropriate subject (e.g., "Request to register value in TLS bar
+registry").
+
+Within the review period, the Designated Experts will either approve or
+deny the registration request, communicating this decision to the review
+list and IANA.  Denials SHOULD include an explanation and, if applicable,
+suggestions as to how to make the request successful.  Registration
+requests that are undetermined for a period longer than 21 days can be
+brought to the IESG's attention (using the iesg@ietf.org mailing list)
+for resolution.
+
+Criteria that SHOULD be applied by the Designated Experts includes
+determining whether the proposed registration duplicates existing
+functionality, whether it is likely to be of general applicability
+or useful only for a single application, and whether the registration
+description is clear.
+
+IANA MUST only accept registry updates from the Designated Experts and
+SHOULD direct all requests for registration to the review mailing list.
+
+It is suggested that multiple Designated Experts be appointed who are
+able to represent the perspectives of different applications using this
+specification, in order to enable broadly informed review of
+registration decisions.  In cases where a registration decision could
+be perceived as creating a conflict of interest for a particular
+Expert, that Expert SHOULD defer to the judgment of the other Experts.
 
 Security Considerations
 =======================
