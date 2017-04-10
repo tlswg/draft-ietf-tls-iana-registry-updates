@@ -83,8 +83,6 @@ In this document, we use the term "(D)TLS" to refer to registries that apply to 
 
 This document proposes no changes to the registration policies for TLS Alert {{I-D.ietf-tls-tls13}}, TLS ContentType {{I-D.ietf-tls-tls13}}, TLS HandshakeType, {{I-D.ietf-tls-tls13}} and TLS Certificate Status Types {{RFC6961}}; the existing policies (Standards Action for the first three; IETF Review for the last), are appropriate for these one-byte code points because of their scarcity.
 
-This document proposes no changes to the EC Curve Type, EC Point Format, and Supported Groups Registries (see {{I-D.ietf-tls-rfc4492bis}}).
-
 Add "TLS" to Registry Names
 ===========================
 
@@ -222,6 +220,12 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
     Note(2): Cipher suites marked as "Yes" are those allocated via Standards Track RFCs.  Cipher suites marked as "No" are not; cipher suites marked "No" range from "good" to "bad" from a cryptographic standpoint.
 
     Note(3): The designated expert {{RFC5226}} only ensures that the specification is publicly available.
+
+TLS Supported Groups
+====================
+
+Add a “Recommended” column with a "Yes" for secp256r1, secp384r1, and ecdh_x25519 while all others are "No".  These "Yes" groups are taken from Standards Track RFCs.  Note that all groups from {{I-D.ietf-tls-rfc4492bis}}, which is standards track, are not marked as "Yes"; only those that are musts or shoulds from {{I-D.ietf-tls-tls13}} are marked as "Yes"; these groups also apply to previous version of TLS {{I-D.ietf-tls-rfc4492bis}}.  A Standards Track document {{RFC5226}} is required to register an entry  with the value "Yes".
+
 
 TLS ClientCertificateType Identifiers
 =====================================
