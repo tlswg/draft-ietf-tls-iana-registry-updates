@@ -111,7 +111,7 @@ This is not a universal change as some registries originally defined with "IETF 
 Session Ticket TLS Extension
 ============================
 
-The nomenclature for the registry entries in the TLS ExtensionType Values registry correspond to the presentation       language field name except for entry 35.  To ensure that the values in the registry are consistently identified in the  registry, IANA is to rename entry 35 to "session_ticket (renamed from "SessionTicket TLS")".
+The nomenclature for the registry entries in the TLS ExtensionType Values registry correspond to the presentation language field name except for entry 35.  To ensure that the values in the registry are consistently identified in the  registry, IANA is to rename entry 35 to "session_ticket (renamed from "SessionTicket TLS")".
 
 TLS ExtensionType Values
 ========================
