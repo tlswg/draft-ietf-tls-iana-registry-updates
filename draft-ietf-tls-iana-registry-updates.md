@@ -77,7 +77,7 @@ In this document, we use the term "(D)TLS" to refer to registries that apply to 
 
 - Add missing entry to the TLS Alert Registry for the no_application_protocol alert defined in {{RFC7301}}.
 
-- Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, TLS Suppor Groups, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
+- Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, TLS Supported Groups, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
 
 - Establish Designated Expert pool rules for Specification Required registries.
 
@@ -224,7 +224,7 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 TLS Supported Groups
 ====================
 
-Add a “Recommended” column with a "Yes" for secp256r1, secp384r1, and ecdh_x25519 while all others are "No".  These "Yes" groups are taken from Standards Track RFCs.  Note that all groups from {{I-D.ietf-tls-rfc4492bis}}, which is standards track, are not marked as "Yes"; only those that are musts or shoulds from {{I-D.ietf-tls-tls13}} are marked as "Yes"; these groups also apply to previous version of TLS {{I-D.ietf-tls-rfc4492bis}}.  A Standards Track document {{RFC5226}} is required to register an entry  with the value "Yes".
+Add a “Recommended” column with a "Yes" for secp256r1, secp384r1, x25519, and x448 while all others are "No".  These "Yes" groups are taken from Standards Track RFCs.  Not all groups from {{I-D.ietf-tls-rfc4492bis}}, which is standards track, are not marked as "Yes"; these groups apply to TLS 1.3 {{I-D.ietf-tls-tls13}} and previous versions of TLS {{I-D.ietf-tls-tls13}}.  A Standards Track document {{RFC5226}} is required to register an entry with the value "Yes".
 
 
 TLS ClientCertificateType Identifiers
