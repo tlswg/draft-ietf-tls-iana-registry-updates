@@ -159,7 +159,7 @@ IANA is to update the TLS ExtensionType Values registry as follows:
 | padding                         |         Yes |
 | encrypt_then_mac                |         Yes |
 | extended_master_secret          |         Yes |
-| session_ticket TLS              |         Yes |
+| session_ticket                  |         Yes |
 | renegotiation_info              |         Yes |
 
 
