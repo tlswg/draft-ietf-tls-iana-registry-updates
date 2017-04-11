@@ -77,7 +77,7 @@ In this document, we use the term "(D)TLS" to refer to registries that apply to 
 
 - Add missing entry to the TLS Alert Registry for the no_application_protocol alert defined in {{RFC7301}}.
 
-- Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
+- Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, TLS Suppor Groups, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
 
 - Establish Designated Expert pool rules for Specification Required registries.
 
