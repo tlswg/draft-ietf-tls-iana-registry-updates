@@ -108,6 +108,11 @@ Many of the TLS-related IANA registries were defined prior to {{RFC5226}} where 
 
 This is not a universal change as some registries originally defined with "IETF Consensus" are undergoing other changes either as a result of this document or {{I-D.ietf-tls-rfc4492bis}}.
 
+Session Ticket TLS Extension
+============================
+
+The nomenclature for the registry entries in the TLS ExtensionType Values registry correspond to the presentation       language field name except for entry 35.  To ensure that the values in the registry are consistently identified in the  registry, IANA is to rename entry 35 to "session_ticket (renamed from "SessionTicket TLS")".
+
 TLS ExtensionType Values
 ========================
 
@@ -154,7 +159,7 @@ IANA is to update the TLS ExtensionType Values registry as follows:
 | padding                         |         Yes |
 | encrypt_then_mac                |         Yes |
 | extended_master_secret          |         Yes |
-| SessionTicket TLS               |         Yes |
+| session_ticket TLS              |         Yes |
 | renegotiation_info              |         Yes |
 
 
@@ -240,11 +245,6 @@ New Session Ticket TLS Handshake Message Type
 =============================================
 
 To align with TLS implementations and to align the naming nomenclature for other Handshake message types, IANA is to rename entry 4 in the TLS HandshakeType registry to "new_session_ticket (renamed from NewSessionTicket)". IANA is to also add a reference to this document in the Reference column for entry 4 in the TLS HandshakeType registry.
-
-Session Ticket TLS Extension
-============================
-
-The nomenclature for the registry entries in the TLS ExtensionType Values registry correspond to the presentation language field name except for entry 35.  To ensure that the values in the registry are consistently identified in the registry, IANA is to rename entry 35 to "session_ticket (renamed from "SessionTicket TLS")".
 
 TLS Exporter Label Registry
 ===========================
