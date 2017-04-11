@@ -6,8 +6,8 @@ TLS WG                                                        J. Salowey
 Internet-Draft                                          Tableau Software
 Updates: 3749, 5077, 4680, 5246, 5878,                         S. Turner
          6520, 7301 (if approved)                                  sn3rd
-Intended status: Standards Track                          March 13, 2017
-Expires: September 14, 2017
+Intended status: Standards Track                          April 10, 2017
+Expires: October 12, 2017
 
 
                       D/TLS IANA Registry Updates
@@ -35,7 +35,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on September 14, 2017.
+   This Internet-Draft will expire on October 12, 2017.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Salowey & Turner       Expires September 14, 2017               [Page 1]
+Salowey & Turner        Expires October 12, 2017                [Page 1]
 
-Internet-Draft         D/TLS IANA Registry Updates            March 2017
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
 
 
    the Trust Legal Provisions and are provided without warranty as
@@ -65,23 +65,24 @@ Table of Contents
 
    1.  Process Note  . . . . . . . . . . . . . . . . . . . . . . . .   2
    2.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
-   3.  Add "TLS" to Registry Names . . . . . . . . . . . . . . . . .   3
+   3.  Add "TLS" to Registry Names . . . . . . . . . . . . . . . . .   4
    4.  Aligning with RFC 5226  . . . . . . . . . . . . . . . . . . .   4
    5.  TLS ExtensionType Values  . . . . . . . . . . . . . . . . . .   4
    6.  TLS Cipher Suite Registry . . . . . . . . . . . . . . . . . .   6
    7.  TLS ClientCertificateType Identifiers . . . . . . . . . . . .   8
    8.  New Session Ticket TLS Handshake Message Type . . . . . . . .   8
    9.  Session Ticket TLS Extension  . . . . . . . . . . . . . . . .   8
-   10. TLS Exporter Label Registry . . . . . . . . . . . . . . . . .   8
+   10. TLS Exporter Label Registry . . . . . . . . . . . . . . . . .   9
    11. Add Missing Item to TLS Alert Registry  . . . . . . . . . . .   9
    12. Orphaned Extensions . . . . . . . . . . . . . . . . . . . . .   9
-   13. Orphaned Registries . . . . . . . . . . . . . . . . . . . . .   9
-   14. Security Considerations . . . . . . . . . . . . . . . . . . .  10
-   15. IANA Considerations . . . . . . . . . . . . . . . . . . . . .  10
-   16. References  . . . . . . . . . . . . . . . . . . . . . . . . .  10
-     16.1.  Normative References . . . . . . . . . . . . . . . . . .  10
-     16.2.  Informative References . . . . . . . . . . . . . . . . .  11
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  11
+   13. Orphaned Registries . . . . . . . . . . . . . . . . . . . . .  10
+   14. Designated Expert Pool  . . . . . . . . . . . . . . . . . . .  10
+   15. Security Considerations . . . . . . . . . . . . . . . . . . .  11
+   16. IANA Considerations . . . . . . . . . . . . . . . . . . . . .  11
+   17. References  . . . . . . . . . . . . . . . . . . . . . . . . .  11
+     17.1.  Normative References . . . . . . . . . . . . . . . . . .  11
+     17.2.  Informative References . . . . . . . . . . . . . . . . .  12
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  13
 
 1.  Process Note
 
@@ -104,15 +105,17 @@ Table of Contents
    o  Change the IANA registry policy [RFC5226] for the TLS
       ExtensionType Values, TLS Cipher Suite, and TLS
       ClientCertificateType Identifiers registries.  These changes
+
+
+
+
+Salowey & Turner        Expires October 12, 2017                [Page 2]
+
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
+
+
       register a small part of these code spaces for experimentation and
       private use.
-
-
-
-Salowey & Turner       Expires September 14, 2017               [Page 2]
-
-Internet-Draft         D/TLS IANA Registry Updates            March 2017
-
 
    o  Add designated expert instructions as notes in the TLS
       ExtensionType Values, TLS Cipher Suite, TLS ClientCertificateType
@@ -141,6 +144,9 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
       incorrect perception that getting a code point somehow legitimizes
       the extension, cipher suite/algorithm, or exporter.
 
+   o  Establish Designated Expert pool rules for Specification Required
+      registries.
+
    This document proposes no changes to the registration policies for
    TLS Alert [I-D.ietf-tls-tls13], TLS ContentType [I-D.ietf-tls-tls13],
    TLS HandshakeType, [I-D.ietf-tls-tls13] and TLS Certificate Status
@@ -152,6 +158,18 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
    Format, and Supported Groups Registries (see
    [I-D.ietf-tls-rfc4492bis]).
 
+
+
+
+
+
+
+
+Salowey & Turner        Expires October 12, 2017                [Page 3]
+
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
+
+
 3.  Add "TLS" to Registry Names
 
    IANA is to update the names of the following registries to add "TLS"
@@ -162,13 +180,6 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
    o  ExtensionType Values,
 
    o  Heartbeat Message Types,
-
-
-
-Salowey & Turner       Expires September 14, 2017               [Page 3]
-
-Internet-Draft         D/TLS IANA Registry Updates            March 2017
-
 
    o  Heartbeat Modes, and
 
@@ -207,6 +218,14 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
    o  Update the "References" to also refer to this document.
 
+
+
+
+Salowey & Turner        Expires October 12, 2017                [Page 4]
+
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
+
+
    o  Add the following note:
 
       Note: Experts are to verify that there is in fact a publicly
@@ -217,14 +236,6 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
       "Yes" and all others as "No".  Future extensions MUST define the
       value of this column.  A Standards Track document [RFC5226] is
       required to register an extension with the value "Yes".
-
-
-
-
-Salowey & Turner       Expires September 14, 2017               [Page 4]
-
-Internet-Draft         D/TLS IANA Registry Updates            March 2017
-
 
          +----------------------------------------+-------------+
          | Extension                              | Recommended |
@@ -263,6 +274,14 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
          |                                        |             |
          | application_layer_protocol_negotiation |         Yes |
          |                                        |             |
+
+
+
+Salowey & Turner        Expires October 12, 2017                [Page 5]
+
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
+
+
          | status_request_v2                      |         Yes |
          |                                        |             |
          | signed_certificate_timestamp           |          No |
@@ -274,14 +293,6 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
          | padding                                |         Yes |
          |                                        |             |
          | encrypt_then_mac                       |         Yes |
-
-
-
-Salowey & Turner       Expires September 14, 2017               [Page 5]
-
-Internet-Draft         D/TLS IANA Registry Updates            March 2017
-
-
          |                                        |             |
          | extended_master_secret                 |         Yes |
          |                                        |             |
@@ -302,7 +313,13 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
    o  Add a "Recommended" column to the cipher suite registry.  The
       cipher suites that follow in the two tables are marked as "Yes".
-      All other cipher suites are marked as "No".
+      All other cipher suites are marked as "No".  Future cipher suites
+      MUST define the value of the Recommended column.  A Standards
+      Track document [RFC5226] is required to register a cipher suite
+      with the value "Yes".
+
+   o  Update the reference for this registry to also point to this
+      document.
 
    The cipher suites that follow are standards track server-
    authenticated (and optionally client-authenticated) cipher suites
@@ -311,6 +328,15 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
    prior to the publication of this specification, but this document
    promotes those 4 cipher suites to standards track (see TO-DO insert
    reference).
+
+
+
+
+
+Salowey & Turner        Expires October 12, 2017                [Page 6]
+
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
+
 
    RFC EDITOR: Please delete the sentence beginning with "The notable
    exception ..." after RFC 5289 has been promoted to Proposed Standard.
@@ -330,13 +356,6 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
    TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256   | {0xCC,0xA8}
    TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 | {0xCC,0xA9}
    TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAA}
-
-
-
-Salowey & Turner       Expires September 14, 2017               [Page 6]
-
-Internet-Draft         D/TLS IANA Registry Updates            March 2017
-
 
    The cipher suites that follow are standards track ephemeral pre-
    shared key cipher suites which are available in TLS 1.2.  [RFC6655]
@@ -368,6 +387,13 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
       cryptographic algorithms listed continue to provide the expected
       level of security.
 
+
+
+Salowey & Turner        Expires October 12, 2017                [Page 7]
+
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
+
+
       Note(1): Although TLS 1.3 uses the same cipher suite space as
       previous versions of TLS, TLS 1.3 cipher suites are defined
       differently, only specifying the symmetric ciphers, and cannot be
@@ -381,18 +407,6 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
       Note(3): The designated expert [RFC5226] only ensures that the
       specification is publicly available.
-
-
-
-
-
-
-
-
-Salowey & Turner       Expires September 14, 2017               [Page 7]
-
-Internet-Draft         D/TLS IANA Registry Updates            March 2017
-
 
 7.  TLS ClientCertificateType Identifiers
 
@@ -426,6 +440,16 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
    consistently identified in the registry, IANA is to rename entry 35
    to "session_ticket (renamed from "SessionTicket TLS")".
 
+
+
+
+
+
+Salowey & Turner        Expires October 12, 2017                [Page 8]
+
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
+
+
 10.  TLS Exporter Label Registry
 
    IANA is to add the following note to the TLS Exporter Label Registry:
@@ -442,13 +466,6 @@ Note: {{RFC5705}} defines keying material exporters for TLS in terms of the TLS 
    IANA is also to add the following note:
 
 Note: The designated expert {{RFC5226}} ensures that the specification is publicly available.  The expert also verifies that the label is a string consisting of printable ASCII characters beginning with "EXPORTER". IANA MUST also verify that one label is not a prefix of any other label.  For example, labels "key" or "master secretary" are forbidden.
-
-
-
-Salowey & Turner       Expires September 14, 2017               [Page 8]
-
-Internet-Draft         D/TLS IANA Registry Updates            March 2017
-
 
    Exporter Value
    -------------------------------
@@ -479,6 +496,16 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 Note: The following extensions are only applicable to (D)TLS protocol vesions prior to 1.3: truncated_hmac, srp, encrypt_then_mac, extended_master_secret, session_ticket, and renegotiation_info. These are not applicable to DTLS 1.3.
 
+
+
+
+
+
+Salowey & Turner        Expires October 12, 2017                [Page 9]
+
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
+
+
 13.  Orphaned Registries
 
    To make it clear that (D)TLS 1.3 has orphaned certain registries
@@ -497,32 +524,69 @@ Note: The following extensions are only applicable to (D)TLS protocol vesions pr
       Note: The values in this registry are only applicable to (D)TLS
       protocol versions prior to 1.3.
 
-
-
-
-
-Salowey & Turner       Expires September 14, 2017               [Page 9]
-
-Internet-Draft         D/TLS IANA Registry Updates            March 2017
-
-
    o  Update the "References" in the TLS Compression Method Identifiers,
       TLS Hash Algorithm [RFC5246] and TLS SignatureAlgorithm registries
       to also refer to this document.
 
-14.  Security Considerations
+14.  Designated Expert Pool
+
+   Specification Required [RFC5226] registry requests are registered
+   after a three-week review period on the (tbd but maybe tls-reg-
+   review@ietf.org) mailing list, on the advice of one or more
+   Designated Experts.  However, to allow for the allocation of values
+   prior to publication, the Designated Experts may approve registration
+   once they are satisfied that such a specification will be published.
+
+   Registration requests sent to the mailing list for review SHOULD use
+   an appropriate subject (e.g., "Request to register value in TLS bar
+   registry").
+
+   Within the review period, the Designated Experts will either approve
+   or deny the registration request, communicating this decision to the
+   review list and IANA.  Denials SHOULD include an explanation and, if
+   applicable, suggestions as to how to make the request successful.
+   Registration requests that are undetermined for a period longer than
+   21 days can be brought to the IESG's attention (using the
+   iesg@ietf.org mailing list) for resolution.
+
+   Criteria that SHOULD be applied by the Designated Experts includes
+   determining whether the proposed registration duplicates existing
+   functionality, whether it is likely to be of general applicability or
+   useful only for a single application, and whether the registration
+   description is clear.
+
+
+
+Salowey & Turner        Expires October 12, 2017               [Page 10]
+
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
+
+
+   IANA MUST only accept registry updates from the Designated Experts
+   and SHOULD direct all requests for registration to the review mailing
+   list.
+
+   It is suggested that multiple Designated Experts be appointed who are
+   able to represent the perspectives of different applications using
+   this specification, in order to enable broadly informed review of
+   registration decisions.  In cases where a registration decision could
+   be perceived as creating a conflict of interest for a particular
+   Expert, that Expert SHOULD defer to the judgment of the other
+   Experts.
+
+15.  Security Considerations
 
    The authors are fairly certain that there are no security
    considerations for this document.
 
-15.  IANA Considerations
+16.  IANA Considerations
 
    This document is entirely about changes to TLS-related IANA
    registries.
 
-16.  References
+17.  References
 
-16.1.  Normative References
+17.1.  Normative References
 
    [I-D.ietf-tls-tls13]
               Rescorla, E., "The Transport Layer Security (TLS) Protocol
@@ -547,20 +611,17 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
               DOI 10.17487/RFC5226, May 2008,
               <http://www.rfc-editor.org/info/rfc5226>.
 
+
+
+Salowey & Turner        Expires October 12, 2017               [Page 11]
+
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
+
+
    [RFC5246]  Dierks, T. and E. Rescorla, "The Transport Layer Security
               (TLS) Protocol Version 1.2", RFC 5246,
               DOI 10.17487/RFC5246, August 2008,
               <http://www.rfc-editor.org/info/rfc5246>.
-
-
-
-
-
-
-Salowey & Turner       Expires September 14, 2017              [Page 10]
-
-Internet-Draft         D/TLS IANA Registry Updates            March 2017
-
 
    [RFC5705]  Rescorla, E., "Keying Material Exporters for Transport
               Layer Security (TLS)", RFC 5705, DOI 10.17487/RFC5705,
@@ -586,13 +647,13 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
               Negotiation Extension", RFC 7301, DOI 10.17487/RFC7301,
               July 2014, <http://www.rfc-editor.org/info/rfc7301>.
 
-16.2.  Informative References
+17.2.  Informative References
 
    [I-D.ietf-tls-rfc4492bis]
               Nir, Y., Josefsson, S., and M. Pegourie-Gonnard, "Elliptic
               Curve Cryptography (ECC) Cipher Suites for Transport Layer
               Security (TLS) Versions 1.2 and Earlier", draft-ietf-tls-
-              rfc4492bis-14 (work in progress), March 2017.
+              rfc4492bis-16 (work in progress), March 2017.
 
    [RFC2434]  Narten, T. and H. Alvestrand, "Guidelines for Writing an
               IANA Considerations Section in RFCs", RFC 2434,
@@ -604,18 +665,21 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
               DOI 10.17487/RFC6961, June 2013,
               <http://www.rfc-editor.org/info/rfc6961>.
 
+
+
+
+
+Salowey & Turner        Expires October 12, 2017               [Page 12]
+
+Internet-Draft         D/TLS IANA Registry Updates            April 2017
+
+
 Authors' Addresses
 
    Joe Salowey
    Tableau Software
 
    Email: joe@salowey.net
-
-
-
-Salowey & Turner       Expires September 14, 2017              [Page 11]
-
-Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 
    Sean Turner
@@ -661,12 +725,4 @@ Internet-Draft         D/TLS IANA Registry Updates            March 2017
 
 
 
-
-
-
-
-
-
-
-
-Salowey & Turner       Expires September 14, 2017              [Page 12]
+Salowey & Turner        Expires October 12, 2017               [Page 13]
