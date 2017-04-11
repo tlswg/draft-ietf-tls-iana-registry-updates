@@ -77,7 +77,7 @@ In this document, we use the term "(D)TLS" to refer to registries that apply to 
 
 - Add missing entry to the TLS Alert Registry for the no_application_protocol alert defined in {{RFC7301}}.
 
-- Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
+- Added "Recommended" column to TLS ExtensionType Values, TLS Certificate Types, TLS Cipher Suite, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
 
 - Establish Designated Expert pool rules for Specification Required registries.
 
@@ -281,6 +281,10 @@ IANA is to add the following entry to the TLS Alert Registry (the entry was omit
 
     120   no_application_protocol  Y  [RFC7301]
 
+TLS Certificate Types
+=====================
+
+Add a "Recommended" column to the registry.  X.509 and Raw Public Key are "Yes".  All others are "No".  A Standards Track document [RFC5226] is required to register a certificate type with the value “Yes”.
 
 Orphaned Extensions
 ===================
