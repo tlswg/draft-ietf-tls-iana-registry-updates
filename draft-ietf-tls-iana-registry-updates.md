@@ -287,7 +287,7 @@ Orphaned Extensions
 
 To make it clear that (D)TLS 1.3 has orphaned certain extensions (i.e., they are only applicable to version of (D)TLS prior to 1.3), IANA is to add the following to the TLS ExtensionType Values registry:
 
-    Note: The following extensions are only applicable to (D)TLS protocol vesions prior to 1.3: truncated_hmac, srp, encrypt_then_mac, extended_master_secret, session_ticket, and renegotiation_info. These are not applicable to DTLS 1.3.
+    Note: The following extensions are only applicable to (D)TLS protocol vesions prior to 1.3: trusted_ca_keys, truncated_hmac, ec_porint_formats, srp, encrypt_then_mac, extended_master_secret, session_ticket, and renegotiation_info. These are not applicable to DTLS 1.3.
 
 Orphaned Registries
 ===================
@@ -298,11 +298,11 @@ To make it clear that (D)TLS 1.3 has orphaned certain registries (i.e., they are
 
     Note: Value 0 (NULL) is the only value in this registry applicable to (D)TLS protocol version 1.3 or later.
 
-- Add the following to the TLS Hash Algorithm {{RFC5246}} and TLS SignatureAlgorithm registries {{RFC5246}}:
+- Add the following to the TLS HashAlgorithm {{RFC5246}} and TLS SignatureAlgorithm registries {{RFC5246}}:
 
     Note: The values in this registry are only applicable to (D)TLS protocol versions prior to 1.3.
 
-- Update the "References" in the TLS Compression Method Identifiers, TLS Hash Algorithm {{RFC5246}} and TLS SignatureAlgorithm registries to also refer to this document.
+- Update the "References" in the TLS Compression Method Identifiers, TLS HashAlgorithm {{RFC5246}} and TLS SignatureAlgorithm registries to also refer to this document.
 
 Designated Expert Pool
 ======================
