@@ -304,6 +304,8 @@ To make it clear that (D)TLS 1.3 has orphaned certain registries (i.e., they are
 
 - Update the "References" in the TLS Compression Method Identifiers, TLS Hash Algorithm {{RFC5246}} and TLS SignatureAlgorithm registries to also refer to this document.
 
+IANA [SHALL update/has updated] the TLS HashAlgorithm Registry to list values 7-223 as "Reserved" and the TLS SignatureAlgorithm registry to list values 4-223 as "Reserved".
+
 Designated Expert Pool
 ======================
 
