@@ -77,13 +77,11 @@ In this document, we use the term "(D)TLS" to refer to registries that apply to 
 
 - Add missing entry to the TLS Alert Registry for the no_application_protocol alert defined in {{RFC7301}}.
 
-- Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
+- Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, TLS Supported Groups, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
 
 - Establish Designated Expert pool rules for Specification Required registries.
 
 This document proposes no changes to the registration policies for TLS Alert {{I-D.ietf-tls-tls13}}, TLS ContentType {{I-D.ietf-tls-tls13}}, TLS HandshakeType, {{I-D.ietf-tls-tls13}} and TLS Certificate Status Types {{RFC6961}}; the existing policies (Standards Action for the first three; IETF Review for the last), are appropriate for these one-byte code points because of their scarcity.
-
-This document proposes no changes to the EC Curve Type, EC Point Format, and Supported Groups Registries (see {{I-D.ietf-tls-rfc4492bis}}).
 
 Add "TLS" to Registry Names
 ===========================
@@ -222,6 +220,12 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
     Note(2): Cipher suites marked as "Yes" are those allocated via Standards Track RFCs.  Cipher suites marked as "No" are not; cipher suites marked "No" range from "good" to "bad" from a cryptographic standpoint.
 
     Note(3): The designated expert {{RFC5226}} only ensures that the specification is publicly available.
+
+TLS Supported Groups
+====================
+
+Add a “Recommended” column with a "Yes" for secp256r1, secp384r1, x25519, and x448 while all others are "No".  These "Yes" groups are taken from Standards Track RFCs.  Not all groups from {{I-D.ietf-tls-rfc4492bis}}, which is standards track, are not marked as "Yes"; these groups apply to TLS 1.3 {{I-D.ietf-tls-tls13}} and previous versions of TLS {{I-D.ietf-tls-tls13}}.  A Standards Track document {{RFC5226}} is required to register an entry with the value "Yes".
+
 
 TLS ClientCertificateType Identifiers
 =====================================
