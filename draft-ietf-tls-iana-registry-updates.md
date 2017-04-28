@@ -77,13 +77,12 @@ In this document, we use the term "(D)TLS" to refer to registries that apply to 
 
 - Add missing entry to the TLS Alert Registry for the no_application_protocol alert defined in {{RFC7301}}.
 
-- Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
+
+- Added "Recommended" column to TLS ExtensionType Values, TLS Cipher Suite, TLS Certificate Types, TLS Supported Groups, and TLS Exporters Label registries.  Initial values marked "Yes" are specified in IETF Standards Track documents; all others are marked "No".  This new column is intended to alter the incorrect perception that getting a code point somehow legitimizes the extension, cipher suite/algorithm, or exporter.
 
 - Establish Designated Expert pool rules for Specification Required registries.
 
 This document proposes no changes to the registration policies for TLS Alert {{I-D.ietf-tls-tls13}}, TLS ContentType {{I-D.ietf-tls-tls13}}, TLS HandshakeType, {{I-D.ietf-tls-tls13}} and TLS Certificate Status Types {{RFC6961}}; the existing policies (Standards Action for the first three; IETF Review for the last), are appropriate for these one-byte code points because of their scarcity.
-
-This document proposes no changes to the EC Curve Type, EC Point Format, and Supported Groups Registries (see {{I-D.ietf-tls-rfc4492bis}}).
 
 Add "TLS" to Registry Names
 ===========================
@@ -107,6 +106,11 @@ Many of the TLS-related IANA registries were defined prior to {{RFC5226}} where 
 - TLS Supplemental Data Formats (SupplementalDataType)
 
 This is not a universal change as some registries originally defined with "IETF Consensus" are undergoing other changes either as a result of this document or {{I-D.ietf-tls-rfc4492bis}}.
+
+Session Ticket TLS Extension
+============================
+
+The nomenclature for the registry entries in the TLS ExtensionType Values registry correspond to the presentation language field name except for entry 35.  To ensure that the values in the registry are consistently identified in the  registry, IANA is to rename entry 35 to "session_ticket (renamed from "SessionTicket TLS")".
 
 TLS ExtensionType Values
 ========================
@@ -154,7 +158,7 @@ IANA is to update the TLS ExtensionType Values registry as follows:
 | padding                         |         Yes |
 | encrypt_then_mac                |         Yes |
 | extended_master_secret          |         Yes |
-| SessionTicket TLS               |         Yes |
+| session_ticket                  |         Yes |
 | renegotiation_info              |         Yes |
 
 
@@ -223,6 +227,12 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 
     Note(3): The designated expert {{RFC5226}} only ensures that the specification is publicly available.
 
+TLS Supported Groups
+====================
+
+Add a “Recommended” column with a "Yes" for secp256r1, secp384r1, x25519, and x448 while all others are "No".  These "Yes" groups are taken from Standards Track RFCs.  Not all groups from {{I-D.ietf-tls-rfc4492bis}}, which is standards track, are not marked as "Yes"; these groups apply to TLS 1.3 {{I-D.ietf-tls-tls13}} and previous versions of TLS {{I-D.ietf-tls-tls13}}.  A Standards Track document {{RFC5226}} is required to register an entry with the value "Yes".
+
+
 TLS ClientCertificateType Identifiers
 =====================================
 
@@ -240,11 +250,6 @@ New Session Ticket TLS Handshake Message Type
 =============================================
 
 To align with TLS implementations and to align the naming nomenclature for other Handshake message types, IANA is to rename entry 4 in the TLS HandshakeType registry to "new_session_ticket (renamed from NewSessionTicket)". IANA is to also add a reference to this document in the Reference column for entry 4 in the TLS HandshakeType registry.
-
-Session Ticket TLS Extension
-============================
-
-The nomenclature for the registry entries in the TLS ExtensionType Values registry correspond to the presentation language field name except for entry 35.  To ensure that the values in the registry are consistently identified in the registry, IANA is to rename entry 35 to "session_ticket (renamed from "SessionTicket TLS")".
 
 TLS Exporter Label Registry
 ===========================
@@ -281,13 +286,18 @@ IANA is to add the following entry to the TLS Alert Registry (the entry was omit
 
     120   no_application_protocol  Y  [RFC7301]
 
+TLS Certificate Types
+=====================
+
+Add a "Recommended" column to the registry.  X.509 and Raw Public Key are "Yes".  All others are "No".  A Standards Track document [RFC5226] is required to register a certificate type with the value “Yes”.
 
 Orphaned Extensions
 ===================
 
 To make it clear that (D)TLS 1.3 has orphaned certain extensions (i.e., they are only applicable to version of (D)TLS prior to 1.3), IANA is to add the following to the TLS ExtensionType Values registry:
 
-    Note: The following extensions are only applicable to (D)TLS protocol vesions prior to 1.3: truncated_hmac, srp, status_request_v2, encrypt_then_mac, extended_master_secret, session_ticket, and renegotiation_info. These are not applicable to DTLS 1.3.
+    Note: The following extensions are only applicable to (D)TLS protocol vesions prior to 1.3: trusted_ca_keys, truncated_hmac, ec_point_formats, srp, status_request_v2, encrypt_then_mac, extended_master_secret, session_ticket, and renegotiation_info. These are not applicable to DTLS 1.3.
+
 
 Orphaned Registries
 ===================
@@ -298,11 +308,11 @@ To make it clear that (D)TLS 1.3 has orphaned certain registries (i.e., they are
 
     Note: Value 0 (NULL) is the only value in this registry applicable to (D)TLS protocol version 1.3 or later.
 
-- Add the following to the TLS Hash Algorithm {{RFC5246}} and TLS SignatureAlgorithm registries {{RFC5246}}:
+- Add the following to the TLS HashAlgorithm {{RFC5246}} and TLS SignatureAlgorithm registries {{RFC5246}}:
 
     Note: The values in this registry are only applicable to (D)TLS protocol versions prior to 1.3.
 
-- Update the "References" in the TLS Compression Method Identifiers, TLS Hash Algorithm {{RFC5246}} and TLS SignatureAlgorithm registries to also refer to this document.
+- Update the "References" in the TLS Compression Method Identifiers, TLS HashAlgorithm {{RFC5246}} and TLS SignatureAlgorithm registries to also refer to this document.
 
 Designated Expert Pool
 ======================
