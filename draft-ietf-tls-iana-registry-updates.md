@@ -296,7 +296,8 @@ Orphaned Extensions
 
 To make it clear that (D)TLS 1.3 has orphaned certain extensions (i.e., they are only applicable to version of (D)TLS prior to 1.3), IANA is to add the following to the TLS ExtensionType Values registry:
 
-    Note: The following extensions are only applicable to (D)TLS protocol vesions prior to 1.3: trusted_ca_keys, truncated_hmac, ec_point_formats, srp, encrypt_then_mac, extended_master_secret, session_ticket, and renegotiation_info. These are not applicable to DTLS 1.3.
+    Note: The following extensions are only applicable to (D)TLS protocol vesions prior to 1.3: trusted_ca_keys, truncated_hmac, ec_point_formats, srp, status_request_v2, encrypt_then_mac, extended_master_secret, session_ticket, and renegotiation_info. These are not applicable to DTLS 1.3.
+
 
 Orphaned Registries
 ===================
