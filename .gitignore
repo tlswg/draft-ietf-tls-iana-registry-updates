@@ -9,5 +9,6 @@
 .targets.mk
 venv/
 issues.json
+pulls.json
 lib
-draft-ietf-tls-iana-registry-updates.md
+draft-ietf-tls-iana-registry-updates.xml
