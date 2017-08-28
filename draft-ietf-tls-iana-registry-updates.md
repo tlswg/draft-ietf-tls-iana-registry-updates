@@ -345,12 +345,14 @@ expert pool.
 
 IANA [SHALL add/has added] the following notes:
 
-    Note(1): The designated expert {{RFC8126}} only ensures that the
-    specification is publicly available.
+Note:
+: The designated expert {{RFC8126}} only ensures that the specification
+is publicly available.
 
-    Note(2): ClientCertificateType Identifers marked as "Yes" are
-    those allocated via Standards Track RFCs.  ClientCertificateTypes
-    marked as "No" are not.
+Note:
+: ClientCertificateType Identifers marked as "Yes" are those allocated
+via Standards Track RFCs.  ClientCertificateTypes marked as "No" are
+not.
 
 New Session Ticket TLS Handshake Message Type
 =============================================
