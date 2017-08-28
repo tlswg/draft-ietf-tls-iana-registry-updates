@@ -268,7 +268,7 @@ Despite the following behavior being crazy, experience has shown that
 some customers use the IANA registry as checklist against which to
 measure an implemention's completeness and some implementers blindly
 implement cipher suites.  Therefore, IANA [SHALL add/has added] the
-following warning:
+following warning to the registry:
 
 WARNING:
 : Cryptographic algorithms will be broken or weakened over time.
@@ -322,6 +322,18 @@ Note:
 : Supported Groups marked as "Yes" are those allocated via Standards
 Track RFCs.  Supported Groups marked as "No" are not; supported groups
 marked "No" range from "good" to "bad" from a cryptographic standpoint.
+
+Despite the following behavior being crazy, experience has shown that
+some customers use the IANA registry as checklist against which to
+measure an implemention's completeness and some implementers blindly
+implement cipher supported.  Therefore, IANA [SHALL add/has added] the
+following warning to the registry:
+ 
+WARNING:
+: Supported groups will be broken or weakened over time. Blindly
+implementing cipher suites listed here is not advised.  Implementers
+and users need to check that the cryptographic algorithms listed
+continue to provide the expected level of security.
 
 IANA [SHALL update/has updated] the reference for this registry to also
 refer to this document.
