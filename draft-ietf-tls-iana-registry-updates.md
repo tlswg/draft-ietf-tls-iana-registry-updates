@@ -232,6 +232,8 @@ TLS Supported Groups
 
 Add a “Recommended” column with a "Yes" for secp256r1, secp384r1, x25519, and x448 while all others are "No".  These "Yes" groups are taken from Standards Track RFCs.  Not all groups from {{I-D.ietf-tls-rfc4492bis}}, which is standards track, are not marked as "Yes"; these groups apply to TLS 1.3 {{I-D.ietf-tls-tls13}} and previous versions of TLS {{I-D.ietf-tls-tls13}}.  A Standards Track document {{RFC5226}} is required to register an entry with the value "Yes".
 
+The value 0 (0x0000) is to be marked as reserved.
+
 
 TLS ClientCertificateType Identifiers
 =====================================
