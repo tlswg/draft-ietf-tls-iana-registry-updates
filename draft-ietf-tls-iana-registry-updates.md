@@ -93,7 +93,7 @@ RFC8126-defined "IETF Review".  To align with the new terminology,
 IANA [SHALL update/has updated] the following registries to use "IETF
 Review" in place of "IETF Consensus":
 
-- TLS Authorization Data Formats {{!RFC4680}}}
+- TLS Authorization Data Formats {{!RFC4680}}
 - TLS Supplemental Data Formats (SupplementalDataType) {{!RFC5878}}
 
 This is not a universal change as some registries originally defined
@@ -116,7 +116,7 @@ consistently identified in the registry, IANA:
 
 - [SHALL add/has added] a reference to this document in the Reference
 column for entry 35.
- 
+
 TLS ExtensionType Values
 ========================
 
@@ -204,7 +204,7 @@ expert pool.
 
 The cipher suite registry has grown significantly and will continue to
 do so.  To better guide those not intimately involved in TLS, IANA
-[shall update/has updated] the TLS Cipher Suite registry as follows:  
+[shall update/has updated] the TLS Cipher Suite registry as follows:
 
 - Add a "Recommended" column to the TLS Cipher Suite registry.  The
   cipher suites that follow in the two tables are marked as "Yes". All
@@ -217,7 +217,7 @@ do so.  To better guide those not intimately involved in TLS, IANA
   (and optionally client-authenticated) cipher suites which are
   currently available in TLS 1.2.
 
-RFC EDITOR: The previous paragraph is for document reviewers and is not                                             
+RFC EDITOR: The previous paragraph is for document reviewers and is not
 meant for the registry.
 
 ~~~
@@ -278,7 +278,7 @@ algorithms listed continue to provide the expected level of security.
 
 IANA [SHALL add/has added] the following note to ensure that those that
 focus on IANA registries are aware that TLS 1.3 {{I-D.ietf-tls-tls13}}
-uses the same registry but defines ciphers differently: 
+uses the same registry but defines ciphers differently:
 
 Note:
 : Although TLS 1.3 uses the same cipher suite space as previous
@@ -328,7 +328,7 @@ some customers use the IANA registry as checklist against which to
 measure an implemention's completeness and some implementers blindly
 implement cipher supported.  Therefore, IANA [SHALL add/has added] the
 following warning to the registry:
- 
+
 WARNING:
 : Cryptographic algorithms and parameters will be broken or weakened
 over time.  Blindly implementing cipher suites listed here is not
@@ -346,10 +346,10 @@ TLS ClientCertificateType Identifiers
 Experience has shown that the IETF Consensus registry policy for TLS
 ClientCertificateType Identifers is too strict.   Based on WG
 consensus, the decision was taken to change registration policy to
-Specification Required {{RFC8126}} while reserving a small part of                                               
+Specification Required {{RFC8126}} while reserving a small part of
 the code space for experimental and prviate use.  Therefore, IANA
 [SHALL update/has updated] the TLS Cipher Suite registry's policy as
-follows: 
+follows:
 
     Values in the range 0-223 are assigned via Specification Required
     {{RFC8126}}.  Values 224-255 are reserved for Private Use.
