@@ -338,6 +338,8 @@ algorithms listed continue to provide the expected level of security.
 IANA [SHALL update/has updated] the reference for this registry to also
 refer to this document.
 
+The value 0 (0x0000) is to be marked as reserved.
+
 TLS ClientCertificateType Identifiers
 =====================================
 
