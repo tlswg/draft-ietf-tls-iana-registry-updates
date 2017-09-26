@@ -271,10 +271,10 @@ implement cipher suites.  Therefore, IANA [SHALL add/has added] the
 following warning to the registry:
 
 WARNING:
-: Cryptographic algorithms will be broken or weakened over time.
-Blindly implementing cipher suites listed here is not advised.
-Implementers and users need to check that the cryptographic algorithms
-listed continue to provide the expected level of security.
+: Cryptographic algorithms and parameters will be broken or weakened
+over time.  Blindly implementing cipher suites listed here is not
+advised.  Implementers and users need to check that the cryptographic
+algorithms listed continue to provide the expected level of security.
 
 IANA [SHALL add/has added] the following note to ensure that those that
 focus on IANA registries are aware that TLS 1.3 {{I-D.ietf-tls-tls13}}
@@ -330,10 +330,10 @@ implement cipher supported.  Therefore, IANA [SHALL add/has added] the
 following warning to the registry:
  
 WARNING:
-: Supported groups will be broken or weakened over time. Blindly
-implementing cipher suites listed here is not advised.  Implementers
-and users need to check that the cryptographic algorithms listed
-continue to provide the expected level of security.
+: Cryptographic algorithms and parameters will be broken or weakened
+over time.  Blindly implementing cipher suites listed here is not
+advised.  Implementers and users need to check that the cryptographic
+algorithms listed continue to provide the expected level of security.
 
 IANA [SHALL update/has updated] the reference for this registry to also
 refer to this document.
