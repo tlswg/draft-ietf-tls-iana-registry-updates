@@ -418,7 +418,7 @@ address {
 <p/>
 
 <ul>
-  <li>TLS Authorization Data Formats <a href="#RFC4680">[RFC4680]</a>}</li>
+  <li>TLS Authorization Data Formats <a href="#RFC4680">[RFC4680]</a></li>
   <li>TLS Supplemental Data Formats (SupplementalDataType) <a href="#RFC5878">[RFC5878]</a></li>
 </ul>
 <p id="rfc.section.4.p.3">This is not a universal change as some registries originally defined with &#8220;IETF Consensus&#8221; are undergoing other changes either as a result of this document or <a href="#I-D.ietf-tls-rfc4492bis">[I-D.ietf-tls-rfc4492bis]</a>.</p>
@@ -581,7 +581,7 @@ via Specification Required {{RFC8126}}.  Values with the first byte
 <ul>
   <li>Add a &#8220;Recommended&#8221; column to the TLS Cipher Suite registry.  The cipher suites that follow in the two tables are marked as &#8220;Yes&#8221;. All other cipher suites are marked as &#8220;No&#8221;.  Future cipher suites MUST define the value of the Recommended column.  A Standards Track document <a href="#RFC8126">[RFC8126]</a> is required to register a cipher suite with the value &#8220;Yes&#8221;.  <br/><br/> The cipher suites that follow are standards track server-authenticated (and optionally client-authenticated) cipher suites which are currently available in TLS 1.2.</li>
 </ul>
-<p id="rfc.section.7.p.5">RFC EDITOR: The previous paragraph is for document reviewers and is not                                           <br/> meant for the registry.</p>
+<p id="rfc.section.7.p.5">RFC EDITOR: The previous paragraph is for document reviewers and is not meant for the registry.</p>
 <pre>
 Cipher Suite Name                             | Value
 ----------------------------------------------+------------
@@ -661,7 +661,7 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 <p id="rfc.section.8.p.6">IANA [SHALL update/has updated] the reference for this registry to also refer to this document.</p>
 <p id="rfc.section.8.p.7">The value 0 (0x0000) is to be marked as reserved.</p>
 <h1 id="rfc.section.9"><a href="#rfc.section.9">9.</a> <a href="#tls-clientcertificatetype-identifiers" id="tls-clientcertificatetype-identifiers">TLS ClientCertificateType Identifiers</a></h1>
-<p id="rfc.section.9.p.1">Experience has shown that the IETF Consensus registry policy for TLS ClientCertificateType Identifers is too strict.   Based on WG consensus, the decision was taken to change registration policy to Specification Required <a href="#RFC8126">[RFC8126]</a> while reserving a small part of                                             <br/> the code space for experimental and prviate use.  Therefore, IANA [SHALL update/has updated] the TLS Cipher Suite registry&#8217;s policy as follows:</p>
+<p id="rfc.section.9.p.1">Experience has shown that the IETF Consensus registry policy for TLS ClientCertificateType Identifers is too strict.   Based on WG consensus, the decision was taken to change registration policy to Specification Required <a href="#RFC8126">[RFC8126]</a> while reserving a small part of the code space for experimental and prviate use.  Therefore, IANA [SHALL update/has updated] the TLS Cipher Suite registry&#8217;s policy as follows:</p>
 <pre>
 Values in the range 0-223 are assigned via Specification Required
 {{RFC8126}}.  Values 224-255 are reserved for Private Use.

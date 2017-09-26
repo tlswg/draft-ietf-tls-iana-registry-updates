@@ -147,7 +147,7 @@ Internet-Draft         D/TLS IANA Registry Updates        September 2017
    IANA [SHALL update/has updated] the following registries to use "IETF
    Review" in place of "IETF Consensus":
 
-   o  TLS Authorization Data Formats [RFC4680]}
+   o  TLS Authorization Data Formats [RFC4680]
 
    o  TLS Supplemental Data Formats (SupplementalDataType) [RFC5878]
 
@@ -326,8 +326,8 @@ Internet-Draft         D/TLS IANA Registry Updates        September 2017
       which are currently available in TLS 1.2.
 
    RFC EDITOR: The previous paragraph is for document reviewers and is
-   not
-   meant for the registry.
+   not meant for the registry.
+
 
 
 
@@ -477,9 +477,9 @@ Internet-Draft         D/TLS IANA Registry Updates        September 2017
    Experience has shown that the IETF Consensus registry policy for TLS
    ClientCertificateType Identifers is too strict.  Based on WG
    consensus, the decision was taken to change registration policy to
-   Specification Required [RFC8126] while reserving a small part of
-   the code space for experimental and prviate use.  Therefore, IANA
-   [SHALL update/has updated] the TLS Cipher Suite registry's policy as
+   Specification Required [RFC8126] while reserving a small part of the
+   code space for experimental and prviate use.  Therefore, IANA [SHALL
+   update/has updated] the TLS Cipher Suite registry's policy as
    follows:
 
    Values in the range 0-223 are assigned via Specification Required
