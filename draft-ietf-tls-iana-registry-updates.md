@@ -558,7 +558,11 @@ Expert, that Expert SHOULD defer to the judgment of the other Experts.
 Security Considerations
 =======================
 
-The authors are fairly certain that there are no security considerations for this document.
+The change to Specification Required from IETF Review lowers the amount
+of review provided by the WG for cipher suites and supported groups.
+This change reflects reality in that the WG essentially provided no
+cryptographic review of the cipher suites or supported groups.  This
+was espcecially true of national cipher suites.
 
 IANA Considerations
 ===================
