@@ -323,6 +323,10 @@ Note:
 Track RFCs.  Supported Groups marked as "No" are not; supported groups
 marked "No" range from "good" to "bad" from a cryptographic standpoint.
 
+Note:
+: The designated expert {{RFC8126}} only ensures that the specification
+is publicly available.
+
 Despite the following behavior being crazy, experience has shown that
 some customers use the IANA registry as checklist against which to
 measure an implemention's completeness and some implementers blindly
