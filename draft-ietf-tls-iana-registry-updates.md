@@ -1,5 +1,5 @@
 ---
-title: D/TLS IANA Registry Updates
+title: IANA Registry Updates for TLS and DTLS
 abbrev: D/TLS IANA Registry Updates
 docname: draft-ietf-tls-iana-registry-updates-latest
 date: {DATE}
@@ -32,7 +32,7 @@ informative:
 
 --- abstract
 
-This document describes a number of changes to D/TLS IANA registries
+This document describes a number of changes to (D)TLS IANA registries
 that range from adding notes to the registry all the way to changing
 the registration policy.  These changes were mostly motivated by WG
 review of the (D)TLS-related registries undertaken as part of the
