@@ -5,7 +5,7 @@
 <head profile="http://www.w3.org/2006/03/hcard http://dublincore.org/documents/2008/08/04/dc-html/">
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
 
-  <title>D/TLS IANA Registry Updates</title>
+  <title>IANA Registry Updates for TLS and DTLS</title>
 
   
 <style type="text/css">/*<![CDATA[*/
@@ -304,9 +304,9 @@ address {
 
   <meta name="dct.creator" content="Salowey, J. and S. Turner" />
   <meta name="dct.identifier" content="urn:ietf:id:draft-ietf-tls-iana-registry-updates-latest" />
-  <meta name="dct.issued" scheme="ISO8601" content="2017-9-26" />
-  <meta name="dct.abstract" content="This document describes a number of changes to D/TLS IANA registries that range from adding notes to the registry all the way to changing the registration policy.  These changes were mostly motivated by WG review of the (D)TLS-related registries undertaken as part of the TLS1.3 development process.  This document updates many (D)TLS RFCs (see updates header)." />
-  <meta name="description" content="This document describes a number of changes to D/TLS IANA registries that range from adding notes to the registry all the way to changing the registration policy.  These changes were mostly motivated by WG review of the (D)TLS-related registries undertaken as part of the TLS1.3 development process.  This document updates many (D)TLS RFCs (see updates header)." />
+  <meta name="dct.issued" scheme="ISO8601" content="2017-10-3" />
+  <meta name="dct.abstract" content="This document describes a number of changes to (D)TLS IANA registries that range from adding notes to the registry all the way to changing the registration policy.  These changes were mostly motivated by WG review of the (D)TLS-related registries undertaken as part of the TLS1.3 development process.  This document updates many (D)TLS RFCs (see updates header)." />
+  <meta name="description" content="This document describes a number of changes to (D)TLS IANA registries that range from adding notes to the registry all the way to changing the registration policy.  These changes were mostly motivated by WG review of the (D)TLS-related registries undertaken as part of the TLS1.3 development process.  This document updates many (D)TLS RFCs (see updates header)." />
 
 </head>
 
@@ -333,10 +333,10 @@ address {
 </tr>
 <tr>
   <td class="left">Intended status: Standards Track</td>
-  <td class="right">September 26, 2017</td>
+  <td class="right">October 3, 2017</td>
 </tr>
 <tr>
-  <td class="left">Expires: March 30, 2018</td>
+  <td class="left">Expires: April 6, 2018</td>
   <td class="right"></td>
 </tr>
 
@@ -344,20 +344,20 @@ address {
     </tbody>
   </table>
 
-  <p class="title">D/TLS IANA Registry Updates<br />
+  <p class="title">IANA Registry Updates for TLS and DTLS<br />
   <span class="filename">draft-ietf-tls-iana-registry-updates-latest</span></p>
   
   <h1 id="rfc.abstract">
   <a href="#rfc.abstract">Abstract</a>
 </h1>
-<p>This document describes a number of changes to D/TLS IANA registries that range from adding notes to the registry all the way to changing the registration policy.  These changes were mostly motivated by WG review of the (D)TLS-related registries undertaken as part of the TLS1.3 development process.  This document updates many (D)TLS RFCs (see updates header).</p>
+<p>This document describes a number of changes to (D)TLS IANA registries that range from adding notes to the registry all the way to changing the registration policy.  These changes were mostly motivated by WG review of the (D)TLS-related registries undertaken as part of the TLS1.3 development process.  This document updates many (D)TLS RFCs (see updates header).</p>
 <h1 id="rfc.status">
   <a href="#rfc.status">Status of This Memo</a>
 </h1>
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at http://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on March 30, 2018.</p>
+<p>This Internet-Draft will expire on April 6, 2018.</p>
 <h1 id="rfc.copyrightnotice">
   <a href="#rfc.copyrightnotice">Copyright Notice</a>
 </h1>
@@ -650,6 +650,8 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 <dl>
   <dt>Note:</dt>
   <dd style="margin-left: 8">Supported Groups marked as &#8220;Yes&#8221; are those allocated via Standards Track RFCs.  Supported Groups marked as &#8220;No&#8221; are not; supported groups marked &#8220;No&#8221; range from &#8220;good&#8221; to &#8220;bad&#8221; from a cryptographic standpoint.</dd>
+  <dt>Note:</dt>
+  <dd style="margin-left: 8">The designated expert <a href="#RFC8126">[RFC8126]</a> only ensures that the specification is publicly available.</dd>
 </dl>
 <p id="rfc.section.8.p.4">Despite the following behavior being crazy, experience has shown that some customers use the IANA registry as checklist against which to measure an implemention&#8217;s completeness and some implementers blindly implement cipher supported.  Therefore, IANA [SHALL add/has added] the following warning to the registry:</p>
 <p/>
