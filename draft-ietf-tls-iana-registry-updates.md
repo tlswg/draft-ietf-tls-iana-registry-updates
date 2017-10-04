@@ -574,7 +574,14 @@ The change to Specification Required from IETF Review lowers the amount
 of review provided by the WG for cipher suites and supported groups.
 This change reflects reality in that the WG essentially provided no
 cryptographic review of the cipher suites or supported groups.  This
-was espcecially true of national cipher suites.
+was especially true of national cipher suites.
+
+Recommended algorithms regarded as secure for general use at the time of
+registration, however, cryptographic algorithms and parameters will be broken
+or weakened over time.  It is possible that the recommended status in the
+registry lags behind the most recent advances in cryptanalysis.  Implementers
+and users need to check that the cryptographic algorithms listed continue to
+provide the expected level of security.
 
 IANA Considerations
 ===================
