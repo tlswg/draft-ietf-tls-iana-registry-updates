@@ -517,6 +517,18 @@ SignatureAlgorithm registries to also refer to this document.
 values 7-223 as "Reserved" and the TLS SignatureAlgorithm registry to
 list values 4-223 as "Reserved".
 
+Despite the fact that the HashAlgorithm and SignarureAlgorithm
+registries are orphaned, it is still import to warn implementers of
+pre-TLS1.3 implmentations about the dangers of blinding implementing
+cryptographic algorithms.  Therefore, IANA [SHALL add/has added] the
+following warning to the HashAlgorithm and SignatureAlgorithm:
+
+WARNING:
+Cryptographic algorithms and parameters will be broken or weakened
+over time.  Blindly implementing cipher suites listed here is not
+advised.  Implementers and users need to check that the cryptographic
+algorithms listed continue to provide the expected level of security.
+
 Designated Expert Pool {#expert-pool}
 ======================
 
