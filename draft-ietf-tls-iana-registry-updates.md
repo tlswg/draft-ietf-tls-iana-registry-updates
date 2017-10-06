@@ -136,15 +136,15 @@ TLS ExtensionType Values
 
 Experience has shown that the IETF Review registry policy for TLS
 Extensions was too strict.  Based on WG consensus, the decision was
-taken to change the registration policy to Specification Required
+taken to change the registration policy to Expert Review
 {{RFC8126}} while reserving a small part of the code space for
-experimental and prviate use.  Therefore, IANA [SHALL update/has
+experimental and private use.  Therefore, IANA [SHALL update/has
 updated] the TLS ExtensionType Values registry to:
 
 - Change the registry policy to:
 
     Values with the first byte in the range 0-254 (decimal) are assigned
-    via Specification Required {{RFC8126}}.  Values with the first byte
+    via Expert Review {{RFC8126}}.  Values with the first byte
     255 (decimal) are reserved for Private Use {{RFC8126}}.
 
 - Update the "Reference" to also refer to this document.
@@ -153,7 +153,7 @@ updated] the TLS ExtensionType Values registry to:
 
 Note:
 : Experts are to verify that there is in fact a publicly available
-standard.
+specification.
 
 See {{expert-pool}} for additional information about the designated
 expert pool.
@@ -204,13 +204,13 @@ TLS Cipher Suite Registry
 Experience has shown that the IETF Consensus registry policy for TLS
 Cipher Suites was too strict.  Based on WG consensus, the decision was
 taken to change the TLS Cipher Suite registry's registration policy
-to Specification Required {{RFC8126}} while reserving a small part of
+to Expert Review {{RFC8126}} while reserving a small part of
 the code space for experimental and prviate use.  Therefore, IANA
 [SHALL update/has updated] the TLS Cipher Suite registry's policy as
 follows:
 
     Values with the first byte in the range 0-254 (decimal) are assigned
-    via Specification Required {{RFC8126}}.  Values with the first byte
+    via Expert Review {{RFC8126}}.  Values with the first byte
     255 (decimal) are reserved for Private Use {{RFC8126}}.
 
 See {{expert-pool}} for additional information about the designated
@@ -364,12 +364,12 @@ TLS ClientCertificateType Identifiers
 Experience has shown that the IETF Consensus registry policy for TLS
 ClientCertificateType Identifers is too strict.   Based on WG
 consensus, the decision was taken to change registration policy to
-Specification Required {{RFC8126}} while reserving a small part of
+Expert Review {{RFC8126}} while reserving a small part of
 the code space for experimental and prviate use.  Therefore, IANA
 [SHALL update/has updated] the TLS Cipher Suite registry's policy as
 follows:
 
-    Values in the range 0-223 are assigned via Specification Required
+    Values in the range 0-223 are assigned via Expert Review
     {{RFC8126}}.  Values 224-255 are reserved for Private Use.
 
 See {{expert-pool}} for additional information about the designated
@@ -465,7 +465,7 @@ TLS Certificate Types
 
 Experience has shown that the IETF Consensus registry policy for TLS
 Certificate Types is too strict.  Based on WG consensus, the decision
-was taken to change registration policy to Specification Required
+was taken to change registration policy to Expert Review
 {{RFC8126}} while reserving a small part of the code space for
 experimental and prviate use.  Therefore, IANA [SHALL add/has added]
 a "Recommended" column to the registry.  X.509 and Raw Public Key are
@@ -546,12 +546,13 @@ algorithms listed continue to provide the expected level of security.
 Designated Expert Pool {#expert-pool}
 ======================
 
-Specification Required {{RFC8126}} registry requests are registered
+Expect Review {{RFC8126}} registry requests are registered
 after a three-week review period on the (tbd but maybe
 tls-reg-review@ietf.org) mailing list, on the advice of one or more
 Designated Experts.  However, to allow for the allocation of values
 prior to publication, the Designated Experts may approve registration
 once they are satisfied that such a specification will be published.
+Note that Internet Drafts qualify as "published".
 
 Registration requests sent to the mailing list for review SHOULD use an
 appropriate subject (e.g., "Request to register value in TLS bar
@@ -584,7 +585,7 @@ Expert, that Expert SHOULD defer to the judgment of the other Experts.
 Security Considerations
 =======================
 
-The change to Specification Required from IETF Review lowers the amount
+The change to Expert Review from IETF Review lowers the amount
 of review provided by the WG for cipher suites and supported groups.
 This change reflects reality in that the WG essentially provided no
 cryptographic review of the cipher suites or supported groups.  This
