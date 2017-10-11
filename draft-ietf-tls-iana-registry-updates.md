@@ -229,8 +229,7 @@ do so.  To better guide those not intimately involved in TLS, IANA
 
   The cipher suites that follow are standards track server-authenticated
   (and optionally client-authenticated) cipher suites which are
-  currently available in TLS 1.2.  These ciphers are AEAD ciphers with
-  strong authentication.
+  currently available in TLS 1.2.
 
 RFC EDITOR: The previous paragraph is for document reviewers and is not
 meant for the registry.
