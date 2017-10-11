@@ -105,6 +105,7 @@ to also refer to this document.
 
 Adding recommended Column
 =========================
+
 The instructions in this document add a recommended column to many of
 the TLS registries to indicate parameters that are generally recommended
 for implementations to support.  Adding a recommended parameter to a
@@ -596,6 +597,10 @@ or weakened over time.  It is possible that the recommended status in the
 registry lags behind the most recent advances in cryptanalysis.  Implementers
 and users need to check that the cryptographic algorithms listed continue to
 provide the expected level of security.
+
+Designated experts ensure the specification is publicly available.  They may
+provide more in depth reviews.  Their review should not be taken as an
+endorsement of the cipher suite, extension, supported group, etc.
 
 IANA Considerations
 ===================
