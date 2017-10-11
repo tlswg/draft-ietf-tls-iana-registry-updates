@@ -105,17 +105,18 @@ to also refer to this document.
 
 Adding recommended Column
 =========================
-The instructions in this document add a recommended column to many of the TLS
-registries to indicate parameters that are generally recommended for
-implementations to support.  Adding a recommended parameter to a registry
-or updating a parameter to recommended status requires standards action.
-Not all parameters defined in standards track documents need to be marked as
-recommended.
 
-If an item is marked as not recommended it does not necessarily mean that it
-is flawed, rather, it indicates that either the item has not been
-through the IETF consensus process or the item has limited applicability to
-specific cases.
+The instructions in this document add a recommended column to many of
+the TLS registries to indicate parameters that are generally recommended
+for implementations to support.  Adding a recommended parameter to a
+registry or updating a parameter to recommended status requires
+standards action.  Not all parameters defined in standards track
+documents need to be marked as recommended.
+
+If an item is marked as not recommended it does not necessarily mean
+that it is flawed, rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
 
 Session Ticket TLS Extension
 ============================
