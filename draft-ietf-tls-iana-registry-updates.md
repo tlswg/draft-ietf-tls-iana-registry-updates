@@ -246,8 +246,6 @@ TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256         | {0xC0,0x2F}
 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384         | {0xC0,0x30}
 TLS_DHE_RSA_WITH_AES_128_CCM                  | {0xC0,0x9E}
 TLS_DHE_RSA_WITH_AES_256_CCM                  | {0xC0,0x9F}
-TLS_DHE_RSA_WITH_AES_128_CCM_8                | {0xC0,0xA2}
-TLS_DHE_RSA_WITH_AES_256_CCM_8                | {0xC0,0xA3}
 TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256   | {0xCC,0xA8}
 TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 | {0xCC,0xA9}
 TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAA}
@@ -268,11 +266,8 @@ TLS_DHE_PSK_WITH_AES_128_GCM_SHA256           | {0x00,0xAA}
 TLS_DHE_PSK_WITH_AES_256_GCM_SHA384           | {0x00,0xAB}
 TLS_DHE_PSK_WITH_AES_128_CCM                  | {0xC0,0xA6}
 TLS_DHE_PSK_WITH_AES_256_CCM                  | {0xC0,0xA7}
-TLS_PSK_DHE_WITH_AES_128_CCM_8                | {0xC0,0xAA}
-TLS_PSK_DHE_WITH_AES_256_CCM_8                | {0xC0,0xAB}
 TLS_ECDHE_PSK_WITH_AES_128_GCM_SHA256         | {TBD}
 TLS_ECDHE_PSK_WITH_AES_256_GCM_SHA384         | {TBD}
-TLS_ECDHE_PSK_WITH_AES_128_CCM_8_SHA256       | {TBD}
 TLS_ECDHE_PSK_WITH_AES_128_CCM_SHA256         | {TBD}
 TLS_ECDHE_PSK_WITH_AES_256_CCM_SHA384         | {TBD}
 TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256   | {0xCC,0xAC}
@@ -309,6 +304,12 @@ Note:
 : Cipher suites marked as "Yes" are those allocated via Standards Track
 RFCs.  Cipher suites marked as "No" are not; cipher suites marked "No"
 range from "good" to "bad" from a cryptographic standpoint.
+
+Note:
+: CCM_8 cipher suites are not marked as Recommended.  These cipher
+suites have a significantly truncated authentication tag that represents
+a security trade-off that may not be appropriate for general
+environments.
 
 Note:
 : The designated expert {{RFC8126}} only ensures that the specification
