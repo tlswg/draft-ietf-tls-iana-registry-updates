@@ -55,7 +55,7 @@ Copyright Notice
 
 Salowey & Turner           Expires May 3, 2018                  [Page 1]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    include Simplified BSD License text as described in Section 4.e of
@@ -111,7 +111,7 @@ Table of Contents
 
 Salowey & Turner           Expires May 3, 2018                  [Page 2]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    This document proposes no changes to the registration policies for
@@ -167,7 +167,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                  [Page 3]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
 5.  Adding recommended Column
@@ -223,7 +223,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                  [Page 4]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    See Section 17 for additional information about the designated expert
@@ -279,7 +279,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                  [Page 5]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
          | heartbeat                              |         Yes |
@@ -335,7 +335,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                  [Page 6]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
       Track document [RFC8126] is required to register a cipher suite
@@ -391,7 +391,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                  [Page 7]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    measure an implemention's completeness and some implementers blindly
@@ -447,7 +447,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                  [Page 8]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    are marked as "Yes"; these groups apply to TLS 1.3
@@ -503,7 +503,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                  [Page 9]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    IANA [SHALL add/has added] the following notes:
@@ -559,7 +559,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                 [Page 10]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    Exporter Value
@@ -615,7 +615,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                 [Page 11]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    Track document [RFC8126] is required to register an entry with the
@@ -671,7 +671,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                 [Page 12]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    o  [SHALL update/has updated] the TLS HashAlgorithm Registry to list
@@ -727,7 +727,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                 [Page 13]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    It is suggested that multiple Designated Experts be appointed who are
@@ -783,7 +783,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                 [Page 14]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    [RFC4680]  Santesson, S., "TLS Handshake Message for Supplemental
@@ -839,7 +839,7 @@ Internet-Draft         D/TLS IANA Registry Updates          October 2017
 
 Salowey & Turner           Expires May 3, 2018                 [Page 15]
 
-Internet-Draft         D/TLS IANA Registry Updates          October 2017
+Internet-Draft        (D)TLS IANA Registry Updates          October 2017
 
 
    [I-D.ietf-tls-rfc4492bis]
