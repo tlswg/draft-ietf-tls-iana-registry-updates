@@ -1,6 +1,6 @@
 ---
 title: IANA Registry Updates for TLS and DTLS
-abbrev: D/TLS IANA Registry Updates
+abbrev: (D)TLS IANA Registry Updates
 docname: draft-ietf-tls-iana-registry-updates-latest
 date: {DATE}
 category: std
