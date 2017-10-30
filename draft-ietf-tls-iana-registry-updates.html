@@ -785,7 +785,12 @@ EXPORTER: teap session key seed
   <li>[SHALL update/has updated] the TLS HashAlgorithm Registry to list values 7-223 as &#8220;Reserved&#8221; and the TLS SignatureAlgorithm registry to list values 4-223 as &#8220;Reserved&#8221;.</li>
 </ul>
 <p id="rfc.section.16.p.7">Despite the fact that the HashAlgorithm and SignarureAlgorithm registries are orphaned, it is still import to warn implementers of pre-TLS1.3 implmentations about the dangers of blinding implementing cryptographic algorithms.  Therefore, IANA [SHALL add/has added] the following warning to the HashAlgorithm and SignatureAlgorithm:</p>
-<p id="rfc.section.16.p.8">WARNING: Cryptographic algorithms and parameters will be broken or weakened over time.  Blindly implementing cipher suites listed here is not advised.  Implementers and users need to check that the cryptographic algorithms listed continue to provide the expected level of security.</p>
+<p/>
+
+<dl>
+  <dt>WARNING:</dt>
+  <dd style="margin-left: 8">Cryptographic algorithms and parameters will be broken or weakened over time.  Blindly implementing cipher suites listed here is not advised.  Implementers and users need to check that the cryptographic algorithms listed continue to provide the expected level of security.</dd>
+</dl>
 <h1 id="rfc.section.17"><a href="#rfc.section.17">17.</a> <a href="#expert-pool" id="expert-pool">Designated Expert Pool</a></h1>
 <p id="rfc.section.17.p.1">Specification Required <a href="#RFC8126">[RFC8126]</a> registry requests are registered after a three-week review period on the (tbd but maybe tls-reg-review@ietf.org) mailing list, on the advice of one or more Designated Experts.  However, to allow for the allocation of values prior to publication, the Designated Experts may approve registration once they are satisfied that such a specification will be published.</p>
 <p id="rfc.section.17.p.2">Registration requests sent to the mailing list for review SHOULD use an appropriate subject (e.g., &#8220;Request to register value in TLS bar registry&#8221;).</p>
