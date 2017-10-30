@@ -540,7 +540,7 @@ cryptographic algorithms.  Therefore, IANA [SHALL add/has added] the
 following warning to the HashAlgorithm and SignatureAlgorithm:
 
 WARNING:
-Cryptographic algorithms and parameters will be broken or weakened
+: Cryptographic algorithms and parameters will be broken or weakened
 over time.  Blindly implementing cipher suites listed here is not
 advised.  Implementers and users need to check that the cryptographic
 algorithms listed continue to provide the expected level of security.
