@@ -54,12 +54,12 @@ Introduction
 
 This document instructs IANA to make changes to a number of
 (D)TLS-related IANA registries.  These changes were almost entirely
-motiviated by the development of TLS1.3 {{!I-D.ietf-tls-tls13}}.
+motivated by the development of TLS1.3 {{!I-D.ietf-tls-tls13}}.
 
 The changes introduced by this document range from simple, e.g., adding
-notes, to commplex, e.g., changing a registry's registration policy.
-Intsead of listing the changes and their rationale in this, the
-introducotry, section each section provides rationale for the proposed
+notes, to complex, e.g., changing a registry's registration policy.
+Instead of listing the changes and their rationale in this, the
+introductory, section each section provides rationale for the proposed
 change(s).
 
 This document proposes no changes to the registration policies for TLS
@@ -69,18 +69,27 @@ Types {{?RFC6961}} registries; the existing policies (Standards Action
 for the first three; IETF Review for the last), are appropriate for
 these one-byte code points because of their scarcity.
 
+Terminology
+===========
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+"SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+"OPTIONAL" in this document are to be interpreted as described in
+BCP 14 {{!RFC2119}} {{!RFC8174}} when, and only when, they appear in
+all capitals, as shown here.
+
 Add "TLS" to Registry Names
 ===========================
 
 For consistency amongst TLS reqgistries, IANA
-[SHALL prepend/has prepended] "TLS" to the following registries:
+[SHALL prepend/has prepended] "TLS" to the following registeries:
 
 - Application-Layer Protocol Negotiation (ALPN) Protocol IDs {{!RFC7301}},
 - ExtensionType Values,
 - Heartbeat Message Types {{!RFC6520}}, and
 - Heartbeat Modes {{RFC6520}}.
 
-IANA [SHALL update/has updated] the reference for these four registires
+IANA [SHALL update/has updated] the reference for these four registeries
 to also refer to this document.  The remainder of this document will
 use the registry names with the "TLS" prefix.
 
@@ -139,7 +148,7 @@ Experience has shown that the IETF Review registry policy for TLS
 Extensions was too strict.  Based on WG consensus, the decision was
 taken to change the registration policy to Specification Required
 {{RFC8126}} while reserving a small part of the code space for
-experimental and prviate use.  Therefore, IANA [SHALL update/has
+experimental and private use.  Therefore, IANA [SHALL update/has
 updated] the TLS ExtensionType Values registry to:
 
 - Change the registry policy to:
@@ -206,13 +215,13 @@ Experience has shown that the IETF Consensus registry policy for TLS
 Cipher Suites was too strict.  Based on WG consensus, the decision was
 taken to change the TLS Cipher Suite registry's registration policy
 to Specification Required {{RFC8126}} while reserving a small part of
-the code space for experimental and prviate use.  Therefore, IANA
+the code space for experimental and private use.  Therefore, IANA
 [SHALL update/has updated] the TLS Cipher Suite registry's policy as
 follows:
 
-    Values with the first byte in the range 0-254 (decimal) are assigned
-    via Specification Required {{RFC8126}}.  Values with the first byte
-    255 (decimal) are reserved for Private Use {{RFC8126}}.
+    Values with the first byte in the range 0-254 (decimal) are
+    assigned via Specification Required {{RFC8126}}.  Values with the
+    first byte 255 (decimal) are reserved for Private Use {{RFC8126}}.
 
 See {{expert-pool}} for additional information about the designated
 expert pool.
@@ -276,7 +285,7 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 
 Despite the following behavior being crazy, experience has shown that
 some customers use the IANA registry as checklist against which to
-measure an implemention's completeness and some implementers blindly
+measure an implementation's completeness and some implementers blindly
 implement cipher suites.  Therefore, IANA [SHALL add/has added] the
 following warning to the registry:
 
@@ -315,7 +324,7 @@ Note:
 : The designated expert {{RFC8126}} only ensures that the specification
 is publicly available.
 
-IANA [SHALL uppdate/has updated] the reference for this registry to
+IANA [SHALL update/has updated] the reference for this registry to
 also refer to this document.
 
 TLS Supported Groups
@@ -345,7 +354,7 @@ is publicly available.
 
 Despite the following behavior being crazy, experience has shown that
 some customers use the IANA registry as checklist against which to
-measure an implemention's completeness and some implementers blindly
+measure an implementation's completeness and some implementers blindly
 implement cipher supported.  Therefore, IANA [SHALL add/has added] the
 following warning to the registry:
 
@@ -364,7 +373,7 @@ TLS ClientCertificateType Identifiers
 =====================================
 
 Experience has shown that the IETF Consensus registry policy for TLS
-ClientCertificateType Identifers is too strict.   Based on WG
+ClientCertificateType Identifiers is too strict.   Based on WG
 consensus, the decision was taken to change registration policy to
 Specification Required {{RFC8126}} while reserving a small part of
 the code space for experimental and prviate use.  Therefore, IANA
@@ -384,7 +393,7 @@ Note:
 is publicly available.
 
 Note:
-: ClientCertificateType Identifers marked as "Yes" are those allocated
+: ClientCertificateType Identifiers marked as "Yes" are those allocated
 via Standards Track RFCs.  ClientCertificateTypes marked as "No" are
 not.
 
@@ -458,7 +467,7 @@ Add Missing Item to TLS Alert Registry
 
 IANA [SHALL add/has added] the following entry to the TLS Alert
 Registry; the entry was omitted from the IANA instructions in
-{{!RFC7301}}):
+{{!RFC7301}}:
 
     120   no_application_protocol  Y  [RFC7301]
 
@@ -469,7 +478,7 @@ Experience has shown that the IETF Consensus registry policy for TLS
 Certificate Types is too strict.  Based on WG consensus, the decision
 was taken to change registration policy to Specification Required
 {{RFC8126}} while reserving a small part of the code space for
-experimental and prviate use.  Therefore, IANA [SHALL add/has added]
+experimental and private use.  Therefore, IANA [SHALL add/has added]
 a "Recommended" column to the registry.  X.509 and Raw Public Key are
 "Yes".  All others are "No".  A Standards Track document {{RFC8126}}
 is required to register a certificate type with the value “Yes”.
@@ -498,11 +507,11 @@ IANA [SHALL add/has added] the following note to the TLS ExtensionType
 Values registry:
 
 Note:
-: The following extensions are only applicable to (D)TLS protocol vesions
-prior to 1.3: trusted_ca_keys, truncated_hmac, ec_point_formats, srp,
-status_request_v2, encrypt_then_mac, extended_master_secret,
-session_ticket, and renegotiation_info.  These extensions are not
-applicable to (D)TLS 1.3.
+: The following extensions are only applicable to (D)TLS protocol
+versions prior to 1.3: trusted_ca_keys, truncated_hmac,
+ec_point_formats, srp, status_request_v2, encrypt_then_mac,
+extended_master_secret, session_ticket, and renegotiation_info.
+These extensions are not applicable to (D)TLS 1.3.
 
 Orphaned Registries
 ===================
@@ -535,7 +544,7 @@ list values 4-223 as "Reserved".
 
 Despite the fact that the HashAlgorithm and SignarureAlgorithm
 registries are orphaned, it is still import to warn implementers of
-pre-TLS1.3 implmentations about the dangers of blinding implementing
+pre-TLS1.3 implementations abouw thw dangerw ow blinding implementing
 cryptographic algorithms.  Therefore, IANA [SHALL add/has added] the
 following warning to the HashAlgorithm and SignatureAlgorithm:
 
