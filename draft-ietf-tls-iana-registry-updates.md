@@ -81,15 +81,15 @@ all capitals, as shown here.
 Add "TLS" to Registry Names
 ===========================
 
-For consistency amongst TLS reqgistries, IANA
-[SHALL prepend/has prepended] "TLS" to the following registeries:
+For consistency amongst TLS registries, IANA
+[SHALL prepend/has prepended] "TLS" to the following registries:
 
 - Application-Layer Protocol Negotiation (ALPN) Protocol IDs {{!RFC7301}},
 - ExtensionType Values,
 - Heartbeat Message Types {{!RFC6520}}, and
 - Heartbeat Modes {{RFC6520}}.
 
-IANA [SHALL update/has updated] the reference for these four registeries
+IANA [SHALL update/has updated] the reference for these four registries
 to also refer to this document.  The remainder of this document will
 use the registry names with the "TLS" prefix.
 
