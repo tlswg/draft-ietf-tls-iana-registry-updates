@@ -512,8 +512,8 @@ Values registry:
 
 Note:
 : The following extensions are only applicable to (D)TLS protocol
-versions prior to 1.3: trusted_ca_keys, truncated_hmac,
-ec_point_formats, srp, status_request_v2, encrypt_then_mac,
+versions prior to 1.3: trusted_ca_keys, truncated_hmac, user_mapping,
+cert_type, ec_point_formats, srp, status_request_v2, encrypt_then_mac,
 extended_master_secret, session_ticket, and renegotiation_info.
 These extensions are not applicable to (D)TLS 1.3.
 
