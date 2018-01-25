@@ -159,11 +159,18 @@ updated] the TLS ExtensionType Values registry to:
 
 - Update the "Reference" to also refer to this document.
 
-- Add the following note:
+- Add the following notes:
 
 Note:
 : Experts are to verify that there is in fact a publicly available
 standard.
+
+Note:
+: As specified in {{RFC8126}}, assignments made in the Private Use
+space are not generally useful for broad interoperability.  It is
+the responsibility of those making use of the Private Use range to
+ensure that no conflicts occur (within the intended scope of use).
+For widespread experiments, temporary reservations are available.
 
 See {{expert-pool}} for additional information about the designated
 expert pool.
@@ -343,9 +350,19 @@ suites have a significantly truncated authentication tag that represents
 a security trade-off that may not be appropriate for general
 environments.
 
+IANA [SHALL add/has added] the following notes for additional
+information:
+
 Note:
 : The designated expert {{RFC8126}} only ensures that the specification
 is publicly available.
+
+Note:
+: As specified in {{RFC8126}}, assignments made in the Private Use
+space are not generally useful for broad interoperability.  It is the
+responsibility of those making use of the Private Use range to ensure
+that no conflicts occur (within the intended scope of use).  For
+widespread experiments, temporary reservations are available.
 
 IANA [SHALL update/has updated] the reference for this registry to
 also refer to this document.
@@ -415,6 +432,13 @@ IANA [SHALL add/has added] the following notes:
 Note:
 : The designated expert {{RFC8126}} only ensures that the specification
 is publicly available.
+
+Note:
+: As specified in {{RFC8126}}, assignments made in the Private Use
+space are not generally useful for broad interoperability.  It is
+the responsibility of those making use of the Private Use range to
+ensure that no conflicts occur (within the intended scope of use).
+For widespread experiments, temporary reservations are available.
 
 Note:
 : ClientCertificateType Identifiers marked as "Yes" are those allocated
