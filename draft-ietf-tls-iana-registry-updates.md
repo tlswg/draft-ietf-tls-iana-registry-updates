@@ -376,7 +376,7 @@ Note:
 : The designated expert {{RFC8126}} only ensures that the specification
 is publicly available.
 
-Despite the following behavior being miguided, experience has shown
+Despite the following behavior being misguided, experience has shown
 that some customers use the IANA registry as checklist against which
 to measure an implementation's completeness and some implementers
 blindly implement groups supported.  Therefore, IANA
