@@ -112,10 +112,10 @@ of this document or {{?I-D.ietf-tls-rfc4492bis}}.
 IANA [SHALL update/has updated] the reference for these two registries
 to also refer to this document.
 
-Adding recommended Column
+Adding Recommended Column
 =========================
 
-The instructions in this document add a recommended column to many of
+The instructions in this document add a Recommended column to many of
 the TLS registries to indicate parameters that are generally recommended
 for implementations to support.  Adding a recommended parameter to a
 registry or updating a parameter to recommended status requires
@@ -209,6 +209,28 @@ update/has updated] the TLS ExtensionType Values registry to:
 | session_ticket                  |         Yes |
 | renegotiation_info              |         Yes |
 
+NOTE:
+: The following is from {{I-D.ietf-tls-tls13}} and is included here to
+ensure aligment between these specifications.
+
+{{I-D.ietf-tls-tls13}} also uses the TLS ExtensionType Registry originally
+created in {{?RFC4366}}.  IANA has updated it to reference this
+document.  The registry and its allocation policy is listed below:
+
+-  IANA [SHALL update/has updated] this registry to include the
+   "key_share", "pre_shared_key", "psk_key_exchange_modes",
+   "early_data", "cookie", "supported_versions",
+   "certificate_authorities", "oid_filters", "post_handshake_auth",
+   and "signature_algorithms_certs", extensions with the values
+   defined in this document and the Recommended value of "Yes".
+
+-  IANA [SHALL update/has updated] this registry to include a "TLS
+   1.3" column which lists the messages in which the extension may
+   appear.  This column [SHALL be/has been] initially populated from
+   the table in Section 4.2 of {{I-D.ietf-tls-tls13}} with any
+   extension not listed there marked as "-" to indicate that it is not
+   used by TLS 1.3.
+
 TLS Cipher Suite Registry
 =========================
 
@@ -284,11 +306,11 @@ TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256   | {0xCC,0xAC}
 TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 ~~~
 
-Despite the following behavior being crazy, experience has shown that
-some customers use the IANA registry as checklist against which to
-measure an implementation's completeness and some implementers blindly
-implement cipher suites.  Therefore, IANA [SHALL add/has added] the
-following warning to the registry:
+Despite the following behavior being misguided, experience has shown
+that some customers use the IANA registry as checklist against which
+to measure an implementation's completeness and some implementers
+blindly implement cipher suites.  Therefore, IANA [SHALL add/has added]
+the following warning to the registry:
 
 WARNING:
 : Cryptographic algorithms and parameters will be broken or weakened
@@ -316,7 +338,7 @@ RFCs.  Cipher suites marked as "No" are not; cipher suites marked "No"
 range from "good" to "bad" from a cryptographic standpoint.
 
 Note:
-: CCM_8 cipher suites are not marked as Recommended.  These cipher
+: CCM_8 cipher suites are not marked as recommended.  These cipher
 suites have a significantly truncated authentication tag that represents
 a security trade-off that may not be appropriate for general
 environments.
@@ -354,11 +376,11 @@ Note:
 : The designated expert {{RFC8126}} only ensures that the specification
 is publicly available.
 
-Despite the following behavior being crazy, experience has shown that
-some customers use the IANA registry as checklist against which to
-measure an implementation's completeness and some implementers blindly
-implement cipher supported.  Therefore, IANA [SHALL add/has added] the
-following warning to the registry:
+Despite the following behavior being miguided, experience has shown
+that some customers use the IANA registry as checklist against which
+to measure an implementation's completeness and some implementers
+blindly implement groups supported.  Therefore, IANA
+[SHALL add/has added] the following warning to the registry:
 
 WARNING:
 : Cryptographic algorithms and parameters will be broken or weakened
