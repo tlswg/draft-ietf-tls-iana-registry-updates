@@ -281,7 +281,7 @@ address {
 <link href="#rfc.section.3" rel="Chapter" title="3 Terminology"/>
 <link href="#rfc.section.4" rel="Chapter" title="4 Add &#x201C;TLS&#x201D; to Registry Names"/>
 <link href="#rfc.section.5" rel="Chapter" title="5 Aligning with RFC 8126"/>
-<link href="#rfc.section.6" rel="Chapter" title="6 Adding recommended Column"/>
+<link href="#rfc.section.6" rel="Chapter" title="6 Adding Recommended Column"/>
 <link href="#rfc.section.7" rel="Chapter" title="7 Session Ticket TLS Extension"/>
 <link href="#rfc.section.8" rel="Chapter" title="8 TLS ExtensionType Values"/>
 <link href="#rfc.section.9" rel="Chapter" title="9 TLS Cipher Suite Registry"/>
@@ -307,7 +307,7 @@ address {
 
   <meta name="dct.creator" content="Salowey, J. and S. Turner" />
   <meta name="dct.identifier" content="urn:ietf:id:draft-ietf-tls-iana-registry-updates-latest" />
-  <meta name="dct.issued" scheme="ISO8601" content="2018-1-3" />
+  <meta name="dct.issued" scheme="ISO8601" content="2018-2-1" />
   <meta name="dct.abstract" content="This document describes a number of changes to (D)TLS IANA registries that range from adding notes to the registry all the way to changing the registration policy.  These changes were mostly motivated by WG review of the (D)TLS-related registries undertaken as part of the TLS1.3 development process.  This document updates many (D)TLS RFCs (see updates header)." />
   <meta name="description" content="This document describes a number of changes to (D)TLS IANA registries that range from adding notes to the registry all the way to changing the registration policy.  These changes were mostly motivated by WG review of the (D)TLS-related registries undertaken as part of the TLS1.3 development process.  This document updates many (D)TLS RFCs (see updates header)." />
 
@@ -336,10 +336,10 @@ address {
 </tr>
 <tr>
   <td class="left">Intended status: Standards Track</td>
-  <td class="right">January 3, 2018</td>
+  <td class="right">February 1, 2018</td>
 </tr>
 <tr>
-  <td class="left">Expires: July 7, 2018</td>
+  <td class="left">Expires: August 5, 2018</td>
   <td class="right"></td>
 </tr>
 
@@ -360,7 +360,7 @@ address {
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at http://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on July 7, 2018.</p>
+<p>This Internet-Draft will expire on August 5, 2018.</p>
 <h1 id="rfc.copyrightnotice">
   <a href="#rfc.copyrightnotice">Copyright Notice</a>
 </h1>
@@ -377,7 +377,7 @@ address {
 <li>3.   <a href="#rfc.section.3">Terminology</a></li>
 <li>4.   <a href="#rfc.section.4">Add &#8220;TLS&#8221; to Registry Names</a></li>
 <li>5.   <a href="#rfc.section.5">Aligning with RFC 8126</a></li>
-<li>6.   <a href="#rfc.section.6">Adding recommended Column</a></li>
+<li>6.   <a href="#rfc.section.6">Adding Recommended Column</a></li>
 <li>7.   <a href="#rfc.section.7">Session Ticket TLS Extension</a></li>
 <li>8.   <a href="#rfc.section.8">TLS ExtensionType Values</a></li>
 <li>9.   <a href="#rfc.section.9">TLS Cipher Suite Registry</a></li>
@@ -430,8 +430,8 @@ address {
 </ul>
 <p id="rfc.section.5.p.3">This is not a universal change as some registries originally defined with &#8220;IETF Consensus&#8221; are undergoing other changes either as a result of this document or <a href="#I-D.ietf-tls-rfc4492bis">[I-D.ietf-tls-rfc4492bis]</a>.</p>
 <p id="rfc.section.5.p.4">IANA [SHALL update/has updated] the reference for these two registries to also refer to this document.</p>
-<h1 id="rfc.section.6"><a href="#rfc.section.6">6.</a> <a href="#adding-recommended-column" id="adding-recommended-column">Adding recommended Column</a></h1>
-<p id="rfc.section.6.p.1">The instructions in this document add a recommended column to many of the TLS registries to indicate parameters that are generally recommended for implementations to support.  Adding a recommended parameter to a registry or updating a parameter to recommended status requires standards action.  Not all parameters defined in standards track documents need to be marked as recommended.</p>
+<h1 id="rfc.section.6"><a href="#rfc.section.6">6.</a> <a href="#adding-recommended-column" id="adding-recommended-column">Adding Recommended Column</a></h1>
+<p id="rfc.section.6.p.1">The instructions in this document add a Recommended column to many of the TLS registries to indicate parameters that are generally recommended for implementations to support.  Adding a recommended parameter to a registry or updating a parameter to recommended status requires standards action.  Not all parameters defined in standards track documents need to be marked as recommended.</p>
 <p id="rfc.section.6.p.2">If an item is marked as not recommended it does not necessarily mean that it is flawed, rather, it indicates that either the item has not been through the IETF consensus process, has limited applicability, or is intended only for specific use cases.</p>
 <h1 id="rfc.section.7"><a href="#rfc.section.7">7.</a> <a href="#session-ticket-tls-extension" id="session-ticket-tls-extension">Session Ticket TLS Extension</a></h1>
 <p id="rfc.section.7.p.1">The nomenclature for the registry entries in the TLS ExtensionType Values registry correspond to the presentation language field name except for entry 35.  To ensure that the values in the registry are consistently identified in the registry, IANA:</p>
@@ -448,13 +448,15 @@ address {
 <ul>
   <li>Change the registry policy to:  <br/><br/> Values with the first byte in the range 0-254 (decimal) are assigned via Specification Required <a href="#RFC8126">[RFC8126]</a>.  Values with the first byte 255 (decimal) are reserved for Private Use <a href="#RFC8126">[RFC8126]</a>.</li>
   <li>Update the &#8220;Reference&#8221; to also refer to this document.</li>
-  <li>Add the following note:</li>
+  <li>Add the following notes:</li>
 </ul>
 <p/>
 
 <dl>
   <dt>Note:</dt>
   <dd style="margin-left: 8">Experts are to verify that there is in fact a publicly available standard.</dd>
+  <dt>Note:</dt>
+  <dd style="margin-left: 8">As specified in <a href="#RFC8126">[RFC8126]</a>, assignments made in the Private Use space are not generally useful for broad interoperability.  It is the responsibility of those making use of the Private Use range to ensure that no conflicts occur (within the intended scope of use).  For widespread experiments, temporary reservations are available.</dd>
 </dl>
 <p id="rfc.section.8.p.4">See <a href="#expert-pool">Section 18</a> for additional information about the designated expert pool.</p>
 <p id="rfc.section.8.p.5">Despite wanting to &#8220;loosen&#8221; the registration policies for TLS Extensions, it is still useful to indicate in the IANA registry which extensions the WG recommends be supported.  Therefore, IANA [SHALL update/has updated] the TLS ExtensionType Values registry to:</p>
@@ -577,6 +579,19 @@ address {
     </tr>
   </tbody>
 </table>
+<p/>
+
+<dl>
+  <dt>NOTE:</dt>
+  <dd style="margin-left: 8">The following is from <a href="#I-D.ietf-tls-tls13">[I-D.ietf-tls-tls13]</a> and is included here to ensure aligment between these specifications.</dd>
+</dl>
+<p><a href="#I-D.ietf-tls-tls13">[I-D.ietf-tls-tls13]</a> also uses the TLS ExtensionType Registry originally created in <a href="#RFC4366">[RFC4366]</a>.  IANA has updated it to reference this document.  The registry and its allocation policy is listed below:</p>
+<p/>
+
+<ul>
+  <li>IANA [SHALL update/has updated] this registry to include the &#8220;key_share&#8221;, &#8220;pre_shared_key&#8221;, &#8220;psk_key_exchange_modes&#8221;, &#8220;early_data&#8221;, &#8220;cookie&#8221;, &#8220;supported_versions&#8221;, &#8220;certificate_authorities&#8221;, &#8220;oid_filters&#8221;, &#8220;post_handshake_auth&#8221;, and &#8220;signature_algorithms_certs&#8221;, extensions with the values defined in this document and the Recommended value of &#8220;Yes&#8221;.</li>
+  <li>IANA [SHALL update/has updated] this registry to include a &#8220;TLS 1.3&#8221; column which lists the messages in which the extension may appear.  This column [SHALL be/has been] initially populated from the table in Section 4.2 of <a href="#I-D.ietf-tls-tls13">[I-D.ietf-tls-tls13]</a> with any extension not listed there marked as &#8220;-&#8220; to indicate that it is not used by TLS 1.3.</li>
+</ul>
 <h1 id="rfc.section.9"><a href="#rfc.section.9">9.</a> <a href="#tls-cipher-suite-registry" id="tls-cipher-suite-registry">TLS Cipher Suite Registry</a></h1>
 <p id="rfc.section.9.p.1">Experience has shown that the IETF Consensus registry policy for TLS Cipher Suites was too strict.  Based on WG consensus, the decision was taken to change the TLS Cipher Suite registry&#8217;s registration policy to Specification Required <a href="#RFC8126">[RFC8126]</a> while reserving a small part of the code space for experimental and private use.  Therefore, IANA [SHALL update/has updated] the TLS Cipher Suite registry&#8217;s policy as follows:</p>
 <pre>
@@ -623,7 +638,7 @@ TLS_ECDHE_PSK_WITH_AES_256_CCM_SHA384         | {TBD}
 TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256   | {0xCC,0xAC}
 TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 </pre>
-<p id="rfc.section.9.p.8">Despite the following behavior being crazy, experience has shown that some customers use the IANA registry as checklist against which to measure an implementation&#8217;s completeness and some implementers blindly implement cipher suites.  Therefore, IANA [SHALL add/has added] the following warning to the registry:</p>
+<p id="rfc.section.9.p.8">Despite the following behavior being misguided, experience has shown that some customers use the IANA registry as checklist against which to measure an implementation&#8217;s completeness and some implementers blindly implement cipher suites.  Therefore, IANA [SHALL add/has added] the following warning to the registry:</p>
 <p/>
 
 <dl>
@@ -644,11 +659,18 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
   <dt>Note:</dt>
   <dd style="margin-left: 8">Cipher suites marked as &#8220;Yes&#8221; are those allocated via Standards Track RFCs.  Cipher suites marked as &#8220;No&#8221; are not; cipher suites marked &#8220;No&#8221; range from &#8220;good&#8221; to &#8220;bad&#8221; from a cryptographic standpoint.</dd>
   <dt>Note:</dt>
-  <dd style="margin-left: 8">CCM_8 cipher suites are not marked as Recommended.  These cipher suites have a significantly truncated authentication tag that represents a security trade-off that may not be appropriate for general environments.</dd>
+  <dd style="margin-left: 8">CCM_8 cipher suites are not marked as recommended.  These cipher suites have a significantly truncated authentication tag that represents a security trade-off that may not be appropriate for general environments.</dd>
+</dl>
+<p id="rfc.section.9.p.14">IANA [SHALL add/has added] the following notes for additional information:</p>
+<p/>
+
+<dl>
   <dt>Note:</dt>
   <dd style="margin-left: 8">The designated expert <a href="#RFC8126">[RFC8126]</a> only ensures that the specification is publicly available.</dd>
+  <dt>Note:</dt>
+  <dd style="margin-left: 8">As specified in <a href="#RFC8126">[RFC8126]</a>, assignments made in the Private Use space are not generally useful for broad interoperability.  It is the responsibility of those making use of the Private Use range to ensure that no conflicts occur (within the intended scope of use).  For widespread experiments, temporary reservations are available.</dd>
 </dl>
-<p id="rfc.section.9.p.14">IANA [SHALL update/has updated] the reference for this registry to also refer to this document.</p>
+<p id="rfc.section.9.p.16">IANA [SHALL update/has updated] the reference for this registry to also refer to this document.</p>
 <h1 id="rfc.section.10"><a href="#rfc.section.10">10.</a> <a href="#tls-supported-groups" id="tls-supported-groups">TLS Supported Groups</a></h1>
 <p id="rfc.section.10.p.1">Similar to cipher suites, supported groups have proliferated over time and some use the registry to measure implementations.  Therefore, IANA [SHALL add/has added] a &#8220;Recommended&#8221; column with a &#8220;Yes&#8221; for secp256r1, secp384r1, x25519, and x448 while all others are &#8220;No&#8221;.  These &#8220;Yes&#8221; groups are taken from Standards Track RFCs.  Not all groups from <a href="#I-D.ietf-tls-rfc4492bis">[I-D.ietf-tls-rfc4492bis]</a>, which is standards track, are marked as &#8220;Yes&#8221;; these groups apply to TLS 1.3 <a href="#I-D.ietf-tls-tls13">[I-D.ietf-tls-tls13]</a> and previous versions of TLS.  Future supported groups MUST define the value of this column.  A Standards Track document <a href="#RFC8126">[RFC8126]</a> is REQUIRED to register an entry with the value &#8220;Yes&#8221;.  IESG action is REQUIRED for a Yes-&gt;No transition.</p>
 <p id="rfc.section.10.p.2">IANA [SHALL add/has added] the following note:</p>
@@ -660,7 +682,7 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
   <dt>Note:</dt>
   <dd style="margin-left: 8">The designated expert <a href="#RFC8126">[RFC8126]</a> only ensures that the specification is publicly available.</dd>
 </dl>
-<p id="rfc.section.10.p.4">Despite the following behavior being crazy, experience has shown that some customers use the IANA registry as checklist against which to measure an implementation&#8217;s completeness and some implementers blindly implement cipher supported.  Therefore, IANA [SHALL add/has added] the following warning to the registry:</p>
+<p id="rfc.section.10.p.4">Despite the following behavior being misguided, experience has shown that some customers use the IANA registry as checklist against which to measure an implementation&#8217;s completeness and some implementers blindly implement groups supported.  Therefore, IANA [SHALL add/has added] the following warning to the registry:</p>
 <p/>
 
 <dl>
@@ -682,6 +704,8 @@ Values in the range 0-223 are assigned via Specification Required
 <dl>
   <dt>Note:</dt>
   <dd style="margin-left: 8">The designated expert <a href="#RFC8126">[RFC8126]</a> only ensures that the specification is publicly available.</dd>
+  <dt>Note:</dt>
+  <dd style="margin-left: 8">As specified in <a href="#RFC8126">[RFC8126]</a>, assignments made in the Private Use space are not generally useful for broad interoperability.  It is the responsibility of those making use of the Private Use range to ensure that no conflicts occur (within the intended scope of use).  For widespread experiments, temporary reservations are available.</dd>
   <dt>Note:</dt>
   <dd style="margin-left: 8">ClientCertificateType Identifiers marked as &#8220;Yes&#8221; are those allocated via Standards Track RFCs.  ClientCertificateTypes marked as &#8220;No&#8221; are not.</dd>
 </dl>
@@ -817,7 +841,7 @@ EXPORTER: teap session key seed
       <td class="reference">
         <b id="I-D.ietf-tls-tls13">[I-D.ietf-tls-tls13]</b>
       </td>
-      <td class="top"><a>Rescorla, E.</a>, "<a href="http://tools.ietf.org/html/draft-ietf-tls-tls13-22">The Transport Layer Security (TLS) Protocol Version 1.3</a>", Internet-Draft draft-ietf-tls-tls13-22, November 2017.</td>
+      <td class="top"><a>Rescorla, E.</a>, "<a href="http://tools.ietf.org/html/draft-ietf-tls-tls13-23">The Transport Layer Security (TLS) Protocol Version 1.3</a>", Internet-Draft draft-ietf-tls-tls13-23, January 2018.</td>
     </tr>
     <tr>
       <td class="reference">
@@ -901,6 +925,12 @@ EXPORTER: teap session key seed
         <b id="I-D.ietf-tls-rfc4492bis">[I-D.ietf-tls-rfc4492bis]</b>
       </td>
       <td class="top"><a>Nir, Y.</a>, <a>Josefsson, S.</a> and <a>M. Pegourie-Gonnard</a>, "<a href="http://tools.ietf.org/html/draft-ietf-tls-rfc4492bis-17">Elliptic Curve Cryptography (ECC) Cipher Suites for Transport Layer Security (TLS) Versions 1.2 and Earlier</a>", Internet-Draft draft-ietf-tls-rfc4492bis-17, May 2017.</td>
+    </tr>
+    <tr>
+      <td class="reference">
+        <b id="RFC4366">[RFC4366]</b>
+      </td>
+      <td class="top"><a>Blake-Wilson, S.</a>, <a>Nystrom, M.</a>, <a>Hopwood, D.</a>, <a>Mikkelsen, J.</a> and <a>T. Wright</a>, "<a href="http://tools.ietf.org/html/rfc4366">Transport Layer Security (TLS) Extensions</a>", RFC 4366, DOI 10.17487/RFC4366, April 2006.</td>
     </tr>
     <tr>
       <td class="reference">
