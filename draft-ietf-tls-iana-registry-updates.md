@@ -163,7 +163,9 @@ updated] the TLS ExtensionType Values registry to:
 
 Note:
 : Experts are to verify that there is in fact a publicly available
-standard.
+standard.  An Internet Draft that is posted and never published or a
+standard in another standards body, industry consortium, university
+site, etc. suffices.
 
 Note:
 : As specified in {{RFC8126}}, assignments made in the Private Use
@@ -356,7 +358,9 @@ information:
 
 Note:
 : The designated expert {{RFC8126}} only ensures that the specification
-is publicly available.
+is publicly available.  An Internet Draft that is posted and never
+published or a standard in another standards body, industry consortium,
+university site, etc. suffices.
 
 Note:
 : As specified in {{RFC8126}}, assignments made in the Private Use
@@ -392,7 +396,9 @@ marked "No" range from "good" to "bad" from a cryptographic standpoint.
 
 Note:
 : The designated expert {{RFC8126}} only ensures that the specification
-is publicly available.
+is publicly available.  An Internet Draft that is posted and never
+published or a standard in another standards body, industry consortium,
+university site, etc. suffices.
 
 Despite the following behavior being misguided, experience has shown
 that some customers use the IANA registry as checklist against which
@@ -432,7 +438,9 @@ IANA [SHALL add/has added] the following notes:
 
 Note:
 : The designated expert {{RFC8126}} only ensures that the specification
-is publicly available.
+is publicly available.  An Internet Draft that is posted and never
+published or a standard in another standards body, industry consortium,
+university site, etc. suffices.
 
 Note:
 : As specified in {{RFC8126}}, assignments made in the Private Use
@@ -499,8 +507,10 @@ To provide additional information for the designated experts, IANA
 
 Note:
 : The designated expert {{RFC8126}} ensures that the specification is
-publicly available.  The expert also verifies that the label is a
-string consisting of printable ASCII characters beginning with
+publicly available.  An Internet Draft that is posted and never
+published or a standard in another standards body, industry consortium,
+university site, etc. suffices.  The expert also verifies that the label
+is a string consisting of printable ASCII characters beginning with
 "EXPORTER". IANA MUST also verify that one label is not a prefix of any
 other label.  For example, labels "key" or "master secretary" are
 forbidden.
