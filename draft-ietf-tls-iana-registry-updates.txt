@@ -6,8 +6,8 @@ TLS WG                                                        J. Salowey
 Internet-Draft                                          Tableau Software
 Updates: 3749, 5077, 4680, 5246, 5705,                         S. Turner
          5878, 6520, 7301 (if approved)                            sn3rd
-Intended status: Standards Track                       February 14, 2018
-Expires: August 18, 2018
+Intended status: Standards Track                       February 15, 2018
+Expires: August 19, 2018
 
 
                  IANA Registry Updates for TLS and DTLS
@@ -37,7 +37,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on August 18, 2018.
+   This Internet-Draft will expire on August 19, 2018.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Salowey & Turner         Expires August 18, 2018                [Page 1]
+Salowey & Turner         Expires August 19, 2018                [Page 1]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Salowey & Turner         Expires August 18, 2018                [Page 2]
+Salowey & Turner         Expires August 19, 2018                [Page 2]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -165,7 +165,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018                [Page 3]
+Salowey & Turner         Expires August 19, 2018                [Page 3]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -221,7 +221,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018                [Page 4]
+Salowey & Turner         Expires August 19, 2018                [Page 4]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -277,7 +277,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018                [Page 5]
+Salowey & Turner         Expires August 19, 2018                [Page 5]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -333,7 +333,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018                [Page 6]
+Salowey & Turner         Expires August 19, 2018                [Page 6]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -389,7 +389,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018                [Page 7]
+Salowey & Turner         Expires August 19, 2018                [Page 7]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -445,7 +445,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018                [Page 8]
+Salowey & Turner         Expires August 19, 2018                [Page 8]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -501,7 +501,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018                [Page 9]
+Salowey & Turner         Expires August 19, 2018                [Page 9]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -557,7 +557,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018               [Page 10]
+Salowey & Turner         Expires August 19, 2018               [Page 10]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -613,7 +613,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018               [Page 11]
+Salowey & Turner         Expires August 19, 2018               [Page 11]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -669,7 +669,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018               [Page 12]
+Salowey & Turner         Expires August 19, 2018               [Page 12]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -725,7 +725,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018               [Page 13]
+Salowey & Turner         Expires August 19, 2018               [Page 13]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -781,7 +781,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018               [Page 14]
+Salowey & Turner         Expires August 19, 2018               [Page 14]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -837,7 +837,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018               [Page 15]
+Salowey & Turner         Expires August 19, 2018               [Page 15]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -893,7 +893,7 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018               [Page 16]
+Salowey & Turner         Expires August 19, 2018               [Page 16]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -949,7 +949,7 @@ Authors' Addresses
 
 
 
-Salowey & Turner         Expires August 18, 2018               [Page 17]
+Salowey & Turner         Expires August 19, 2018               [Page 17]
 
 Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
@@ -1005,4 +1005,4 @@ Internet-Draft        (D)TLS IANA Registry Updates         February 2018
 
 
 
-Salowey & Turner         Expires August 18, 2018               [Page 18]
+Salowey & Turner         Expires August 19, 2018               [Page 18]
