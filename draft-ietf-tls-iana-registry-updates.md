@@ -529,7 +529,7 @@ IANA [SHALL add/has added] the following entry to the TLS Alert
 Registry; the entry was omitted from the IANA instructions in
 {{!RFC7301}}:
 
-    120   no_application_protocol  Y  [RFC7301]
+    120   no_application_protocol  Y  [RFC7301][this-RFC]
 
 TLS Certificate Types
 =====================
