@@ -124,7 +124,7 @@ registry or updating a parameter to recommended status requires
 standards action.  Not all parameters defined in standards track
 documents need to be marked as recommended.
 
-If an item is marked as not recommended it does not necessarily mean
+If an item is not marked as recommended it does not necessarily mean
 that it is flawed, rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
