@@ -117,12 +117,12 @@ to also refer to this document.
 Adding Recommended Column
 =========================
 
-The instructions in this document add a Recommended column to many of
-the TLS registries to indicate parameters that are generally recommended
-for implementations to support.  Adding a recommended parameter to a
-registry or updating a parameter to recommended status requires
-standards action.  Not all parameters defined in standards track
-documents need to be marked as recommended.
+The instructions in this document add a Recommended column with a value
+of YES or NO to many of the (D)TLS registries to indicate parameters
+that are generally recommended for implementations to support.  Adding
+a recommended parameter to a registry or updating a parameter to
+recommended status requires standards action.  Not all parameters
+defined in standards track documents need to be marked as recommended.
 
 If an item is not marked as recommended it does not necessarily mean
 that it is flawed, rather, it indicates that either the item has not
