@@ -32,12 +32,13 @@ informative:
 
 --- abstract
 
-This document describes a number of changes to (D)TLS IANA registries
-that range from adding notes to the registry all the way to changing
-the registration policy.  These changes were mostly motivated by WG
-review of the (D)TLS-related registries undertaken as part of the
-TLS1.3 development process.  This document updates many (D)TLS RFCs
-(see updates header).
+This document describes a number of changes to Transport Layer Security
+and Datagram Transport Layer Security ((D)TLS) IANA registries that
+range from adding notes to the registry all the way to changing the
+registration policy.  These changes were mostly motivated by WG review
+of the (D)TLS-related registries undertaken as part of the TLS1.3
+development process.  This document updates many (D)TLS RFCs (see
+updates header).
 
 --- middle
 
@@ -52,9 +53,10 @@ RFC EDITOR: Please delete section prior to publication.
 Introduction
 ============
 
-This document instructs IANA to make changes to a number of
-(D)TLS-related IANA registries.  These changes were almost entirely
-motivated by the development of TLS1.3 {{!I-D.ietf-tls-tls13}}.
+This document instructs IANA to make changes to a number of Transport
+Layer Security and Datagram Transport Layer Security ((D)TLS) related
+IANA registries.  These changes were almost entirely motivated by the
+development of TLS1.3 {{!I-D.ietf-tls-tls13}}.
 
 The changes introduced by this document range from simple, e.g., adding
 notes, to complex, e.g., changing a registry's registration policy.
