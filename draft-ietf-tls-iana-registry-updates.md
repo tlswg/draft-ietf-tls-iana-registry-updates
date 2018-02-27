@@ -159,21 +159,6 @@ updated] the TLS ExtensionType Values registry to:
 
 - Update the "Reference" to also refer to this document.
 
-- Add the following notes:
-
-Note:
-: Experts are to verify that there is in fact a publicly available
-standard.  An Internet Draft that is posted and never published or a
-standard in another standards body, industry consortium, university
-site, etc. suffices.
-
-Note:
-: As specified in {{RFC8126}}, assignments made in the Private Use
-space are not generally useful for broad interoperability.  It is
-the responsibility of those making use of the Private Use range to
-ensure that no conflicts occur (within the intended scope of use).
-For widespread experiments, temporary reservations are available.
-
 See {{expert-pool}} for additional information about the designated
 expert pool.
 
@@ -217,6 +202,32 @@ update/has updated] the TLS ExtensionType Values registry to:
 | extended_master_secret          |         Yes |
 | session_ticket                  |         Yes |
 | renegotiation_info              |         Yes |
+
+IANA [SHALL update/has added] the following notes:
+
+Note:
+: Experts are to verify that there is in fact a publicly available
+standard.  An Internet Draft that is posted and never published or a
+standard in another standards body, industry consortium, university
+1site, etc. suffices.
+
+Note:
+: As specified in {{RFC8126}}, assignments made in the Private Use
+space are not generally useful for broad interoperability.  It is
+the responsibility of those making use of the Private Use range to
+ensure that no conflicts occur (within the intended scope of use).
+For widespread experiments, temporary reservations are available.
+
+Note:
+: Extensions marked as "Yes" are those allocated via Standards Track
+RFCs.  Extensions marked as "No" are not.
+
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed, rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
+
 
 NOTE:
 : The following is from {{I-D.ietf-tls-tls13}} and is included here to
@@ -353,6 +364,12 @@ suites have a significantly truncated authentication tag that represents
 a security trade-off that may not be appropriate for general
 environments.
 
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed, rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
+
 IANA [SHALL add/has added] the following notes for additional
 information:
 
@@ -393,6 +410,12 @@ Note:
 : Supported Groups marked as "Yes" are those allocated via Standards
 Track RFCs.  Supported Groups marked as "No" are not; supported groups
 marked "No" range from "good" to "bad" from a cryptographic standpoint.
+
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed, rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
 
 Note:
 : The designated expert {{RFC8126}} only ensures that the specification
@@ -453,6 +476,12 @@ Note:
 : ClientCertificateType Identifiers marked as "Yes" are those allocated
 via Standards Track RFCs.  ClientCertificateTypes marked as "No" are
 not.
+
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed, rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
 
 New Session Ticket TLS Handshake Message Type
 =============================================
@@ -519,6 +548,12 @@ Note:
 : Exporters Labels marked as "Yes" are those allocated via Standards
 Track RFCs.  Exporter Labels marked as "No" are not.
 
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed, rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
+
 IANA [SHALL update/has updated] the reference for this registry to also
 refer to this document.
 
@@ -555,6 +590,12 @@ IANA [SHALL add/has added] the following note:
 Note:
 : Certificate Types marked as "Yes" are those allocated via Standards
 Track RFCs.  Certificate Types marked as "No" are not.
+
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed, rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
 
 IANA [SHALL update/has updated] the reference for this registry to also
 refer this document.
