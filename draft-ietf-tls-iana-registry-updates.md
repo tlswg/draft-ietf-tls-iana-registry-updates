@@ -315,6 +315,11 @@ TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256   | {0xCC,0xAC}
 TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 ~~~
 
+To emphasize, this registry contains _both_ TLS 1.3 and pre-1.3 cipher
+suites. Therefore, registraries for TLS 1.2 and earlier may require
+reserving an entire byte of the two-byte sequence, to avoid potential
+conflict with TLS 1.3 suites.
+
 Despite the following behavior being misguided, experience has shown
 that some customers use the IANA registry as checklist against which
 to measure an implementation's completeness and some implementers
