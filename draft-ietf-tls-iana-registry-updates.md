@@ -619,9 +619,10 @@ following warning to the HashAlgorithm and SignatureAlgorithm:
 
 WARNING:
 : Cryptographic algorithms and parameters will be broken or weakened
-over time.  Blindly implementing cipher suites listed here is not
-advised.  Implementers and users need to check that the cryptographic
-algorithms listed continue to provide the expected level of security.
+over time.  Blindly implementing the cryptographic algorithms listed
+here is not advised.  Implementers and users need to check that the
+cryptographic algorithms listed continue to provide the expected level
+of security.
 
 Designated Expert Pool {#expert-pool}
 ======================
