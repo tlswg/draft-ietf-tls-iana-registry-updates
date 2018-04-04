@@ -154,8 +154,8 @@ updated] the TLS ExtensionType Values registry to:
 - Change the registry policy to:
 
     Values with the first byte in the range 0-254 (decimal) are assigned
-    via Specification Required [RFC8126]].  Values with the first byte
-    255 (decimal) are reserved for Private Use [[RFC8126]].
+    via Specification Required [RFC8126].  Values with the first byte
+    255 (decimal) are reserved for Private Use [RFC8126].
 
 - Update the "Reference" to also refer to this document.
 
@@ -270,7 +270,7 @@ do so.  To better guide those not intimately involved in TLS, IANA
 
 - Add a "Recommended" column to the TLS Cipher Suite registry.  The
   cipher suites that follow in the two tables are marked as "Yes". All
-  other cipher suites are ito be marked as "No".  Future cipher suites
+  other cipher suites are to be marked as "No".  Future cipher suites
   MUST define the value of the Recommended column.  In order to
   register an extension with the value "Yes, a Standards Track document
   {{RFC8126}} is REQUIRED.  IESG action is REQUIRED for a Yes->No
