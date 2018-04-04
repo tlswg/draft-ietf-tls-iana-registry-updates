@@ -36,8 +36,10 @@ This document describes a number of changes to (D)TLS IANA registries
 that range from adding notes to the registry all the way to changing
 the registration policy.  These changes were mostly motivated by WG
 review of the (D)TLS-related registries undertaken as part of the
-TLS1.3 development process.  This document updates many (D)TLS RFCs
-(see updates header).
+TLS1.3 development process.
+
+This document updates the following RFCs: 3749, 5077, 4680, 5246, 5705,
+5878, 6520, 7301.
 
 --- middle
 
