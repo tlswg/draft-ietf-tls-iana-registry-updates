@@ -209,7 +209,7 @@ Note:
 : Experts are to verify that there is in fact a publicly available
 standard.  An Internet Draft that is posted and never published or a
 standard in another standards body, industry consortium, university
-1site, etc. suffices.
+site, etc. suffices.
 
 Note:
 : As specified in {{RFC8126}}, assignments made in the Private Use
