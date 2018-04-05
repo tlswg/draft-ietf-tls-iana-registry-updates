@@ -608,8 +608,8 @@ values 7-223 as "Reserved" and the TLS SignatureAlgorithm registry to
 list values 4-223 as "Reserved".
 
 Despite the fact that the HashAlgorithm and SignatureAlgorithm
-registries are orphaned, it is still import to warn implementers of
-pre-TLS1.3 implementations about the dangers of blinding implementing
+registries are orphaned, it is still important to warn implementers of
+pre-TLS1.3 implementations about the dangers of blindly implementing
 cryptographic algorithms.  Therefore, IANA [SHALL add/has added] the
 following warning to the HashAlgorithm and SignatureAlgorithm:
 
