@@ -1,5 +1,5 @@
 ---
-title: IANA Registry Updates for TLS and DTLS
+title: IANA Registry Updates for Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)
 abbrev: (D)TLS IANA Registry Updates
 docname: draft-ietf-tls-iana-registry-updates-latest
 date: {DATE}
@@ -32,13 +32,14 @@ informative:
 
 --- abstract
 
-This document describes a number of changes to Transport Layer Security
-and Datagram Transport Layer Security ((D)TLS) IANA registries that
-range from adding notes to the registry all the way to changing the
-registration policy.  These changes were mostly motivated by WG review
-of the (D)TLS-related registries undertaken as part of the TLS1.3
-development process.  This document updates many (D)TLS RFCs (see
-updates header).
+This document describes a number of changes to (D)TLS IANA registries
+that range from adding notes to the registry all the way to changing
+the registration policy.  These changes were mostly motivated by WG
+review of the (D)TLS-related registries undertaken as part of the
+TLS1.3 development process.
+
+This document updates the following RFCs: 3749, 5077, 4680, 5246, 5705,
+5878, 6520, 7301.
 
 --- middle
 
@@ -61,7 +62,7 @@ development of TLS1.3 {{!I-D.ietf-tls-tls13}}.
 The changes introduced by this document range from simple, e.g., adding
 notes, to complex, e.g., changing a registry's registration policy.
 Instead of listing the changes and their rationale in this, the
-introductory, section each section provides rationale for the proposed
+introductory section, each section provides rationale for the proposed
 change(s).
 
 This document proposes no changes to the registration policies for TLS
@@ -156,8 +157,8 @@ updated] the TLS ExtensionType Values registry to:
 - Change the registry policy to:
 
     Values with the first byte in the range 0-254 (decimal) are assigned
-    via Specification Required {{RFC8126}}.  Values with the first byte
-    255 (decimal) are reserved for Private Use {{RFC8126}}.
+    via Specification Required [RFC8126].  Values with the first byte
+    255 (decimal) are reserved for Private Use [RFC8126].
 
 - Update the "Reference" to also refer to this document.
 
@@ -202,6 +203,7 @@ update/has updated] the TLS ExtensionType Values registry to:
 | padding                         |         Yes |
 | encrypt_then_mac                |         Yes |
 | extended_master_secret          |         Yes |
+| cached_info                     |         Yes |
 | session_ticket                  |         Yes |
 | renegotiation_info              |         Yes |
 
@@ -230,6 +232,11 @@ that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
 
+
+NOTE:
+: token_binding is omitted from the above table;
+{{?I-D.ietf-tokbind-negotiation}} specifies the Recommended column
+for this extension.
 
 NOTE:
 : The following is from {{I-D.ietf-tls-tls13}} and is included here to
@@ -452,8 +459,10 @@ the code space for experimental and private use.  Therefore, IANA
 [SHALL update/has updated] the TLS Cipher Suite registry's policy as
 follows:
 
+~~~~
     Values in the range 0-223 are assigned via Specification Required
-    {{RFC8126}}.  Values 224-255 are reserved for Private Use.
+    [RFC8126].  Values 224-255 are reserved for Private Use.
+~~~~
 
 See {{expert-pool}} for additional information about the designated
 expert pool.
