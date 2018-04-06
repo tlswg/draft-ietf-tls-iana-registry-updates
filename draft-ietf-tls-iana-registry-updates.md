@@ -574,14 +574,23 @@ Experience has shown that the IETF Consensus registry policy for TLS
 Certificate Types is too strict.  Based on WG consensus, the decision
 was taken to change registration policy to Specification Required
 {{RFC8126}} while reserving a small part of the code space for
-experimental and private use.  Therefore, IANA [SHALL add/has added]
-a "Recommended" column to the registry.  X.509 and Raw Public Key are
-"Yes".  All others are "No".  In order to register an extension with
-the value "Yes", a Standards Track document [RFC8126] is REQUIRED.
-Future Certificate Types MUST define the value of this column.  A
-Standards Track document {{RFC8126}} is REQUIRED to register an
-entry with the value "Yes".  IESG Approval is REQUIRED for a Yes->No
-transition.
+experimental and private use.  Therefore, IANA [SHALL change/has
+changed] the TLS Certificate Types regisry to:
+
+- Change the registry policy to:
+
+    Values with the first byte in the range 0-223 (decimal) are
+    assigned via Specification Required [RFC8126]. Values with
+    the first byte 224-255 (decimal) are reserved for Private Use
+    [RFC8126].
+
+- Add a "Recommended" column to the registry.  X.509 and Raw Public
+Key are "Yes".  All others are "No".  In order to register an
+extension with the value "Yes", a Standards Track document [RFC8126]
+is REQUIRED.  Future Certificate Types MUST define the value of this
+column.  A Standards Track document {{RFC8126}} is REQUIRED to
+register an entry with the value "Yes".  IESG Approval is REQUIRED for
+a Yes->No transition.
 
 See {{expert-pool}} for additional information about the designated
 expert pool.
