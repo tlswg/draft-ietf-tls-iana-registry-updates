@@ -32,12 +32,13 @@ informative:
 
 --- abstract
 
-This document describes a number of changes to (D)TLS IANA registries
-that range from adding notes to the registry all the way to changing
-the registration policy.  These changes were mostly motivated by WG
-review of the (D)TLS-related registries undertaken as part of the
-TLS1.3 development process.  This document updates many (D)TLS RFCs
-(see updates header).
+This document describes a number of changes to Transport Layer Security
+and Datagram Transport Layer Security ((D)TLS) IANA registries that
+range from adding notes to the registry all the way to changing the
+registration policy.  These changes were mostly motivated by WG review
+of the (D)TLS-related registries undertaken as part of the TLS1.3
+development process.  This document updates many (D)TLS RFCs (see
+updates header).
 
 --- middle
 
@@ -52,9 +53,10 @@ RFC EDITOR: Please delete section prior to publication.
 Introduction
 ============
 
-This document instructs IANA to make changes to a number of
-(D)TLS-related IANA registries.  These changes were almost entirely
-motivated by the development of TLS1.3 {{!I-D.ietf-tls-tls13}}.
+This document instructs IANA to make changes to a number of Transport
+Layer Security and Datagram Transport Layer Security ((D)TLS) related
+IANA registries.  These changes were almost entirely motivated by the
+development of TLS1.3 {{!I-D.ietf-tls-tls13}}.
 
 The changes introduced by this document range from simple, e.g., adding
 notes, to complex, e.g., changing a registry's registration policy.
@@ -115,14 +117,14 @@ to also refer to this document.
 Adding Recommended Column
 =========================
 
-The instructions in this document add a Recommended column to many of
-the TLS registries to indicate parameters that are generally recommended
-for implementations to support.  Adding a recommended parameter to a
-registry or updating a parameter to recommended status requires
-standards action.  Not all parameters defined in standards track
-documents need to be marked as recommended.
+The instructions in this document add a Recommended column with a value
+of YES or NO to many of the (D)TLS registries to indicate parameters
+that are generally recommended for implementations to support.  Adding
+a recommended parameter to a registry or updating a parameter to
+recommended status requires standards action.  Not all parameters
+defined in standards track documents need to be marked as recommended.
 
-If an item is marked as not recommended it does not necessarily mean
+If an item is not marked as recommended it does not necessarily mean
 that it is flawed, rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
@@ -159,21 +161,6 @@ updated] the TLS ExtensionType Values registry to:
 
 - Update the "Reference" to also refer to this document.
 
-- Add the following notes:
-
-Note:
-: Experts are to verify that there is in fact a publicly available
-standard.  An Internet Draft that is posted and never published or a
-standard in another standards body, industry consortium, university
-site, etc. suffices.
-
-Note:
-: As specified in {{RFC8126}}, assignments made in the Private Use
-space are not generally useful for broad interoperability.  It is
-the responsibility of those making use of the Private Use range to
-ensure that no conflicts occur (within the intended scope of use).
-For widespread experiments, temporary reservations are available.
-
 See {{expert-pool}} for additional information about the designated
 expert pool.
 
@@ -187,7 +174,7 @@ update/has updated] the TLS ExtensionType Values registry to:
   all others as "No". Future extensions MUST define the value of the
   Recommended column.  In order to register an extension with the value
   "Yes", a Standards Track document {{RFC8126}} is REQUIRED.  IESG
-  action is REQUIRED for a Yes->No transition.
+  Approval is REQUIRED for a Yes->No transition.
 
 | Extension                                | Recommended |
 |:-----------------------------------------|------------:|
@@ -218,9 +205,35 @@ update/has updated] the TLS ExtensionType Values registry to:
 | session_ticket                  |         Yes |
 | renegotiation_info              |         Yes |
 
+IANA [SHALL update/has added] the following notes:
+
+Note:
+: Experts are to verify that there is in fact a publicly available
+specification.  An Internet Draft that is posted and never published or a
+specification in another standards body, industry consortium, university
+site, etc. suffices.
+
+Note:
+: As specified in {{RFC8126}}, assignments made in the Private Use
+space are not generally useful for broad interoperability.  It is
+the responsibility of those making use of the Private Use range to
+ensure that no conflicts occur (within the intended scope of use).
+For widespread experiments, temporary reservations are available.
+
+Note:
+: Extensions marked as "Yes" are those allocated via Standards Track
+RFCs.  Extensions marked as "No" are not.
+
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed; rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
+
+
 NOTE:
 : The following is from {{I-D.ietf-tls-tls13}} and is included here to
-ensure aligment between these specifications.
+ensure alignment between these specifications.
 
 {{I-D.ietf-tls-tls13}} also uses the TLS ExtensionType Registry originally
 created in {{?RFC4366}}.  IANA has updated it to reference this
@@ -267,7 +280,7 @@ do so.  To better guide those not intimately involved in TLS, IANA
   other cipher suites are marked as "No".  Future cipher suites MUST
   define the value of the Recommended column.  In order to register
   an extension with the value "Yes, a Standards Track document
-  {{RFC8126}} is REQUIRED.  IESG action is REQUIRED for a Yes->No
+  {{RFC8126}} is REQUIRED.  IESG Approval is REQUIRED for a Yes->No
   transition.
 
   The cipher suites that follow are standards track server-authenticated
@@ -352,14 +365,20 @@ suites have a significantly truncated authentication tag that represents
 a security trade-off that may not be appropriate for general
 environments.
 
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed; rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
+
 IANA [SHALL add/has added] the following notes for additional
 information:
 
 Note:
 : The designated expert {{RFC8126}} only ensures that the specification
 is publicly available.  An Internet Draft that is posted and never
-published or a standard in another standards body, industry consortium,
-university site, etc. suffices.
+published or a standard in another standards body, industry
+consortium, university site, etc. suffices.
 
 Note:
 : As specified in {{RFC8126}}, assignments made in the Private Use
@@ -383,7 +402,7 @@ groups are taken from Standards Track RFCs.  Not all groups from
 "Yes"; these groups apply to TLS 1.3 {{I-D.ietf-tls-tls13}} and
 previous versions of TLS.  Future supported groups MUST define the value
 of this column.  In order to register an extension with the value "Yes",
-a Standards Track document {{RFC8126}} is REQUIRED.  IESG action is
+a Standards Track document {{RFC8126}} is REQUIRED.  IESG Approval is
 REQUIRED for a Yes->No transition.
 
 IANA [SHALL add/has added] the following note:
@@ -392,6 +411,12 @@ Note:
 : Supported Groups marked as "Yes" are those allocated via Standards
 Track RFCs.  Supported Groups marked as "No" are not; supported groups
 marked "No" range from "good" to "bad" from a cryptographic standpoint.
+
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed; rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
 
 Note:
 : The designated expert {{RFC8126}} only ensures that the specification
@@ -423,7 +448,7 @@ Experience has shown that the IETF Consensus registry policy for TLS
 ClientCertificateType Identifiers is too strict.   Based on WG
 consensus, the decision was taken to change registration policy to
 Specification Required {{RFC8126}} while reserving a small part of
-the code space for experimental and prviate use.  Therefore, IANA
+the code space for experimental and private use.  Therefore, IANA
 [SHALL update/has updated] the TLS Cipher Suite registry's policy as
 follows:
 
@@ -452,6 +477,12 @@ Note:
 : ClientCertificateType Identifiers marked as "Yes" are those allocated
 via Standards Track RFCs.  ClientCertificateTypes marked as "No" are
 not.
+
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed; rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
 
 New Session Ticket TLS Handshake Message Type
 =============================================
@@ -483,7 +514,7 @@ however the value is computed different.
 that follows has been generated by marking Standards Track RFCs as
 "Yes" and all others as "No".  Future exporters MUST define the value of
 this column.  In order to register an extension with the value "Yes", a
-Standards Track document {{RFC8126}} is REQUIRED.  IESG action is
+Standards Track document {{RFC8126}} is REQUIRED.  IESG Approval is
 REQUIRED for a Yes->No transition.
 
 ~~~
@@ -518,6 +549,12 @@ Note:
 : Exporters Labels marked as "Yes" are those allocated via Standards
 Track RFCs.  Exporter Labels marked as "No" are not.
 
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed; rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
+
 IANA [SHALL update/has updated] the reference for this registry to also
 refer to this document.
 
@@ -528,7 +565,7 @@ IANA [SHALL add/has added] the following entry to the TLS Alert
 Registry; the entry was omitted from the IANA instructions in
 {{!RFC7301}}:
 
-    120   no_application_protocol  Y  [RFC7301]
+    120   no_application_protocol  Y  [RFC7301][this-RFC]
 
 TLS Certificate Types
 =====================
@@ -563,6 +600,12 @@ IANA [SHALL add/has added] the following note:
 Note:
 : Certificate Types marked as "Yes" are those allocated via Standards
 Track RFCs.  Certificate Types marked as "No" are not.
+
+Note:
+: If an item is not marked as recommended it does not necessarily mean
+that it is flawed; rather, it indicates that either the item has not
+been through the IETF consensus process, has limited applicability, or
+is intended only for specific use cases.
 
 IANA [SHALL update/has updated] the reference for this registry to also
 refer this document.
@@ -608,12 +651,12 @@ Compression Method Identifiers, TLS HashAlgorithm and TLS
 SignatureAlgorithm registries to also refer to this document.
 
 - [SHALL update/has updated] the TLS HashAlgorithm Registry to list
-values 7-223 as "Reserved" and the TLS SignatureAlgorithm registry to
-list values 4-223 as "Reserved".
+values 7 and 9-223 as "Reserved" and the TLS SignatureAlgorithm
+registry to list values 4-6 and 9-223 as "Reserved".
 
 Despite the fact that the HashAlgorithm and SignatureAlgorithm
-registries are orphaned, it is still import to warn implementers of
-pre-TLS1.3 implementations about the dangers of blinding implementing
+registries are orphaned, it is still important to warn implementers of
+pre-TLS1.3 implementations about the dangers of blindly implementing
 cryptographic algorithms.  Therefore, IANA [SHALL add/has added] the
 following warning to the HashAlgorithm and SignatureAlgorithm:
 
