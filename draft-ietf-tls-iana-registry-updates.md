@@ -552,8 +552,8 @@ Key are "Yes".  All others are "No".  In order to register an
 extension with the value "Yes", a Standards Track document [RFC8126]
 is REQUIRED.  Future Certificate Types MUST define the value of this
 column.  A Standards Track document {{RFC8126}} is REQUIRED to
-register an entry with the value "Yes".  IESG action is REQUIRED for a
-Yes->No transition.
+register an entry with the value "Yes".  IESG Approval is REQUIRED for
+a Yes->No transition.
 
 See {{expert-pool}} for additional information about the designated
 expert pool.
