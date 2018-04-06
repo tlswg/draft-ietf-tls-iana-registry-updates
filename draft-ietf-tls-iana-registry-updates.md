@@ -220,7 +220,7 @@ update/has updated] the TLS ExtensionType Values registry to:
 
 NOTE:
 : The following is from {{I-D.ietf-tls-tls13}} and is included here to
-ensure aligment between these specifications.
+ensure alignment between these specifications.
 
 {{I-D.ietf-tls-tls13}} also uses the TLS ExtensionType Registry originally
 created in {{?RFC4366}}.  IANA has updated it to reference this
@@ -423,7 +423,7 @@ Experience has shown that the IETF Consensus registry policy for TLS
 ClientCertificateType Identifiers is too strict.   Based on WG
 consensus, the decision was taken to change registration policy to
 Specification Required {{RFC8126}} while reserving a small part of
-the code space for experimental and prviate use.  Therefore, IANA
+the code space for experimental and private use.  Therefore, IANA
 [SHALL update/has updated] the TLS Cipher Suite registry's policy as
 follows:
 
