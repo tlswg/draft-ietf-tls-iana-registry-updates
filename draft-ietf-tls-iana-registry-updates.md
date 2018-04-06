@@ -207,8 +207,8 @@ IANA [SHALL update/has added] the following notes:
 
 Note:
 : Experts are to verify that there is in fact a publicly available
-standard.  An Internet Draft that is posted and never published or a
-standard in another standards body, industry consortium, university
+specification.  An Internet Draft that is posted and never published or a
+specification in another standards body, industry consortium, university
 site, etc. suffices.
 
 Note:
@@ -376,8 +376,8 @@ information:
 Note:
 : The designated expert {{RFC8126}} only ensures that the specification
 is publicly available.  An Internet Draft that is posted and never
-published or a standard in another standards body, industry consortium,
-university site, etc. suffices.
+published or a standard in another standards body, industry
+consortium, university site, etc. suffices.
 
 Note:
 : As specified in {{RFC8126}}, assignments made in the Private Use
