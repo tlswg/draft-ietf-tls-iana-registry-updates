@@ -120,12 +120,12 @@ Adding Recommended Column
 
 The instructions in this document add a Recommended column to many of
 the TLS registries to indicate parameters that are generally recommended
-for implementations to support.  Adding a recommended parameter to a
-registry or updating a parameter to recommended status requires
+for implementations to support.  Adding a Recommended parameter to a
+registry or updating a parameter to Recommended status requires
 standards action.  Not all parameters defined in standards track
 documents need to be marked as Recommended.
 
-If an item is not marked as recommended it does not necessarily mean
+If an item is not marked as Recommended it does not necessarily mean
 that it is flawed, rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
@@ -210,10 +210,10 @@ update/has updated] the TLS ExtensionType Values registry to:
 IANA [SHALL update/has added] the following notes:
 
 Note:
-: Experts are to verify that there is in fact a publicly available
-specification.  An Internet Draft that is posted and never published or a
-specification in another standards body, industry consortium, university
-site, etc. suffices.
+: The designated expert {{RFC8126}} ensures that the specification is
+publicly available.  An Internet Draft that is posted and never
+published or a specification in another standards body, industry
+consortium, university site, etc. suffices.
 
 Note:
 : As specified in {{RFC8126}}, assignments made in the Private Use
@@ -227,7 +227,7 @@ Note:
 RFCs.  Extensions marked as "No" are not.
 
 Note:
-: If an item is not marked as recommended it does not necessarily mean
+: If an item is not marked as Recommended it does not necessarily mean
 that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
@@ -367,13 +367,13 @@ RFCs.  Cipher suites marked as "No" are not; cipher suites marked "No"
 range from "good" to "bad" from a cryptographic standpoint.
 
 Note:
-: CCM_8 cipher suites are not marked as recommended.  These cipher
+: CCM_8 cipher suites are not marked as Recommended.  These cipher
 suites have a significantly truncated authentication tag that represents
 a security trade-off that may not be appropriate for general
 environments.
 
 Note:
-: If an item is not marked as recommended it does not necessarily mean
+: If an item is not marked as Recommended it does not necessarily mean
 that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
@@ -421,7 +421,7 @@ Track RFCs.  Supported Groups marked as "No" are not; supported groups
 marked "No" range from "good" to "bad" from a cryptographic standpoint.
 
 Note:
-: If an item is not marked as recommended it does not necessarily mean
+: If an item is not marked as Recommended it does not necessarily mean
 that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
@@ -489,7 +489,7 @@ via Standards Track RFCs.  ClientCertificateTypes marked as "No" are
 not.
 
 Note:
-: If an item is not marked as recommended it does not necessarily mean
+: If an item is not marked as Recommended it does not necessarily mean
 that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
@@ -560,7 +560,7 @@ Note:
 Track RFCs.  Exporter Labels marked as "No" are not.
 
 Note:
-: If an item is not marked as recommended it does not necessarily mean
+: If an item is not marked as Recommended it does not necessarily mean
 that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
@@ -608,11 +608,17 @@ expert pool.
 IANA [SHALL add/has added] the following note:
 
 Note:
+The designated expert {{RFC8126}} only ensures that the specification
+is publicly available.  An Internet Draft that is posted and never
+published or a standard in another standards body, industry consortium,
+university site, etc. suffices.
+
+Note:
 : Certificate Types marked as "Yes" are those allocated via Standards
 Track RFCs.  Certificate Types marked as "No" are not.
 
 Note:
-: If an item is not marked as recommended it does not necessarily mean
+: If an item is not marked as Recommended it does not necessarily mean
 that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
