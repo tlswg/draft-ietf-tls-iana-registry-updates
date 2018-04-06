@@ -123,7 +123,7 @@ standards action.  Not all parameters defined in standards track
 documents need to be marked as recommended.
 
 If an item is marked as not recommended it does not necessarily mean
-that it is flawed, rather, it indicates that either the item has not
+that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
 
@@ -224,7 +224,7 @@ RFCs.  Extensions marked as "No" are not.
 
 Note:
 : If an item is not marked as recommended it does not necessarily mean
-that it is flawed, rather, it indicates that either the item has not
+that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
 
@@ -366,7 +366,7 @@ environments.
 
 Note:
 : If an item is not marked as recommended it does not necessarily mean
-that it is flawed, rather, it indicates that either the item has not
+that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
 
@@ -413,7 +413,7 @@ marked "No" range from "good" to "bad" from a cryptographic standpoint.
 
 Note:
 : If an item is not marked as recommended it does not necessarily mean
-that it is flawed, rather, it indicates that either the item has not
+that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
 
@@ -479,7 +479,7 @@ not.
 
 Note:
 : If an item is not marked as recommended it does not necessarily mean
-that it is flawed, rather, it indicates that either the item has not
+that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
 
@@ -550,7 +550,7 @@ Track RFCs.  Exporter Labels marked as "No" are not.
 
 Note:
 : If an item is not marked as recommended it does not necessarily mean
-that it is flawed, rather, it indicates that either the item has not
+that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
 
@@ -593,7 +593,7 @@ Track RFCs.  Certificate Types marked as "No" are not.
 
 Note:
 : If an item is not marked as recommended it does not necessarily mean
-that it is flawed, rather, it indicates that either the item has not
+that it is flawed; rather, it indicates that either the item has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
 
