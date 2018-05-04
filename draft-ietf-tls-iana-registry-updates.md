@@ -210,10 +210,13 @@ update/has updated] the TLS ExtensionType Values registry to:
 IANA [SHALL update/has added] the following notes:
 
 Note:
-: Experts are to verify that there is in fact a publicly available
-specification.  An Internet Draft that is posted and never published or a
-specification in another standards body, industry consortium, university
-site, etc. suffices.
+: The role of the designature expert is described in [this-RFC].
+The designated expert {{RFC8126}} ensures that the specification is
+publicly available.  An Internet Draft that is posted and never
+published or a standard in another standards body, industry
+consortium, university site, etc. suffices.  The expert may provide
+more in depth reviews, but their approval should not be taken as an
+endorsement of the extension.
 
 Note:
 : As specified in {{RFC8126}}, assignments made in the Private Use
@@ -382,10 +385,13 @@ IANA [SHALL add/has added] the following notes for additional
 information:
 
 Note:
-: The designated expert {{RFC8126}} only ensures that the specification
-is publicly available.  An Internet Draft that is posted and never
+: The role of the designature expert is described in [this-RFC].
+The designated expert {{RFC8126}} ensures that the specification is
+publicly available.  An Internet Draft that is posted and never
 published or a standard in another standards body, industry
-consortium, university site, etc. suffices.
+consortium, university site, etc. suffices.  The expert may provide
+more in depth reviews, but their approval should not be taken as an
+endorsement of the cipher suite.
 
 Note:
 : As specified in {{RFC8126}}, assignments made in the Private Use
@@ -427,10 +433,13 @@ been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
 
 Note:
-: The designated expert {{RFC8126}} only ensures that the specification
-is publicly available.  An Internet Draft that is posted and never
-published or a standard in another standards body, industry consortium,
-university site, etc. suffices.
+: The role of the designature expert is described in [this-RFC].
+The designated expert {{RFC8126}} ensures that the specification is
+publicly available.  An Internet Draft that is posted and never
+published or a standard in another standards body, industry
+consortium, university site, etc. suffices.  The expert may provide
+more in depth reviews, but their approval should not be taken as an
+endorsement of the supported group.
 
 Despite the following behavior being misguided, experience has shown
 that some customers use the IANA registry as checklist against which
@@ -471,10 +480,13 @@ expert pool.
 IANA [SHALL add/has added] the following notes:
 
 Note:
-: The designated expert {{RFC8126}} only ensures that the specification
-is publicly available.  An Internet Draft that is posted and never
-published or a standard in another standards body, industry consortium,
-university site, etc. suffices.
+: The role of the designature expert is described in [this-RFC].
+The designated expert {{RFC8126}} ensures that the specification is
+publicly available.  An Internet Draft that is posted and never
+published or a standard in another standards body, industry
+consortium, university site, etc. suffices.  The expert may provide
+more in depth reviews, but their approval should not be taken as an
+endorsement of the identifier.
 
 Note:
 : As specified in {{RFC8126}}, assignments made in the Private Use
@@ -546,13 +558,16 @@ To provide additional information for the designated experts, IANA
 [SHALL add/has added] the following note:
 
 Note:
-: The designated expert {{RFC8126}} ensures that the specification is
+: The role of the designature expert is described in [this-RFC].
+The designated expert {{RFC8126}} ensures that the specification is
 publicly available.  An Internet Draft that is posted and never
-published or a standard in another standards body, industry consortium,
-university site, etc. suffices.  The expert also verifies that the label
+published or a standard in another standards body, industry
+consortium, university site, etc. suffices.  The expert may provide
+more in depth reviews, but their approval should not be taken as an
+endorsement of the exporter.  The expert also verifies that the label
 is a string consisting of printable ASCII characters beginning with
-"EXPORTER". IANA MUST also verify that one label is not a prefix of any
-other label.  For example, labels "key" or "master secretary" are
+"EXPORTER".  IANA MUST also verify that one label is not a prefix of
+any other label.  For example, labels "key" or "master secretary" are
 forbidden.
 
 Note:
@@ -606,6 +621,20 @@ See {{expert-pool}} for additional information about the designated
 expert pool.
 
 IANA [SHALL add/has added] the following note:
+
+Note:
+: The role of the designature expert is described in [this-RFC].
+The designated expert {{RFC8126}} ensures that the specification is
+publicly available.  An Internet Draft that is posted and never
+published or a standard in another standards body, industry
+consortium, university site, etc. suffices.  The expert may provide
+more in depth reviews, but their approval should not be taken as an
+endorsement of the certificate type.
+
+The designated expert {{RFC8126}} only ensures that the specification
+is publicly available.  An Internet Draft that is posted and never
+published or a standard in another standards body, industry consortium,
+university site, etc. suffices.
 
 Note:
 : Certificate Types marked as "Yes" are those allocated via Standards
