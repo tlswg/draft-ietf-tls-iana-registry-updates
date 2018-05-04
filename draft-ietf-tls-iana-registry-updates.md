@@ -631,11 +631,6 @@ consortium, university site, etc. suffices.  The expert may provide
 more in depth reviews, but their approval should not be taken as an
 endorsement of the certificate type.
 
-The designated expert {{RFC8126}} only ensures that the specification
-is publicly available.  An Internet Draft that is posted and never
-published or a standard in another standards body, industry consortium,
-university site, etc. suffices.
-
 Note:
 : Certificate Types marked as "Yes" are those allocated via Standards
 Track RFCs.  Certificate Types marked as "No" are not.
