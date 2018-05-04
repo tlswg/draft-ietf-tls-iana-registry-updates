@@ -6,8 +6,8 @@ TLS WG                                                        J. Salowey
 Internet-Draft                                          Tableau Software
 Updates: 3749, 5077, 4680, 5246, 5705,                         S. Turner
          5878, 6520, 7301 (if approved)                            sn3rd
-Intended status: Standards Track                           April 6, 2018
-Expires: October 8, 2018
+Intended status: Standards Track                             May 4, 2018
+Expires: November 5, 2018
 
 
  IANA Registry Updates for Transport Layer Security (TLS) and Datagram
@@ -40,7 +40,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on October 8, 2018.
+   This Internet-Draft will expire on November 5, 2018.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Salowey & Turner         Expires October 8, 2018                [Page 1]
+Salowey & Turner        Expires November 5, 2018                [Page 1]
 
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
 
 
    publication of this document.  Please review these documents
@@ -80,16 +80,16 @@ Table of Contents
    11. TLS ClientCertificateType Identifiers . . . . . . . . . . . .  11
    12. New Session Ticket TLS Handshake Message Type . . . . . . . .  12
    13. TLS Exporter Label Registry . . . . . . . . . . . . . . . . .  12
-   14. Add Missing Item to TLS Alert Registry  . . . . . . . . . . .  13
+   14. Add Missing Item to TLS Alert Registry  . . . . . . . . . . .  14
    15. TLS Certificate Types . . . . . . . . . . . . . . . . . . . .  14
-   16. Orphaned Extensions . . . . . . . . . . . . . . . . . . . . .  14
+   16. Orphaned Extensions . . . . . . . . . . . . . . . . . . . . .  15
    17. Orphaned Registries . . . . . . . . . . . . . . . . . . . . .  15
    18. Designated Expert Pool  . . . . . . . . . . . . . . . . . . .  16
-   19. Security Considerations . . . . . . . . . . . . . . . . . . .  16
+   19. Security Considerations . . . . . . . . . . . . . . . . . . .  17
    20. IANA Considerations . . . . . . . . . . . . . . . . . . . . .  17
    21. References  . . . . . . . . . . . . . . . . . . . . . . . . .  17
      21.1.  Normative References . . . . . . . . . . . . . . . . . .  17
-     21.2.  Informative References . . . . . . . . . . . . . . . . .  18
+     21.2.  Informative References . . . . . . . . . . . . . . . . .  19
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  19
 
 1.  Process Note
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Salowey & Turner         Expires October 8, 2018                [Page 2]
+Salowey & Turner        Expires November 5, 2018                [Page 2]
 
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
 
 
    The changes introduced by this document range from simple, e.g.,
@@ -165,9 +165,9 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
 
 
 
-Salowey & Turner         Expires October 8, 2018                [Page 3]
+Salowey & Turner        Expires November 5, 2018                [Page 3]
 
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
 
 
    o  TLS Supplemental Data Formats (SupplementalDataType) [RFC5878]
@@ -221,9 +221,9 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
 
 
 
-Salowey & Turner         Expires October 8, 2018                [Page 4]
+Salowey & Turner        Expires November 5, 2018                [Page 4]
 
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
 
 
       Values with the first byte in the range 0-254 (decimal) are
@@ -277,9 +277,9 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
 
 
 
-Salowey & Turner         Expires October 8, 2018                [Page 5]
+Salowey & Turner        Expires November 5, 2018                [Page 5]
 
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
 
 
          |                                        |             |
@@ -316,10 +316,13 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
 
    IANA [SHALL update/has added] the following notes:
 
-   Note:  Experts are to verify that there is in fact a publicly
-      available specification.  An Internet Draft that is posted and
-      never published or a specification in another standards body,
-      industry consortium, university site, etc. suffices.
+   Note:  The role of the designature expert is described in [this-RFC].
+      The designated expert [RFC8126] ensures that the specification is
+      publicly available.  An Internet Draft that is posted and never
+      published or a standard in another standards body, industry
+      consortium, university site, etc. suffices.  The expert may
+      provide more in depth reviews, but their approval should not be
+      taken as an endorsement of the extension.
 
    Note:  As specified in [RFC8126], assignments made in the Private Use
       space are not generally useful for broad interoperability.  It is
@@ -327,16 +330,16 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
       ensure that no conflicts occur (within the intended scope of use).
       For widespread experiments, temporary reservations are available.
 
+
+
+
+Salowey & Turner        Expires November 5, 2018                [Page 6]
+
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
+
+
    Note:  Extensions marked as "Yes" are those allocated via Standards
       Track RFCs.  Extensions marked as "No" are not.
-
-
-
-
-Salowey & Turner         Expires October 8, 2018                [Page 6]
-
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
-
 
    Note:  If an item is not marked as Recommended it does not
       necessarily mean that it is flawed; rather, it indicates that
@@ -384,15 +387,15 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
    assigned via Specification Required {{RFC8126}}.  Values with the
    first byte 255 (decimal) are reserved for Private Use {{RFC8126}}.
 
+
+
+Salowey & Turner        Expires November 5, 2018                [Page 7]
+
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
+
+
    See Section 18 for additional information about the designated expert
    pool.
-
-
-
-Salowey & Turner         Expires October 8, 2018                [Page 7]
-
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
-
 
    The cipher suite registry has grown significantly and will continue
    to do so.  To better guide those not intimately involved in TLS, IANA
@@ -442,12 +445,9 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
 
 
 
-
-
-
-Salowey & Turner         Expires October 8, 2018                [Page 8]
+Salowey & Turner        Expires November 5, 2018                [Page 8]
 
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
 
 
    Cipher Suite Name                             | Value
@@ -501,9 +501,9 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
 
 
 
-Salowey & Turner         Expires October 8, 2018                [Page 9]
+Salowey & Turner        Expires November 5, 2018                [Page 9]
 
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
 
 
    Note:  If an item is not marked as Recommended it does not
@@ -515,10 +515,13 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
    IANA [SHALL add/has added] the following notes for additional
    information:
 
-   Note:  The designated expert [RFC8126] only ensures that the
-      specification is publicly available.  An Internet Draft that is
-      posted and never published or a standard in another standards
-      body, industry consortium, university site, etc. suffices.
+   Note:  The role of the designature expert is described in [this-RFC].
+      The designated expert [RFC8126] ensures that the specification is
+      publicly available.  An Internet Draft that is posted and never
+      published or a standard in another standards body, industry
+      consortium, university site, etc. suffices.  The expert may
+      provide more in depth reviews, but their approval should not be
+      taken as an endorsement of the cipher suite.
 
    Note:  As specified in [RFC8126], assignments made in the Private Use
       space are not generally useful for broad interoperability.  It is
@@ -552,24 +555,26 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
       supported groups marked "No" range from "good" to "bad" from a
       cryptographic standpoint.
 
+
+
+Salowey & Turner        Expires November 5, 2018               [Page 10]
+
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
+
+
    Note:  If an item is not marked as Recommended it does not
       necessarily mean that it is flawed; rather, it indicates that
-
-
-
-Salowey & Turner         Expires October 8, 2018               [Page 10]
-
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
-
-
       either the item has not been through the IETF consensus process,
       has limited applicability, or is intended only for specific use
       cases.
 
-   Note:  The designated expert [RFC8126] only ensures that the
-      specification is publicly available.  An Internet Draft that is
-      posted and never published or a standard in another standards
-      body, industry consortium, university site, etc. suffices.
+   Note:  The role of the designature expert is described in [this-RFC].
+      The designated expert [RFC8126] ensures that the specification is
+      publicly available.  An Internet Draft that is posted and never
+      published or a standard in another standards body, industry
+      consortium, university site, etc. suffices.  The expert may
+      provide more in depth reviews, but their approval should not be
+      taken as an endorsement of the supported group.
 
    Despite the following behavior being misguided, experience has shown
    that some customers use the IANA registry as checklist against which
@@ -606,17 +611,20 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
 
    IANA [SHALL add/has added] the following notes:
 
-   Note:  The designated expert [RFC8126] only ensures that the
-      specification is publicly available.  An Internet Draft that is
-      posted and never published or a standard in another standards
-      body, industry consortium, university site, etc. suffices.
 
 
-
-Salowey & Turner         Expires October 8, 2018               [Page 11]
+Salowey & Turner        Expires November 5, 2018               [Page 11]
 
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
 
+
+   Note:  The role of the designature expert is described in [this-RFC].
+      The designated expert [RFC8126] ensures that the specification is
+      publicly available.  An Internet Draft that is posted and never
+      published or a standard in another standards body, industry
+      consortium, university site, etc. suffices.  The expert may
+      provide more in depth reviews, but their approval should not be
+      taken as an endorsement of the identifier.
 
    Note:  As specified in [RFC8126], assignments made in the Private Use
       space are not generally useful for broad interoperability.  It is
@@ -658,6 +666,14 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
       thus requiring a new construction.  The exporter interface remains
       the same, however the value is computed differently.
 
+
+
+
+Salowey & Turner        Expires November 5, 2018               [Page 12]
+
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
+
+
    o  A "Recommended" column to the TLS Exporter Label registry.  The
       table that follows has been generated by marking Standards Track
       RFCs as "Yes" and all others as "No".  Future exporters MUST
@@ -665,14 +681,6 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
       extension with the value "Yes", a Standards Track document
       [RFC8126] is REQUIRED.  IESG Approval is REQUIRED for a Yes->No
       transition.
-
-
-
-
-Salowey & Turner         Expires October 8, 2018               [Page 12]
-
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
-
 
    Exporter Value                  | Recommended |
    --------------------------------|-------------|
@@ -690,11 +698,14 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
    To provide additional information for the designated experts, IANA
    [SHALL add/has added] the following note:
 
-   Note:  The designated expert [RFC8126] ensures that the specification
-      is publicly available.  An Internet Draft that is posted and never
+   Note:  The role of the designature expert is described in [this-RFC].
+      The designated expert [RFC8126] ensures that the specification is
+      publicly available.  An Internet Draft that is posted and never
       published or a standard in another standards body, industry
-      consortium, university site, etc. suffices.  The expert also
-      verifies that the label is a string consisting of printable ASCII
+      consortium, university site, etc. suffices.  The expert may
+      provide more in depth reviews, but their approval should not be
+      taken as an endorsement of the exporter.  The expert also verifies
+      that the label is a string consisting of printable ASCII
       characters beginning with "EXPORTER".  IANA MUST also verify that
       one label is not a prefix of any other label.  For example, labels
       "key" or "master secretary" are forbidden.
@@ -711,6 +722,14 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
    IANA [SHALL update/has updated] the reference for this registry to
    also refer to this document.
 
+
+
+
+Salowey & Turner        Expires November 5, 2018               [Page 13]
+
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
+
+
 14.  Add Missing Item to TLS Alert Registry
 
    IANA [SHALL add/has added] the following entry to the TLS Alert
@@ -718,17 +737,6 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
    [RFC7301]:
 
    120   no_application_protocol  Y  [RFC7301][this-RFC]
-
-
-
-
-
-
-
-Salowey & Turner         Expires October 8, 2018               [Page 13]
-
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
-
 
 15.  TLS Certificate Types
 
@@ -759,6 +767,28 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
 
    IANA [SHALL add/has added] the following note:
 
+   Note:  The role of the designature expert is described in [this-RFC].
+      The designated expert [RFC8126] ensures that the specification is
+      publicly available.  An Internet Draft that is posted and never
+      published or a standard in another standards body, industry
+      consortium, university site, etc. suffices.  The expert may
+      provide more in depth reviews, but their approval should not be
+      taken as an endorsement of the certificate type.
+
+   The designated expert [RFC8126] only ensures that the specification
+   is publicly available.  An Internet Draft that is posted and never
+
+
+
+
+Salowey & Turner        Expires November 5, 2018               [Page 14]
+
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
+
+
+   published or a standard in another standards body, industry
+   consortium, university site, etc. suffices.
+
    Note:  Certificate Types marked as "Yes" are those allocated via
       Standards Track RFCs.  Certificate Types marked as "No" are not.
 
@@ -777,14 +807,6 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
    (i.e., some extensions are only applicable to version of (D)TLS prior
    to 1.3), IANA [SHALL add/has added] the following note to the TLS
    ExtensionType Values registry:
-
-
-
-
-Salowey & Turner         Expires October 8, 2018               [Page 14]
-
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
-
 
    Note:  The following extensions are only applicable to (D)TLS
       protocol versions prior to 1.3: trusted_ca_keys, truncated_hmac,
@@ -811,6 +833,15 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
    Note:  The values in this registry are only applicable to (D)TLS
       protocol versions prior to 1.3.
 
+
+
+
+
+Salowey & Turner        Expires November 5, 2018               [Page 15]
+
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
+
+
    o  [SHALL update/has updated] the "Reference" field in the TLS
       Compression Method Identifiers, TLS HashAlgorithm and TLS
       SignatureAlgorithm registries to also refer to this document.
@@ -831,16 +862,6 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
       algorithms listed here is not advised.  Implementers and users
       need to check that the cryptographic algorithms listed continue to
       provide the expected level of security.
-
-
-
-
-
-
-Salowey & Turner         Expires October 8, 2018               [Page 15]
-
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
-
 
 18.  Designated Expert Pool
 
@@ -869,6 +890,14 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
    useful only for a single application, and whether the registration
    description is clear.
 
+
+
+
+Salowey & Turner        Expires November 5, 2018               [Page 16]
+
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
+
+
    IANA MUST only accept registry updates from the Designated Experts
    and SHOULD direct all requests for registration to the review mailing
    list.
@@ -888,15 +917,6 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
    groups.  This change reflects reality in that the WG essentially
    provided no cryptographic review of the cipher suites or supported
    groups.  This was especially true of national cipher suites.
-
-
-
-
-
-Salowey & Turner         Expires October 8, 2018               [Page 16]
-
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
-
 
    Recommended algorithms are regarded as secure for general use at the
    time of registration, however, cryptographic algorithms and
@@ -925,6 +945,15 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
               Version 1.3", draft-ietf-tls-tls13-28 (work in progress),
               March 2018.
 
+
+
+
+
+Salowey & Turner        Expires November 5, 2018               [Page 17]
+
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
+
+
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997, <https://www.rfc-
@@ -942,17 +971,6 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
               "Transport Layer Security (TLS) Session Resumption without
               Server-Side State", RFC 5077, DOI 10.17487/RFC5077,
               January 2008, <https://www.rfc-editor.org/info/rfc5077>.
-
-
-
-
-
-
-
-Salowey & Turner         Expires October 8, 2018               [Page 17]
-
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
-
 
    [RFC5246]  Dierks, T. and E. Rescorla, "The Transport Layer Security
               (TLS) Protocol Version 1.2", RFC 5246,
@@ -983,6 +1001,15 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
               Negotiation Extension", RFC 7301, DOI 10.17487/RFC7301,
               July 2014, <https://www.rfc-editor.org/info/rfc7301>.
 
+
+
+
+
+Salowey & Turner        Expires November 5, 2018               [Page 18]
+
+Internet-Draft        (D)TLS IANA Registry Updates              May 2018
+
+
    [RFC8126]  Cotton, M., Leiba, B., and T. Narten, "Guidelines for
               Writing an IANA Considerations Section in RFCs", BCP 26,
               RFC 8126, DOI 10.17487/RFC8126, June 2017,
@@ -1000,21 +1027,11 @@ Internet-Draft        (D)TLS IANA Registry Updates            April 2018
               Security (TLS) Versions 1.2 and Earlier", draft-ietf-tls-
               rfc4492bis-17 (work in progress), May 2017.
 
-
-
-
-
-
-Salowey & Turner         Expires October 8, 2018               [Page 18]
-
-Internet-Draft        (D)TLS IANA Registry Updates            April 2018
-
-
    [I-D.ietf-tokbind-negotiation]
               Popov, A., Nystrom, M., Balfanz, D., and A. Langley,
               "Transport Layer Security (TLS) Extension for Token
               Binding Protocol Negotiation", draft-ietf-tokbind-
-              negotiation-10 (work in progress), October 2017.
+              negotiation-12 (work in progress), May 2018.
 
    [RFC4366]  Blake-Wilson, S., Nystrom, M., Hopwood, D., Mikkelsen, J.,
               and T. Wright, "Transport Layer Security (TLS)
@@ -1044,21 +1061,4 @@ Authors' Addresses
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Salowey & Turner         Expires October 8, 2018               [Page 19]
+Salowey & Turner        Expires November 5, 2018               [Page 19]

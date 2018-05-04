@@ -9,80 +9,30 @@
 
   
 <style type="text/css">/*<![CDATA[*/
-@viewport {
-  zoom: 1.0;
-  width: extend-to-zoom;
-}
-@-ms-viewport {
-  width: extend-to-zoom;
-  zoom: 1.0;
-}
-
-@media screen and (min-width: 1024px) {
-  body>ul.toc, body>#rfc\.toc {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    right: calc(50vw - 550px);
-    width: 300px;
-    z-index: 1;
-  }
-  #rfc\.toc {
-    top: 55px;
-    overflow: auto;
-    overscroll-behavior: contain;
-  }
-  ul.toc, #rfc\.toc {
-    overflow: auto;
-    overscroll-behavior: contain;
-  }
-  body>ul.toc {
-    top: 140px;
-  }
-
-  body {
-    padding-right: 350px;
-  }
-}
 
 body {
-  font: 16px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font: 16px "Helvetica Neue","Open Sans",Helvetica,Calibri,sans-serif;
   color: #333;
   font-size-adjust: 0.5;
   line-height: 24px;
   margin: 75px auto;
   max-width: 724px;
+  padding: 0 5px;
 }
 
-.title, .filename, h1, h2, h3, h4 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.title, .filename, h1, h2, h3, h4, h5 {
+  font: 16px "Helvetica Neue","Roboto Condensed","Open Sans",Helvetica,Calibri,sans-serif;
   font-size-adjust: 0.5;
-  font-weight: 500;
+  font-weight: bold;
   color: #333;
   line-height: 100%;
   margin: 0.8em 0 0.3em;
 }
-.title { font-size: 36px; }
-h1 { font-size: 36px; }
-h2 { font-size: 24px; }
-h3, h4 { font-size: 18px; }
+.title, #rfc\.title h1 { font-size: 32px; }
+h1, section h1, h2, section h2, section h3, nav h2 { font-size: 20px; }
+h3, section h4, h4, section h5 { font-size: 16px; }
 h1 a[href], h2 a[href], h3 a[href], h4 a[href] {
   color: #333;
-}
-
-ul.toc li {
-  list-style: none;
-  text-indent: -2.5em;
-  padding-left: 2.5em;
-  padding-bottom: 5px;
-  margin: 0;
-}
-ul.toc ul {
-  margin: 0;
-}
-/* xml2rfc nests ul directly inside ul which messes with the style badly */
-ul.toc, ul.toc>ul, ul.toc ul>ul {
-  margin: 0 0 0 1.5em;
 }
 
 table {
@@ -111,24 +61,26 @@ td.reference {
 }
 
 
-table.header {
+table.header, table#rfc\.headerblock {
   width: 100%;
 }
-table.header td {
+table.header td, table#rfc\.headerblock td {
   border: none;
   background-color: transparent;
   color: black;
+  padding: 0;
 }
 .filename {
+  display: block;
   color: rgb(119, 119, 119);
-  font-size: 23px;
+  font-size: 20px;
   font-weight: normal;
-  height: auto;
   line-height: 100%;
+  margin: 10px 0 32px;
 }
 #rfc\.abstract+p, #rfc\.abstract p {
-  font-size: 18px;
-  line-height: 27px%;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 samp, tt, code, pre {
@@ -142,13 +94,15 @@ pre {
   padding: 5px;
   margin: 5px;
 }
-.figure {
+.figure, caption {
   font-style: italic;
   margin: 0 1.5em;
+  text-align: left;
 }
 
 address {
-  margin: 10px 0 0;
+  margin: 16px 2px;
+  line-height: 20px;
 }
 .vcard {
   font-style: normal;
@@ -156,8 +110,8 @@ address {
 .vcardline {
   display: block;
 }
-.vcardline .fn {
-  font-weight: bold;
+.vcardline .fn, address b {
+  font-weight: normal;
 }
 .vcardline .hidden {
   display: none;
@@ -222,6 +176,45 @@ address {
   font-style: normal;
 }
 
+ul.toc ul {
+  margin: 0 0 0 2em;
+}
+ul.toc li {
+  list-style: none;
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-right: 350px;
+  }
+  body>ul.toc, body>#rfc\.toc {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    right: calc(50vw - 550px);
+    width: 300px;
+    z-index: 1;
+    overflow: auto;
+    overscroll-behavior: contain;
+  }
+  body>#rfc\.toc {
+    top: 55px;
+  }
+  body>ul.toc {
+    top: 100px;
+  }
+
+  ul.toc {
+    margin: 0 0 0 4px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  ul.toc ul {
+    margin-left: 1.2em;
+  }
+}
+
 .github-fork-ribbon-wrapper {
   display: none;
 }
@@ -279,6 +272,7 @@ address {
     position: fixed;
   }
 /*]]>*/</style>
+<meta name="viewport" content="initial-scale=1.0">
 
 
   <link href="#rfc.toc" rel="Contents"/>
@@ -313,7 +307,7 @@ address {
 
   <meta name="dct.creator" content="Salowey, J. and S. Turner" />
   <meta name="dct.identifier" content="urn:ietf:id:draft-ietf-tls-iana-registry-updates-latest" />
-  <meta name="dct.issued" scheme="ISO8601" content="2018-4-6" />
+  <meta name="dct.issued" scheme="ISO8601" content="2018-5-4" />
   <meta name="dct.abstract" content="This document describes a number of changes to (D)TLS IANA registries that range from adding notes to the registry all the way to changing the registration policy.  These changes were mostly motivated by WG review of the (D)TLS-related registries undertaken as part of the TLS1.3 development process." />
   <meta name="description" content="This document describes a number of changes to (D)TLS IANA registries that range from adding notes to the registry all the way to changing the registration policy.  These changes were mostly motivated by WG review of the (D)TLS-related registries undertaken as part of the TLS1.3 development process." />
 
@@ -342,10 +336,10 @@ address {
 </tr>
 <tr>
   <td class="left">Intended status: Standards Track</td>
-  <td class="right">April 6, 2018</td>
+  <td class="right">May 4, 2018</td>
 </tr>
 <tr>
-  <td class="left">Expires: October 8, 2018</td>
+  <td class="left">Expires: November 5, 2018</td>
   <td class="right"></td>
 </tr>
 
@@ -367,7 +361,7 @@ address {
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at http://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on October 8, 2018.</p>
+<p>This Internet-Draft will expire on November 5, 2018.</p>
 <h1 id="rfc.copyrightnotice">
   <a href="#rfc.copyrightnotice">Copyright Notice</a>
 </h1>
@@ -586,7 +580,7 @@ address {
 
 <dl>
   <dt>Note:</dt>
-  <dd style="margin-left: 8">Experts are to verify that there is in fact a publicly available specification.  An Internet Draft that is posted and never published or a specification in another standards body, industry consortium, university site, etc. suffices.</dd>
+  <dd style="margin-left: 8">The role of the designature expert is described in [this-RFC].  The designated expert <a href="#RFC8126">[RFC8126]</a> ensures that the specification is publicly available.  An Internet Draft that is posted and never published or a standard in another standards body, industry consortium, university site, etc. suffices.  The expert may provide more in depth reviews, but their approval should not be taken as an endorsement of the extension.</dd>
   <dt>Note:</dt>
   <dd style="margin-left: 8">As specified in <a href="#RFC8126">[RFC8126]</a>, assignments made in the Private Use space are not generally useful for broad interoperability.  It is the responsibility of those making use of the Private Use range to ensure that no conflicts occur (within the intended scope of use).  For widespread experiments, temporary reservations are available.</dd>
   <dt>Note:</dt>
@@ -680,7 +674,7 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 
 <dl>
   <dt>Note:</dt>
-  <dd style="margin-left: 8">The designated expert <a href="#RFC8126">[RFC8126]</a> only ensures that the specification is publicly available.  An Internet Draft that is posted and never published or a standard in another standards body, industry consortium, university site, etc. suffices.</dd>
+  <dd style="margin-left: 8">The role of the designature expert is described in [this-RFC].  The designated expert <a href="#RFC8126">[RFC8126]</a> ensures that the specification is publicly available.  An Internet Draft that is posted and never published or a standard in another standards body, industry consortium, university site, etc. suffices.  The expert may provide more in depth reviews, but their approval should not be taken as an endorsement of the cipher suite.</dd>
   <dt>Note:</dt>
   <dd style="margin-left: 8">As specified in <a href="#RFC8126">[RFC8126]</a>, assignments made in the Private Use space are not generally useful for broad interoperability.  It is the responsibility of those making use of the Private Use range to ensure that no conflicts occur (within the intended scope of use).  For widespread experiments, temporary reservations are available.</dd>
 </dl>
@@ -696,7 +690,7 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
   <dt>Note:</dt>
   <dd style="margin-left: 8">If an item is not marked as Recommended it does not necessarily mean that it is flawed; rather, it indicates that either the item has not been through the IETF consensus process, has limited applicability, or is intended only for specific use cases.</dd>
   <dt>Note:</dt>
-  <dd style="margin-left: 8">The designated expert <a href="#RFC8126">[RFC8126]</a> only ensures that the specification is publicly available.  An Internet Draft that is posted and never published or a standard in another standards body, industry consortium, university site, etc. suffices.</dd>
+  <dd style="margin-left: 8">The role of the designature expert is described in [this-RFC].  The designated expert <a href="#RFC8126">[RFC8126]</a> ensures that the specification is publicly available.  An Internet Draft that is posted and never published or a standard in another standards body, industry consortium, university site, etc. suffices.  The expert may provide more in depth reviews, but their approval should not be taken as an endorsement of the supported group.</dd>
 </dl>
 <p id="rfc.section.10.p.4">Despite the following behavior being misguided, experience has shown that some customers use the IANA registry as checklist against which to measure an implementation&#8217;s completeness and some implementers blindly implement groups supported.  Therefore, IANA [SHALL add/has added] the following warning to the registry:</p>
 <p/>
@@ -719,7 +713,7 @@ TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 
 <dl>
   <dt>Note:</dt>
-  <dd style="margin-left: 8">The designated expert <a href="#RFC8126">[RFC8126]</a> only ensures that the specification is publicly available.  An Internet Draft that is posted and never published or a standard in another standards body, industry consortium, university site, etc. suffices.</dd>
+  <dd style="margin-left: 8">The role of the designature expert is described in [this-RFC].  The designated expert <a href="#RFC8126">[RFC8126]</a> ensures that the specification is publicly available.  An Internet Draft that is posted and never published or a standard in another standards body, industry consortium, university site, etc. suffices.  The expert may provide more in depth reviews, but their approval should not be taken as an endorsement of the identifier.</dd>
   <dt>Note:</dt>
   <dd style="margin-left: 8">As specified in <a href="#RFC8126">[RFC8126]</a>, assignments made in the Private Use space are not generally useful for broad interoperability.  It is the responsibility of those making use of the Private Use range to ensure that no conflicts occur (within the intended scope of use).  For widespread experiments, temporary reservations are available.</dd>
   <dt>Note:</dt>
@@ -772,7 +766,7 @@ EXPORTER: teap session key seed |         Yes |
 
 <dl>
   <dt>Note:</dt>
-  <dd style="margin-left: 8">The designated expert <a href="#RFC8126">[RFC8126]</a> ensures that the specification is publicly available.  An Internet Draft that is posted and never published or a standard in another standards body, industry consortium, university site, etc. suffices.  The expert also verifies that the label is a string consisting of printable ASCII characters beginning with &#8220;EXPORTER&#8221;. IANA MUST also verify that one label is not a prefix of any other label.  For example, labels &#8220;key&#8221; or &#8220;master secretary&#8221; are forbidden.</dd>
+  <dd style="margin-left: 8">The role of the designature expert is described in [this-RFC].  The designated expert <a href="#RFC8126">[RFC8126]</a> ensures that the specification is publicly available.  An Internet Draft that is posted and never published or a standard in another standards body, industry consortium, university site, etc. suffices.  The expert may provide more in depth reviews, but their approval should not be taken as an endorsement of the exporter.  The expert also verifies that the label is a string consisting of printable ASCII characters beginning with &#8220;EXPORTER&#8221;.  IANA MUST also verify that one label is not a prefix of any other label.  For example, labels &#8220;key&#8221; or &#8220;master secretary&#8221; are forbidden.</dd>
   <dt>Note:</dt>
   <dd style="margin-left: 8">Exporters Labels marked as &#8220;Yes&#8221; are those allocated via Standards Track RFCs.  Exporter Labels marked as &#8220;No&#8221; are not.</dd>
   <dt>Note:</dt>
@@ -798,11 +792,18 @@ EXPORTER: teap session key seed |         Yes |
 
 <dl>
   <dt>Note:</dt>
+  <dd style="margin-left: 8">The role of the designature expert is described in [this-RFC].  The designated expert <a href="#RFC8126">[RFC8126]</a> ensures that the specification is publicly available.  An Internet Draft that is posted and never published or a standard in another standards body, industry consortium, university site, etc. suffices.  The expert may provide more in depth reviews, but their approval should not be taken as an endorsement of the certificate type.</dd>
+</dl>
+<p id="rfc.section.15.p.6">The designated expert <a href="#RFC8126">[RFC8126]</a> only ensures that the specification is publicly available.  An Internet Draft that is posted and never published or a standard in another standards body, industry consortium, university site, etc. suffices.</p>
+<p/>
+
+<dl>
+  <dt>Note:</dt>
   <dd style="margin-left: 8">Certificate Types marked as &#8220;Yes&#8221; are those allocated via Standards Track RFCs.  Certificate Types marked as &#8220;No&#8221; are not.</dd>
   <dt>Note:</dt>
   <dd style="margin-left: 8">If an item is not marked as Recommended it does not necessarily mean that it is flawed; rather, it indicates that either the item has not been through the IETF consensus process, has limited applicability, or is intended only for specific use cases.</dd>
 </dl>
-<p id="rfc.section.15.p.6">IANA [SHALL update/has updated] the reference for this registry to also refer this document.</p>
+<p id="rfc.section.15.p.8">IANA [SHALL update/has updated] the reference for this registry to also refer this document.</p>
 <h1 id="rfc.section.16"><a href="#rfc.section.16">16.</a> <a href="#orphaned-extensions" id="orphaned-extensions">Orphaned Extensions</a></h1>
 <p id="rfc.section.16.p.1">To make it clear that (D)TLS 1.3 has orphaned certain extensions (i.e., some extensions are only applicable to version of (D)TLS prior to 1.3), IANA [SHALL add/has added] the following note to the TLS ExtensionType Values registry:</p>
 <p/>
@@ -958,7 +959,7 @@ EXPORTER: teap session key seed |         Yes |
       <td class="reference">
         <b id="I-D.ietf-tokbind-negotiation">[I-D.ietf-tokbind-negotiation]</b>
       </td>
-      <td class="top"><a>Popov, A.</a>, <a>Nystrom, M.</a>, <a>Balfanz, D.</a> and <a>A. Langley</a>, "<a href="http://tools.ietf.org/html/draft-ietf-tokbind-negotiation-10">Transport Layer Security (TLS) Extension for Token Binding Protocol Negotiation</a>", Internet-Draft draft-ietf-tokbind-negotiation-10, October 2017.</td>
+      <td class="top"><a>Popov, A.</a>, <a>Nystrom, M.</a>, <a>Balfanz, D.</a> and <a>A. Langley</a>, "<a href="http://tools.ietf.org/html/draft-ietf-tokbind-negotiation-12">Transport Layer Security (TLS) Extension for Token Binding Protocol Negotiation</a>", Internet-Draft draft-ietf-tokbind-negotiation-12, May 2018.</td>
     </tr>
     <tr>
       <td class="reference">
