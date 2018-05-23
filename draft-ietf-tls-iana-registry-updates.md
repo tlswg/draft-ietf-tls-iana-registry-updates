@@ -678,7 +678,8 @@ protocol version 1.3 or later.
 
 Note:
 : The values in this registry are only applicable to (D)TLS protocol
-versions prior to 1.3.
+versions prior to 1.3.  (D)TLS 1.3 and later versions' values are
+registered in the TLS SignatureScheme registry.
 
 - [SHALL update/has updated] the "Reference" field in the TLS
 Compression Method Identifiers, TLS HashAlgorithm and TLS
